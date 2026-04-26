@@ -42,16 +42,16 @@
 - C (Tussar): *My Favorite Murder*. You're caught up on every season, you have opinions on Karen's editing choices, and you're listening at 1.5x.
 - D (Maximalist): Diljit, "G.O.A.T." Windows down. Everyone in the car singing the chorus. You picked it.
 
-## Q7 — Show me the last text she sent.
+## Q7 — Show me the last text you sent.
 
 - A (Modernist): "ok", replied in 30 seconds.
 - B (Romantic): A 4-minute voice note. 1am. To one person.
 - C (Occasionalist): "7 or 7:30? if 7:30 i'll grab the wine."
 - D (Maximalist): "BABEEEE WAIT WAIT NO STOP 😭😭" at 11am on a Tuesday.
 
-## Q8 — First afternoon in a new city. Where is she?
+## Q8 — First afternoon in a new city. Where are you?
 
 - A (Wanderer): The natural-dye scarf-maker in a back lane in George Town. A friend in Chennai sent the pin last year.
-- B (Mul): Out the door, no maps. She'll figure out which way is the river.
-- C (Maximalist): Bag dropped at the hotel, three texts out before she's unpacked. By sunset she's at the loudest table on a Mar Mikhael rooftop, two of the four strangers already in her phone.
+- B (Mul): Out the door, no maps. You'll figure out which way is the river.
+- C (Maximalist): Bag dropped at the hotel, three texts out before you're unpacked. By sunset you're at the loudest table on a Mar Mikhael rooftop, two of the four strangers already in your phone.
 - D (Occasionalist): Itinerary printed. Lunch at Chote Nawab booked. Spa list from the concierge folded into the back.

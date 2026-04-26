@@ -256,7 +256,7 @@ Locked. See `docs/saree-dna-archetypes.md`.
 
 ## Q7 — LOCKED (was Q8 — text message)
 
-**Question:** *Show me the last text she sent.*
+**Question:** *Show me the last text you sent.*
 
 | | Option | Primary |
 |---|---|---|
@@ -285,13 +285,13 @@ Locked. See `docs/saree-dna-archetypes.md`.
 
 ## Q8 — LOCKED (new — first afternoon in a new city, added in v1.2 pass)
 
-**Question:** *First afternoon in a new city. Where is she?*
+**Question:** *First afternoon in a new city. Where are you?*
 
 | | Option | Primary |
 |---|---|---|
 | A | The natural-dye scarf-maker in a back lane in George Town. A friend in Chennai sent the pin last year. | Wanderer |
-| B | Out the door, no maps. She'll figure out which way is the river. | Mul |
-| C | Bag dropped at the hotel, three texts out before she's unpacked. By sunset she's at the loudest table on a Mar Mikhael rooftop, two of the four strangers already in her phone. | Maximalist |
+| B | Out the door, no maps. You'll figure out which way is the river. | Mul |
+| C | Bag dropped at the hotel, three texts out before you're unpacked. By sunset you're at the loudest table on a Mar Mikhael rooftop, two of the four strangers already in your phone. | Maximalist |
 | D | Itinerary printed. Lunch at Chote Nawab booked. Spa list from the concierge folded into the back. | Occasionalist |
 
 **Why Q8 was added (v1.2 pass):**
@@ -315,7 +315,7 @@ Q8's secondary job is to give Wanderer a third primary (it had only two in v1.1)
 - C: Wanderer (Mar Mikhael rooftop is not where you go to find a city), Tussar (loudest table on a rooftop is the opposite of a holiday), Mul (three texts before unpacking is a project; the city is right there), Heir (we don't sit with strangers we met an hour ago), Occasionalist (no booking, no plan — one cancellation and she's stranded).
 - D: Wanderer (a printed itinerary is a cage), Mul (the day was supposed to surprise her), Folklorist (the concierge is not the source).
 
-**Stem check:** "First afternoon in a new city. Where is she?" — uses the third-person frame ("she") that's already established by Q2 ("Pick the bedside that's hers") and Q4 ("Pick the room that's hers"). No "actually," no "you're at/on" preposition-frame collision with Q3/Q6.
+**Stem check:** "First afternoon in a new city. Where are you?" — uses the second-person frame ("you") that's already established by Q1, Q3, Q5, Q6, Q7. (Pivoted from the original "Where is she?" third-person framing in a consistency pass; Q2 and Q4's "pick the X that's hers" frame is intentionally retained because the picker-stance there is structurally different.) No "actually," no "you're at/on" preposition-frame collision with Q3/Q6.
 
 **Scoring matrix:** see § Scoring matrix v1.3.
 

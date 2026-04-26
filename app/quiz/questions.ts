@@ -136,7 +136,7 @@ export const questions: Question[] = [
   },
   {
     id: 7,
-    stem: "Show me the last text she sent.",
+    stem: "Show me the last text you sent.",
     options: [
       { id: "A", text: "\"ok\", replied in 30 seconds." },
       { id: "B", text: "A 4-minute voice note. 1am. To one person." },
@@ -146,7 +146,7 @@ export const questions: Question[] = [
   },
   {
     id: 8,
-    stem: "First afternoon in a new city. Where is she?",
+    stem: "First afternoon in a new city. Where are you?",
     options: [
       {
         id: "A",
@@ -154,11 +154,11 @@ export const questions: Question[] = [
       },
       {
         id: "B",
-        text: "Out the door, no maps. She'll figure out which way is the river.",
+        text: "Out the door, no maps. You'll figure out which way is the river.",
       },
       {
         id: "C",
-        text: "Bag dropped at the hotel, three texts out before she's unpacked. By sunset she's at the loudest table on a Mar Mikhael rooftop, two of the four strangers already in her phone.",
+        text: "Bag dropped at the hotel, three texts out before you're unpacked. By sunset you're at the loudest table on a Mar Mikhael rooftop, two of the four strangers already in your phone.",
       },
       {
         id: "D",
