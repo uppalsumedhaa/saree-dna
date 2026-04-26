@@ -12,10 +12,10 @@ Brand voice: observational, dry, slightly funny, never aspirational. Never menti
 She's a keeper.
 
 **Description**
-She has a jeweller, a tailor, and a cook she's been with longer than most marriages. She'll wear a saree her mother wore, and her mother's mother, and tell you about both. She can tell real zari by the weight of it, and whose loom it came off, and when. She'll spot a power-loom Kanjeevaram across a room.
+She has a jeweller, a tailor, and a cook she's been with longer than most marriages. She'll wear a saree her mother wore, and her mother's mother, and tell you about both. She trained in Bharatanatyam from the age of six and still goes back to her guru's house when she's in Chennai. She knows the Margazhi calendar by heart and won't miss the morning concerts at the Music Academy. She can tell real zari by the weight of it, and whose loom it came off, and when. She'll spot a power-loom Kanjeevaram across a room. Navaratri at her house is nine nights of kolu, three changes of saree, and a list of who's coming when.
 
 **Weave**
-Kanjeevaram silk with real zari. Pattu pet, wide kanchi-pet borders, traditional motifs. Bought from the same weaver family.
+Kanjeevaram silk with real zari. Pattu pet, wide kanchi-pet borders, traditional motifs. Bought from the same weaver family. Worn for the recital, the temple, the December concert, the niece's arangetram.
 
 **Drape**
 Nivi, sharp pleats, pallu pinned. Always with a temple jewellery set or polki.
@@ -24,7 +24,7 @@ Nivi, sharp pleats, pallu pinned. Always with a temple jewellery set or polki.
 Deep red. Ochre. Forest green. Old cream.
 
 **Worn well by**
-The woman whose home you visit and stay too long at. The one who feeds you before she asks how you are.
+The woman whose home you visit and stay too long at. The one who feeds you before she asks how you are. The one running Navaratri at her house, nine nights, kolu in the corner.
 
 ---
 
