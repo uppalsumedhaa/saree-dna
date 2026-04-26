@@ -27,17 +27,17 @@ export default function Home() {
       {/* Dead-center text block. Flex-centered both axes; safe-zone padding for narrow viewports. */}
       <div className="absolute inset-0 flex items-center justify-center px-6 sm:px-10 md:px-16">
         <div className="flex max-w-none flex-col items-center text-center">
-          <h1 className="whitespace-nowrap font-serif text-[clamp(1.5rem,6vw,5.5rem)] font-medium leading-[1.05] tracking-tight text-white">
+          <h1 className="font-serif text-[2.5rem] font-medium leading-[1.1] tracking-tight text-white sm:whitespace-nowrap sm:text-[clamp(1.5rem,6vw,5.5rem)] sm:leading-[1.05]">
             Every woman has a <em className="italic font-medium">saree</em> type
           </h1>
 
-          <p className="mt-5 font-serif text-lg font-light italic text-white/80 sm:mt-6 sm:text-xl md:text-2xl">
+          <p className="mt-7 font-serif text-lg font-light italic text-white/80 sm:mt-6 sm:text-xl md:text-2xl">
             Come find yours
           </p>
 
           <Link
             href="/quiz"
-            className="mt-9 inline-block border border-white/70 px-7 py-3 font-sans text-[0.7rem] uppercase tracking-[0.32em] text-white transition-colors duration-200 hover:bg-white hover:text-black sm:mt-12 sm:text-xs"
+            className="mt-10 inline-block border border-white/70 px-7 py-3 font-sans text-[0.7rem] uppercase tracking-[0.32em] text-white transition-colors duration-200 hover:bg-white hover:text-black sm:mt-12 sm:text-xs"
           >
             Begin
           </Link>
