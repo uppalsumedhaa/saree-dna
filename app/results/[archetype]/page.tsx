@@ -10,6 +10,7 @@ import {
 } from "../archetypes";
 import ShareBlock from "./ShareBlock";
 import ExploreAllArchetypes from "./ExploreAllArchetypes";
+import TakeAgainButton from "./TakeAgainButton";
 
 // Production origin — OG/Twitter images REQUIRE absolute URLs to unfurl in
 // WhatsApp / iMessage / Slack / Twitter. We hardcode rather than read from
@@ -101,33 +102,6 @@ function Label({ children }: { children: React.ReactNode }) {
     <div className="font-sans text-[0.6rem] uppercase tracking-[0.24em] text-stone-400">
       {children}
     </div>
-  );
-}
-
-function TakeAgainCTA() {
-  return (
-    <Link
-      href="/"
-      className="group inline-flex items-center gap-2 font-sans text-[0.7rem] uppercase tracking-[0.32em] text-stone-700 transition-colors duration-200 hover:text-stone-900"
-    >
-      <span className="border-b border-stone-400 pb-1 group-hover:border-stone-900">
-        Take again
-      </span>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className="h-4 w-4 transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
-        aria-hidden
-      >
-        <path d="M7 17L17 7" />
-        <path d="M8 7h9v9" />
-      </svg>
-    </Link>
   );
 }
 
@@ -235,7 +209,7 @@ function FullResults({
         </div>
 
         <div className="mt-14 flex justify-center sm:mt-16">
-          <TakeAgainCTA />
+          <TakeAgainButton />
         </div>
 
         <ShareBlock
@@ -278,7 +252,7 @@ function PlaceholderResults({
         </p>
 
         <div className="mt-14 sm:mt-16">
-          <TakeAgainCTA />
+          <TakeAgainButton />
         </div>
 
         <ShareBlock

@@ -3,9 +3,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { Question } from "./questions";
 import { TOTAL_QUESTIONS } from "./questions";
+import { computeWinner, type OptionId, type Pick } from "./scoring";
 
 type Props = {
   question: Question;
@@ -15,23 +16,78 @@ type Props = {
 // auto-advance feeling intentional, not jumpy.
 const HIGHLIGHT_MS = 280;
 
+// localStorage key for the in-progress picks array. Cleared by the
+// "Take again" CTA on the results page so a re-run starts clean.
+const PICKS_KEY = "saree-dna-picks";
+
 function formatNum(n: number): string {
   return n < 10 ? `0${n}` : `${n}`;
+}
+
+function readPicks(): Pick[] {
+  if (typeof window === "undefined") return [];
+  try {
+    const raw = window.localStorage.getItem(PICKS_KEY);
+    if (!raw) return [];
+    const parsed = JSON.parse(raw);
+    if (!Array.isArray(parsed)) return [];
+    // Light shape-check so a malformed entry doesn't poison computeWinner.
+    return parsed.filter(
+      (p): p is Pick =>
+        p &&
+        typeof p.questionId === "number" &&
+        (p.optionId === "A" ||
+          p.optionId === "B" ||
+          p.optionId === "C" ||
+          p.optionId === "D"),
+    );
+  } catch {
+    return [];
+  }
+}
+
+function writePicks(picks: Pick[]): void {
+  if (typeof window === "undefined") return;
+  try {
+    window.localStorage.setItem(PICKS_KEY, JSON.stringify(picks));
+  } catch {
+    // Quota / private mode — silent fall-through. Worst case the user lands
+    // on the Heir fallback at Q8; the visual flow still works.
+  }
 }
 
 export default function QuestionView({ question }: Props) {
   const router = useRouter();
   const [selected, setSelected] = useState<string | null>(null);
+  const picksRef = useRef<Pick[]>([]);
+
+  // Hydrate the picks ref from localStorage on mount so going back to an
+  // earlier question and re-answering replaces the prior pick (instead of
+  // appending a duplicate for the same questionId).
+  useEffect(() => {
+    picksRef.current = readPicks();
+  }, []);
 
   const handleChoose = (optionId: string) => {
     if (selected) return;
     setSelected(optionId);
+
+    const newPick: Pick = {
+      questionId: question.id,
+      optionId: optionId as OptionId,
+    };
+    const without = picksRef.current.filter(
+      (p) => p.questionId !== question.id,
+    );
+    const updated = [...without, newPick];
+    picksRef.current = updated;
+    writePicks(updated);
+
     const next = question.id + 1;
-    // After Q8, lands on the Heir sample results page so the end-to-end
-    // flow is testable. Temporary until quiz scoring is wired and we route
-    // to the actual computed archetype.
     const dest =
-      next > TOTAL_QUESTIONS ? "/results/heir" : `/quiz/${next}`;
+      next > TOTAL_QUESTIONS
+        ? `/results/${computeWinner(updated)}`
+        : `/quiz/${next}`;
     window.setTimeout(() => router.push(dest), HIGHLIGHT_MS);
   };
 
