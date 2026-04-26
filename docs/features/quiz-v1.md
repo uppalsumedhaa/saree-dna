@@ -1,10 +1,10 @@
 # Quiz v1 — Scoping doc
 
-**Status:** Q1–Q5 LOCKED. Q7 cut from plan (was: meal-for-six). New Q7 candidate: celebrity question (in workshop). Q6 (music) and Q8 (text) mapped, drafters not yet spawned.
+**Status:** Q1–Q5 + Q7 LOCKED. Q6 (road-trip music) in v2 redraft (parallel sub-agent currently drafting). Final quiz is 7 questions: Q1, Q2, Q3, Q4, Q5, Q6, Q7. There is no Q8. The previous Q7 (originally meal-for-six, then celebrity-question candidate) was cut; the text-message question, originally drafted as Q8, now occupies the Q7 slot.
 
 ## Product summary
 
-A standalone 7–8 question personality quiz. The taker answers, gets one of nine saree archetypes (weave-anchored), sees a result page she'd want to screenshot, shares it.
+A standalone 7-question personality quiz. The taker answers, gets one of nine saree archetypes (weave-anchored), sees a result page she'd want to screenshot, shares it.
 
 Hero copy: **Your saree DNA. Every woman has a saree archetype. What's yours?**
 
@@ -14,7 +14,7 @@ Indian women (and the diaspora) who own at least one saree, have an emotional re
 
 ## In scope (v1)
 
-- 7–8 question quiz, image-pickable, mobile-first
+- 7-question quiz, image-pickable, mobile-first
 - 9 archetype result pages
 - Pre-composed share card (1080×1920) per archetype
 - "Retake" CTA on every result page
@@ -38,7 +38,7 @@ Synthesised from BuzzFeed quiz-team interviews, Nieman Lab, Typeform research, I
 - 4 answer options is the sweet spot (2x2 mobile grid).
 - 7–8 questions is the upper edge of the sweet spot. Each Q past 6 costs completion.
 - Image-pickable + auto-advance lifts completion ~120%.
-- Progress bar: thin top, step counter ("3 of 8").
+- Progress bar: thin top, step counter ("3 of 7").
 - 5–7 archetypes is the optimal band; we're at 9 (weave-anchoring is the moat).
 - Weighted-bucket scoring (BuzzFeed model).
 - Result page IS the product — name + tagline + hero visual + 120–200 word "you are" + "you are not" contrast + anchor reference + share CTA.
@@ -47,7 +47,7 @@ Synthesised from BuzzFeed quiz-team interviews, Nieman Lab, Typeform research, I
 
 ## Architecture
 
-- 8-Q max, image-pickable, one Q per screen, tap-to-answer auto-advance.
+- 7-Q total, image-pickable, one Q per screen, tap-to-answer auto-advance.
 - Weighted-bucket scoring: 3 = primary, 2 = shadow, 1 = tertiary, 0 = irrelevant.
 - Tiebreaker: surface primary + shadow archetype rather than forcing a winner.
 - Reveal: 2–3s loading state ("Reading your weave…") before result.
@@ -216,15 +216,38 @@ Locked. See `docs/saree-dna-archetypes.md`.
 
 ---
 
-## Q6–Q8 — pending
+## Q6 — pending (v2 redraft in flight)
 
-**Q6 (music) — mapped, drafter not yet spawned.** What plays in her car (sonic identity).
+**Q6 (road-trip music) — v2 redraft, parallel sub-agent currently drafting.** What plays in her car / on the drive (sonic identity).
 
-**Q7 — cut from plan.** Original "meal she'd cook for six friends" cut. **New Q7 candidate: celebrity question (in workshop).**
+---
 
-**Q8 (text) — mapped, drafter not yet spawned.** The last text she sent (rhythm, voice).
+## Q7 — LOCKED (was Q8 — text message)
 
-Q8 may be cut to 7 if the work is done by then.
+**Question:** *Show me the last text she sent.*
+
+| | Option | Primary |
+|---|---|---|
+| A | "ok" — replied in 30 seconds. | Modernist |
+| B | A 4-minute voice note. 1am. To one person. | Romantic |
+| C | "7 or 7:30? if 7:30 i'll grab the wine." | Occasionalist |
+| D | "BABEEEE WAIT WAIT NO STOP 😭😭" — at 11am on a Tuesday. | Maximalist |
+
+**Renumbering note:** Originally drafted as Q8 (text). Now occupies the Q7 slot because the previous Q7 (originally meal-for-six, then a celebrity-question candidate) was cut from plan. **Final quiz is 7 questions: Q1, Q2, Q3, Q4, Q5, Q6, Q7. There is no Q8.**
+
+**What each option does:**
+- **A — Modernist.** Two letters, sub-minute reply. Function over warmth, no padding, no emoji. Reads as efficiency, not coldness — she just doesn't perform texting.
+- **B — Romantic.** Voice note over text. 4 minutes (long, but precisely-bounded — not a 22-minute monologue). 1am (tender hour, not chaos hour). To one person (intimate, not broadcast).
+- **C — Occasionalist.** Logistics with timing precision (7 vs 7:30) and a contingent action (the wine). Plans the evening on the way to the evening. Lowercase — relaxed but executing.
+- **D — Maximalist.** All-caps, no punctuation, escalating emoji, sent at a non-event hour (11am Tuesday — middle of the workday) which makes it land as pure expressive overflow rather than crisis. Volume as default state.
+
+**Cringe test:**
+- A: Romantic (chilling), Maximalist (corpse text), Folklorist (where is the warmth).
+- B: Modernist (a four-minute audio file is a war crime), Occasionalist (just type the question), Heir (1am voice notes are not a thing we do).
+- C: Maximalist (no exclamation marks), Romantic (too transactional), Mul (the half-hour does not matter).
+- D: Modernist (please stop), Heir (decorum), Tussar (this is who I share an office with).
+
+**Scoring matrix:** TODO — wording is locked. Derive next session from primary mappings above plus secondary/tertiary spread.
 
 ---
 
@@ -250,8 +273,8 @@ Q8 may be cut to 7 if the work is done by then.
 - ~~Occasionalist needs another primary — Q5 candidate~~ RESOLVED in Q5.
 - ~~Gym/early-rise/discipline signal deferred from Q1 — Q5 candidate~~ RESOLVED in Q5 (landed on Mul, not Modernist).
 - Q5 scoring matrix still TODO.
-- Q7 (celebrity question) needs draft.
-- Q6 (music) and Q8 (text) drafters not yet spawned.
+- Q7 scoring matrix still TODO (wording locked).
+- Q6 (road-trip music) v2 redraft in flight (parallel sub-agent currently drafting).
 - No archetype-card visual language yet (visual identity work pending)
 - Where do illustrations come from? (decision deferred)
 
@@ -268,5 +291,6 @@ Q8 may be cut to 7 if the work is done by then.
 - Q3 locked (v4, behavior frame)
 - Q4 locked (rooms, trimmed)
 - Q5 locked (Friday night plan; Sunday→Saturday temporal fix on D)
-- Q7 cut from plan (was: meal-for-six); celebrity question now in workshop as new Q7
+- Original Q7 cut from plan (was: meal-for-six); celebrity-question candidate also dropped
+- Q7 locked (was Q8 — last text she sent); final quiz is 7 questions, no Q8
 - One question at a time, slow cadence
