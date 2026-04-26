@@ -89,7 +89,7 @@ Locked. See `docs/saree-dna-archetypes.md`.
 
 ## Q1 — LOCKED
 
-**Question:** *Sunday morning. Where would we find you?*
+**Question:** *It's a sunday morning - where are we likely to find you?*
 
 | | Option | Visual cue |
 |---|---|---|
@@ -117,7 +117,7 @@ Locked. See `docs/saree-dna-archetypes.md`.
 
 ## Q2 — LOCKED
 
-**Question:** *Pick the bedside that's hers.*
+**Question:** *What does your bedside look like?*
 
 | | Option | Visual cue (illustrator brief) |
 |---|---|---|
@@ -256,7 +256,7 @@ Locked. See `docs/saree-dna-archetypes.md`.
 
 ## Q7 — LOCKED (was Q8 — text message)
 
-**Question:** *Show me the last text you sent.*
+**Question:** *What could be the last text you sent?*
 
 | | Option | Primary |
 |---|---|---|

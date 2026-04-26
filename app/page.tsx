@@ -32,7 +32,7 @@ export default function Home() {
           </h1>
 
           <p className="mt-7 font-serif text-lg font-light italic text-white/80 sm:mt-6 sm:text-xl md:text-2xl">
-            Come find yours
+            Discover your saree DNA
           </p>
 
           <Link
