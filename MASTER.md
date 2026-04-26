@@ -4,11 +4,11 @@ A quiz that returns your saree archetype. *Every woman has a saree archetype. Wh
 
 ## Status
 
-Pre-build. Scoping in progress. Q1 + Q2 locked. Q3 needs another redraft (v3 still not landing). Q4 has a fresh warmth-redraft pending review. Q5–Q8 not yet drafted.
+Pre-build. Scoping in progress. Q1–Q4 locked. Q5–Q8 pending. Q3 frame pivoted from misread to behavior. Q5 has hard constraints captured (split Romantic vs Maximalist on volume, give Occasionalist a primary, land the gym signal).
 
 | Feature | Status | Doc |
 |---|---|---|
-| Quiz v1 (8-question archetype quiz) | Q1 + Q2 locked, Q3 unlocked, Q4 redraft pending review, Q5–Q8 pending | [docs/features/quiz-v1.md](docs/features/quiz-v1.md) |
+| Quiz v1 (8-question archetype quiz) | Q1–Q4 locked, Q5–Q8 pending | [docs/features/quiz-v1.md](docs/features/quiz-v1.md) |
 | Result page | Not started | TBD |
 | Share-card generator | Not started | TBD |
 | Visual identity | Not started — fresh from scratch | TBD |
@@ -39,6 +39,7 @@ See `docs/saree-dna-archetypes.md` for full hand-written profiles by Sumedha.
 - **Quiz architecture:** 8-question max, weighted-bucket scoring (BuzzFeed model), one-question-per-screen, image-pickable, polarising voice. Pre-composed share card.
 - **Q1 LOCKED:** "It's Sunday morning. Where are you, actually?"
 - **Q2 LOCKED:** "Pick the bedside that's hers." (after polarising redraft of v1)
-- **Q3 unlocked across three drafts.** Sumedha rejected v1 (goody-two-shoes), v2 ("only woman not performing" — too comparative), and v3 ("Did you change? You look the same." — still not landing). Q3 carries to next session.
-- **Q4 fresh warmth redraft delivered:** "Pick the room that's hers." Brick walls, coloured couches, lamps, warm vs cool light as splitter. Pending review.
+- **Q3 LOCKED (v4, behavior frame):** "You're at a friend's housewarming. What's in your hand?" Frame pivoted from misread/compliment (v1–v3 all rejected) to behavior — mutually exclusive object choices. See `learnings.md`.
+- **Q4 LOCKED (trimmed):** "Pick the room that's hers." Four rooms — red-brick + mustard couch (Wanderer), limewashed + cane daybed (Modernist), terracotta + plum velvet (Maximalist), whitewashed brick + indigo daybed + loom (Folklorist).
 - **Three new standing rules captured to central memory:** polarising-over-tasteful for archetype copy; no verbal-tic mirroring across sequenced drafts; show thinking before executing on non-trivial work.
+- **Meta-learning:** misread frames fail because misreads are universal across archetypes; behavior frames work because behavior is mutually exclusive by construction. Logged in `learnings.md`.

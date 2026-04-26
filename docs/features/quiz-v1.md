@@ -1,6 +1,6 @@
 # Quiz v1 — Scoping doc
 
-**Status:** Q1 + Q2 locked. Q3 NOT LOCKED — three drafts attempted, still not landing. Q4 has a fresh warmth-redraft pending review. Q5–Q8 not yet drafted.
+**Status:** Q1–Q4 LOCKED. Q5–Q8 not yet drafted.
 
 ## Product summary
 
@@ -134,72 +134,52 @@ Locked. See `docs/saree-dna-archetypes.md`.
 
 ---
 
-## Q3 — NOT LOCKED (three drafts rejected)
+## Q3 — LOCKED (v4, behavior frame)
 
-**Question stem (provisionally accepted):** *The compliment you'd replay later. Which one?*
-
-### Q3 v1 (REJECTED)
-
-- A — "Your essay changed how I think about that."
-- B — "You didn't even notice you were the best-dressed person there."
-- C — "You wear your mother's taste like it's yours now."
-- D — "Your light. The whole room shifted."
-
-Sumedha: *"very mediocre options. Again something that anybody would like."*
-
-### Q3 v2 (REJECTED — Option B specifically)
-
-- A — "Your footnotes were tighter than the book."
-- B — "You're the only woman in the room who isn't performing." ← Sumedha rejected the framing (too comparative / slightly mean-spirited toward other women).
-- C — "You wear your grandmother's taste like you earned it."
-- D — "You walked in and everyone else looked under-dressed."
-
-### Q3 v3 (CURRENT — STILL NOT LANDING per Sumedha)
-
-- A — "Your footnotes were tighter than the book."
-- B — "Did you change? You look the same."
-- C — "You wear your grandmother's taste like you earned it."
-- D — "You walked in and everyone else looked under-dressed."
-
-Sumedha at end of session: *"I still don't like Q3."* Specific reason not given. Carry to next session — propose 3 candidate frames in main thread before drafting matrix.
-
-**Q3 v3 scoring matrix (the latest, for reference):**
-
-| Option | Heir | Rom | Wand | Max | Tuss | Folk | Mul | Occ | Mod |
-|---|---|---|---|---|---|---|---|---|---|
-| A — Footnotes | 0 | 0 | 1 | 0 | **3** | 1 | 1 | 0 | 1 |
-| B — Did you change? You look the same. | 0 | 0 | 2 | 0 | 1 | 1 | **3** | 0 | 2 |
-| C — Grandmother's taste | **3** | 1 | 0 | 0 | 0 | **3** | 0 | 1 | 0 |
-| D — Under-dressed | 1 | 2 | 0 | **3** | 0 | 0 | 0 | 2 | 0 |
-
-**Q3's primary job:** split Tussar vs. Mul (they tied 5-5 after Q1+Q2). The matrix above does that — but Q3 hasn't satisfied Sumedha's voice taste yet. Next session: workshop the four compliments in main thread BEFORE writing copy + matrix.
-
----
-
-## Q4 — FRESH WARMTH REDRAFT (pending review)
-
-User direction: warmer, brick walls, coloured couches, lamps, warm-vs-cool light as splitter.
-
-**Question stem (proposed):** *Pick the room that's hers.*
+**Question:** *You're at a friend's housewarming. What's in your hand?*
 
 | | Option | Primary |
 |---|---|---|
-| A | Brick wall, mustard couch, three lamps on, Kochi carpet, books in piles. | Wanderer |
-| B | Limewashed wall, cane daybed, one cool-white floor lamp, a brass bowl. | Modernist |
-| C | Terracotta wall, plum velvet sofa, paintings to the ceiling, two table lamps glowing. | Maximalist |
-| D | Whitewashed brick, indigo daybed, lit clay diya, loom in the corner, agarbatti. | Folklorist |
+| A | A copy of Arundhati Roy's *The Ministry of Utmost Happiness*. It's been in your tote two weeks waiting for her. | Tussar |
+| B | A steel dabba of besan ladoos, still slightly warm. Your mother's recipe, which is now yours. | Heir |
+| C | A bottle of cold-pressed olive oil from that place outside Margao. You were there last week. | Wanderer |
+| D | Nothing. You came from a long walk and the river path took longer than you thought. | Mul |
 
-**Visual cues:**
+**Q3's primary job:** split Tussar vs. Mul (tied 5-5 after Q1+Q2). The behavior frame ("what's in your hand") makes the split mutually exclusive by construction — you can't bring a book AND nothing.
+
+**Scoring matrix:** TODO — wording is locked, but the v3 matrix doesn't map to v4's new options. Derive next session from primary mappings above plus secondary/tertiary spread.
+
+**Frame pivot:** v1–v3 used a "what people get wrong about you" / compliment frame (self-perception). All three failed cringe-test because misreads ("too much," "cold," "intimidating," "low-effort") overlap across archetypes — every woman has been called these things. v4 pivots to behavior. See `learnings.md` for the meta-learning.
+
+**Prior drafts (REJECTED — kept for context):**
+- v1 (compliment): "Your essay changed how I think about that." / "You didn't even notice you were the best-dressed person there." / "You wear your mother's taste like it's yours now." / "Your light. The whole room shifted." — *"very mediocre options."*
+- v2 (compliment): swapped in "You're the only woman in the room who isn't performing." — rejected as comparative/mean-spirited toward other women.
+- v3 (compliment): swapped in "Did you change? You look the same." — *"I still don't like Q3."* Frame still wrong.
+
+---
+
+## Q4 — LOCKED (rooms, trimmed)
+
+**Question:** *Pick the room that's hers.*
+
+| | Option | Primary |
+|---|---|---|
+| A | Red-brick wall, low mustard linen couch, three mismatched lamps in honey light. Filter coffee going cold on stacked books. | Wanderer |
+| B | Limewashed wall, cane-and-teak daybed under one cool arc lamp. Linen throw pushed aside, open notebook face-down. | Modernist |
+| C | Terracotta wall, plum velvet sofa, paintings salon-hung to the ceiling, coloured-glass lamps low and warm. Wine glass on the floor. | Maximalist |
+| D | Whitewashed brick, low indigo daybed, clay diya lit beside a paper lamp. Half-woven loom in the corner, agarbatti and sandalwood. | Folklorist |
+
+**Visual cues (illustrator brief):**
 - **A — Wanderer.** Exposed red-brick, slightly uneven mortar. Low mustard linen couch, broken-in. Kilim half-rolled. Three mismatched lamps lit (floor lamp, desk lamp on book stack, paper lantern). Warm honey light ~2700K. Books in three languages stacked horizontally on the floor. Filter coffee. Domestic, transitional, alive.
-- **B — Modernist.** Single limewashed white wall. Cane-and-teak daybed (Pierre Jeanneret-coded, but warmer wood). One arc floor lamp casting a clean cool-white pool (daylight temp). One terracotta hand-thrown bowl. No clutter. **Cool light is the only cool note**; materials (cane, teak, oat linen) are warm. Apple Store discipline meets craftsperson's hand.
-- **C — Maximalist.** Terracotta wall (lifted from her profile). Deep plum velvet sofa, slightly sagging, three clashing-print throw cushions. Paintings hung salon-style to the ceiling. Two coloured-glass table lamps (amber, rose). Record player. Wine glass. Very warm light ~2400K. Lamps make it feel like 9pm at noon. Mid-conversation.
-- **D — Folklorist.** Whitewashed brick, slightly chalky. Low indigo cotton daybed (charpai-coded). Single clay diya lit on brass tray. Floor lamp with handmade paper shade, warm yellow. Pit loom in corner with half-woven indigo thread. Agarbatti smoke catching lamplight. Honey-coloured. Smells like sandalwood.
+- **B — Modernist.** Single limewashed white wall. Cane-and-teak daybed (Pierre Jeanneret-coded, but warmer wood). One arc floor lamp casting a clean cool-white pool (daylight temp). Linen throw pushed aside, notebook face-down. No clutter. **Cool light is the only cool note**; materials (cane, teak, oat linen) are warm. Apple Store discipline meets craftsperson's hand.
+- **C — Maximalist.** Terracotta wall (lifted from her profile). Deep plum velvet sofa, slightly sagging, three clashing-print throw cushions. Paintings hung salon-style to the ceiling. Two coloured-glass table lamps (amber, rose). Record player. Wine glass on the floor. Very warm light ~2400K. Lamps make it feel like 9pm at noon. Mid-conversation.
+- **D — Folklorist.** Whitewashed brick, slightly chalky. Low indigo cotton daybed (charpai-coded). Single clay diya lit on brass tray beside a handmade paper lamp, warm yellow. Pit loom in corner with half-woven indigo thread. Agarbatti smoke catching lamplight. Honey-coloured. Smells like sandalwood.
 
 **Scoring matrix:**
 
 | Option | Heir | Rom | Wand | Max | Tuss | Folk | Mul | Occ | Mod |
 |---|---|---|---|---|---|---|---|---|---|
-| A — Brick + mustard couch + Kochi | 0 | 1 | **3** | 0 | 2 | 1 | 2 | 0 | 0 |
+| A — Brick + mustard couch + lamps | 0 | 1 | **3** | 0 | 2 | 1 | 2 | 0 | 0 |
 | B — Limewashed + cane daybed + cool lamp | 1 | 0 | 0 | 0 | 1 | 0 | 1 | 2 | **3** |
 | C — Terracotta + plum velvet + paintings | 1 | 2 | 0 | **3** | 0 | 1 | 0 | 1 | 0 |
 | D — Whitewashed brick + indigo daybed + loom | 2 | 1 | 1 | 1 | 1 | **3** | 1 | 0 | 0 |
@@ -220,8 +200,8 @@ User direction: warmer, brick walls, coloured couches, lamps, warm-vs-cool light
 
 **Q5 hard constraints:**
 - Must split Romantic vs. Maximalist on volume (Romantic = intimate-warm, Maximalist = loud-warm). They tie on Romantic's natural path through Q4.
-- Should give Occasionalist one more clear primary.
-- Should land the gym/early-rise/discipline signal we deferred from Q1 (probably as Modernist's free-time signature: long runs).
+- Must give Occasionalist a primary.
+- Must land the gym/early-rise/discipline signal we deferred from Q1 (probably as Modernist's free-time signature: long runs).
 
 **Q6/Q7/Q8 candidate themes:**
 - A meal she'd cook for six friends (taste, hosting style)
@@ -251,9 +231,9 @@ Q8 may be cut to 7 if the work is done by then.
 
 ## Open questions / known issues
 
-- Q3 STILL not landing (three drafts rejected) — workshop in main thread before next draft
-- Q4 redraft pending Sumedha's review
-- Romantic vs. Maximalist tie at end of Q4 — Q5 must split
+- Romantic vs. Maximalist tie at end of Q4 — Q5 must split on volume
+- Occasionalist needs another primary — Q5 candidate
+- Gym/early-rise/discipline signal deferred from Q1 — Q5 candidate (likely Modernist)
 - No archetype-card visual language yet (visual identity work pending)
 - Where do illustrations come from? (decision deferred)
 
@@ -267,4 +247,6 @@ Q8 may be cut to 7 if the work is done by then.
 - Tech: Next.js 14 + Tailwind + shadcn
 - Q1 locked
 - Q2 locked
+- Q3 locked (v4, behavior frame)
+- Q4 locked (rooms, trimmed)
 - One question at a time, slow cadence

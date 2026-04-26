@@ -2,6 +2,14 @@
 
 Process failures and what they taught us. Newest at top.
 
+## 2026-04-26 — Misread frame fails because misreads are universal
+
+**What:** Three drafts of Q3 using a "what people get wrong about you" / compliment frame failed cringe-test because the misreads ("too much," "cold," "intimidating," "low-effort") overlap across archetypes. Every woman has been called these things. The frame collapsed because self-perception isn't mutually exclusive.
+
+**Lesson:** For tiebreaking close archetypes, prefer BEHAVIOR frames over SELF-PERCEPTION frames. Behavior is mutually exclusive by construction (you can't bring a book AND nothing); self-perception isn't (every archetype could be misread the same way).
+
+**Applied:** Q3 v4 pivoted to behavior — "what's in your hand at a housewarming" — locked first try with mutually exclusive object choices (book / dabba of ladoos / olive oil / nothing).
+
 ## 2026-04-26 — Q3 needed three drafts and still didn't land
 
 **What happened:** Q3 (the compliment-question) went through three sub-agent drafts. v1 was rejected as goody-two-shoes (universally appealing compliments). v2 used "you're the only woman in the room who isn't performing" — Sumedha rejected as comparative/mean-spirited toward other women. v3 used "Did you change? You look the same." — still didn't land. Carried to next session.
