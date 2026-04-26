@@ -1,6 +1,6 @@
 # Quiz v1 — Scoping doc
 
-**Status:** Q1–Q5 + Q7 LOCKED. Q6 (road-trip music) in v2 redraft (parallel sub-agent currently drafting). Final quiz is 7 questions: Q1, Q2, Q3, Q4, Q5, Q6, Q7. There is no Q8. The previous Q7 (originally meal-for-six, then celebrity-question candidate) was cut; the text-message question, originally drafted as Q8, now occupies the Q7 slot.
+**Status:** ALL 7 QUESTIONS LOCKED (Q1–Q7). Final quiz is 7 questions: Q1, Q2, Q3, Q4, Q5, Q6, Q7. There is no Q8. The previous Q7 (originally meal-for-six, then celebrity-question candidate) was cut; the text-message question, originally drafted as Q8, now occupies the Q7 slot.
 
 ## Product summary
 
@@ -216,9 +216,30 @@ Locked. See `docs/saree-dna-archetypes.md`.
 
 ---
 
-## Q6 — pending (v2 redraft in flight)
+## Q6 — LOCKED (v2 — road-trip music)
 
-**Q6 (road-trip music) — v2 redraft, parallel sub-agent currently drafting.** What plays in her car / on the drive (sonic identity).
+**Question:** *You're on a road trip. You're handling the music. What's playing?*
+
+| | Option | Primary |
+|---|---|---|
+| A | Nooran Sisters live at Jashn-e-Rekhta. You've heard it forty times. You'll ruin the high note singing along anyway. | Folklorist |
+| B | Begum Akhtar — the Hyderabad ghazal. Your grandmother used to hum it in the kitchen. You've had it on a loop since Tuesday. | Heir |
+| C | *My Favorite Murder*. You're caught up on every season, you have opinions on Karen's editing choices, and you're listening at 1.5x. | Tussar |
+| D | Diljit, "G.O.A.T." Windows down. Everyone in the car singing the chorus. You picked it. | Maximalist |
+
+**What each option does:**
+- **A — Folklorist.** Live recording (not studio), Sufi/folk register, devotional repetition (forty times), embodied participation (singing along badly). Heritage music as living practice, not performance.
+- **B — Heir.** Inherited classical (Begum Akhtar ghazal), specific provenance (Hyderabad), grandmother lineage in the kitchen, current-week obsession (loop since Tuesday). Old-world taste held as personal not performed.
+- **C — Tussar.** Podcast over music, deep completionist knowledge ("every season"), critical opinions on craft (Karen's editing), efficiency (1.5x). Brain at work even on the drive.
+- **D — Maximalist.** Punjabi pop, windows down, group sing-along, owns the aux. Volume + chorus + everyone-in. She picked it and the car obeyed.
+
+**Cringe test:**
+- A: Modernist (forty repeats of one live track is a lot), Occasionalist (Jashn-e-Rekhta is not on her playlist), Maximalist (too sincere, not loud enough).
+- B: Maximalist (where is the chorus), Modernist (kitchen sentiment isn't an aesthetic argument), Wanderer (too rooted in one grandmother's room).
+- C: Romantic (a podcast on a road trip is a betrayal of the drive), Folklorist (no human voice, no rhythm), Heir (true crime is not what we do).
+- D: Tussar (Punjabi pop at volume is not the listening she meant), Heir (decorum), Romantic (kills the moment).
+
+**Scoring matrix:** TODO — wording is locked. Derive next session from primary mappings above plus secondary/tertiary spread.
 
 ---
 
@@ -273,8 +294,8 @@ Locked. See `docs/saree-dna-archetypes.md`.
 - ~~Occasionalist needs another primary — Q5 candidate~~ RESOLVED in Q5.
 - ~~Gym/early-rise/discipline signal deferred from Q1 — Q5 candidate~~ RESOLVED in Q5 (landed on Mul, not Modernist).
 - Q5 scoring matrix still TODO.
+- Q6 scoring matrix still TODO (wording locked).
 - Q7 scoring matrix still TODO (wording locked).
-- Q6 (road-trip music) v2 redraft in flight (parallel sub-agent currently drafting).
 - No archetype-card visual language yet (visual identity work pending)
 - Where do illustrations come from? (decision deferred)
 
@@ -293,4 +314,5 @@ Locked. See `docs/saree-dna-archetypes.md`.
 - Q5 locked (Friday night plan; Sunday→Saturday temporal fix on D)
 - Original Q7 cut from plan (was: meal-for-six); celebrity-question candidate also dropped
 - Q7 locked (was Q8 — last text she sent); final quiz is 7 questions, no Q8
+- Q6 locked (v2 — road-trip music, sonic identity)
 - One question at a time, slow cadence

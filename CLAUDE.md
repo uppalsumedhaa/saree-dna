@@ -2,7 +2,7 @@
 
 ## What this project is
 
-A deterministic 8-question personality quiz that returns one of nine saree archetypes. Mobile-first, image-pickable, observational voice. See `MASTER.md` for status, `PIVOT.md` for pivot history, `docs/features/quiz-v1.md` for the full scoping doc, `docs/saree-dna-archetypes.md` for hand-written archetype profiles.
+A deterministic 7-question personality quiz that returns one of nine saree archetypes. Mobile-first, image-pickable, observational voice. See `MASTER.md` for status, `PIVOT.md` for pivot history, `docs/features/quiz-v1.md` for the full scoping doc, `docs/saree-dna-archetypes.md` for hand-written archetype profiles.
 
 ## Stack
 
@@ -32,6 +32,6 @@ From Sumedha's own archetype document:
 
 ## Workflow
 
-- **One question at a time.** Do not batch-draft Q1–Q8 then reconcile. Lock each before moving on.
+- **One question at a time.** Do not batch-draft Q1–Q7 then reconcile. Lock each before moving on.
 - **Sub-agents for all work.** Main thread is for talk and decisions. Sub-agents handle drafts, edits, audits, file writes — even one-file lookups.
 - Sumedha treats Claude as engineering manager. Plain English, no jargon.

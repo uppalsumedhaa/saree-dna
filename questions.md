@@ -1,0 +1,50 @@
+# Saree DNA — The 7 Questions
+
+## Q1 — It's Sunday morning. Where are you, actually?
+
+- A (Mul): Out walking before the city is up.
+- B (Heir): At the table, filter coffee, someone talking.
+- C (Modernist): Already moving — bag by the door.
+- D (Romantic): In bed past nine, light through the curtain.
+
+## Q2 — Pick the bedside that's hers.
+
+- A (Maximalist): Uncapped lipstick, mismatched earrings, last night's water glass.
+- B (Tussar): Three books open at once, cold tea, margins full.
+- C (Folklorist): Stacked silver rings, clay cup, agarbatti gone to ash.
+- D (Occasionalist): Apple Watch on charge, hand cream, one earring from Tuesday.
+
+## Q3 — You're at a friend's housewarming. What's in your hand?
+
+- A (Tussar): A copy of Arundhati Roy's *The Ministry of Utmost Happiness*. It's been in your tote two weeks waiting for her.
+- B (Heir): A steel dabba of besan ladoos, still slightly warm. Your mother's recipe, which is now yours.
+- C (Wanderer): A bottle of cold-pressed olive oil from that place outside Margao. You were there last week.
+- D (Mul): Nothing. You came from a long walk and the river path took longer than you thought.
+
+## Q4 — Pick the room that's hers.
+
+- A (Wanderer): Red-brick wall, low mustard linen couch, three mismatched lamps in honey light. Filter coffee going cold on stacked books.
+- B (Modernist): Limewashed wall, cane-and-teak daybed under one cool arc lamp. Linen throw pushed aside, open notebook face-down.
+- C (Maximalist): Terracotta wall, plum velvet sofa, paintings salon-hung to the ceiling, coloured-glass lamps low and warm. Wine glass on the floor.
+- D (Folklorist): Whitewashed brick, low indigo daybed, clay diya lit beside a paper lamp. Half-woven loom in the corner, agarbatti and sandalwood.
+
+## Q5 — It's Friday night. What's the plan?
+
+- A (Romantic): Cooking pasta for two at home. Same person, same record, third Friday in a row. Phone face-down.
+- B (Maximalist): A six-top at the Bandra rooftop that turned into eight chairs by 10pm. Loud table. Most of the laughing is yours.
+- C (Occasionalist): The reservation you made three weeks ago, in the dress you knew you'd wear when you booked it. Group chat moving on your timeline.
+- D (Mul): In bed by ten with water, alarm set, four pages of the book before you're out. Saturday's run starts early.
+
+## Q6 — You're on a road trip. You're handling the music. What's playing?
+
+- A (Folklorist): Nooran Sisters live at Jashn-e-Rekhta. You've heard it forty times. You'll ruin the high note singing along anyway.
+- B (Heir): Begum Akhtar — the Hyderabad ghazal. Your grandmother used to hum it in the kitchen. You've had it on a loop since Tuesday.
+- C (Tussar): *My Favorite Murder*. You're caught up on every season, you have opinions on Karen's editing choices, and you're listening at 1.5x.
+- D (Maximalist): Diljit, "G.O.A.T." Windows down. Everyone in the car singing the chorus. You picked it.
+
+## Q7 — Show me the last text she sent.
+
+- A (Modernist): "ok" — replied in 30 seconds.
+- B (Romantic): A 4-minute voice note. 1am. To one person.
+- C (Occasionalist): "7 or 7:30? if 7:30 i'll grab the wine."
+- D (Maximalist): "BABEEEE WAIT WAIT NO STOP 😭😭" — at 11am on a Tuesday.
