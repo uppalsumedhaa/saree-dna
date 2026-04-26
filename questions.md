@@ -1,4 +1,4 @@
-# Saree DNA — The 7 Questions
+# Saree DNA — The 8 Questions
 
 ## Q1 — It's Sunday morning. Where are you, actually?
 
@@ -33,7 +33,7 @@
 - A (Romantic): Cooking pasta for two at home. Same person, same record, third Friday in a row. Phone face-down.
 - B (Maximalist): A six-top at the Bandra rooftop that turned into eight chairs by 10pm. Loud table. Most of the laughing is yours.
 - C (Occasionalist): The reservation you made three weeks ago, in the dress you knew you'd wear when you booked it. Group chat moving on your timeline.
-- D (Mul): In bed by ten with water, alarm set, four pages of the book before you're out. Saturday's run starts early.
+- D (Heir): Pulao on the stove, steel plates already out, her sister's four-year-old in the chair next to hers. Dinner started when she sat down — nobody had to announce it.
 
 ## Q6 — You're on a road trip. You're handling the music. What's playing?
 
@@ -48,3 +48,10 @@
 - B (Romantic): A 4-minute voice note. 1am. To one person.
 - C (Occasionalist): "7 or 7:30? if 7:30 i'll grab the wine."
 - D (Maximalist): "BABEEEE WAIT WAIT NO STOP 😭😭" — at 11am on a Tuesday.
+
+## Q8 — First afternoon in a new city. Where is she?
+
+- A (Wanderer): The natural-dye scarf-maker in a back lane in George Town. A friend in Chennai sent the pin last year.
+- B (Mul): Out the door, no maps. She'll figure out which way is the river.
+- C (Tussar): Twenty minutes in front of the Hammershoi at the Ordrupgaard. Then the bookstore from the long-form piece on the flight.
+- D (Occasionalist): Itinerary printed. Lunch at Chote Nawab booked. Spa list from the concierge folded into the back.

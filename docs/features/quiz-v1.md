@@ -1,10 +1,10 @@
 # Quiz v1 — Scoping doc
 
-**Status:** ALL 7 QUESTIONS LOCKED (Q1–Q7). Final quiz is 7 questions: Q1, Q2, Q3, Q4, Q5, Q6, Q7. There is no Q8. The previous Q7 (originally meal-for-six, then celebrity-question candidate) was cut; the text-message question, originally drafted as Q8, now occupies the Q7 slot.
+**Status:** ALL 8 QUESTIONS LOCKED (Q1–Q8). Final quiz is 8 questions: Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8. Scoring matrix v1.2. The previous Q7 (originally meal-for-six, then celebrity-question candidate) was cut; the text-message question (originally drafted as Q8) sits at Q7; a new Q8 ("first afternoon in a new city") was added in the v1.2 pass alongside a Q5D rewrite (Mul → Heir) to close a household-led-woman gap surfaced by the Lakshmi stress-test persona.
 
 ## Product summary
 
-A standalone 7-question personality quiz. The taker answers, gets one of nine saree archetypes (weave-anchored), sees a result page she'd want to screenshot, shares it.
+A standalone 8-question personality quiz. The taker answers, gets one of nine saree archetypes (weave-anchored), sees a result page she'd want to screenshot, shares it.
 
 Hero copy: **Your saree DNA. Every woman has a saree archetype. What's yours?**
 
@@ -14,7 +14,7 @@ Indian women (and the diaspora) who own at least one saree, have an emotional re
 
 ## In scope (v1)
 
-- 7-question quiz, image-pickable, mobile-first
+- 8-question quiz, image-pickable, mobile-first
 - 9 archetype result pages
 - Pre-composed share card (1080×1920) per archetype
 - "Retake" CTA on every result page
@@ -38,7 +38,7 @@ Synthesised from BuzzFeed quiz-team interviews, Nieman Lab, Typeform research, I
 - 4 answer options is the sweet spot (2x2 mobile grid).
 - 7–8 questions is the upper edge of the sweet spot. Each Q past 6 costs completion.
 - Image-pickable + auto-advance lifts completion ~120%.
-- Progress bar: thin top, step counter ("3 of 7").
+- Progress bar: thin top, step counter ("3 of 8").
 - 5–7 archetypes is the optimal band; we're at 9 (weave-anchoring is the moat).
 - Weighted-bucket scoring (BuzzFeed model).
 - Result page IS the product — name + tagline + hero visual + 120–200 word "you are" + "you are not" contrast + anchor reference + share CTA.
@@ -47,7 +47,7 @@ Synthesised from BuzzFeed quiz-team interviews, Nieman Lab, Typeform research, I
 
 ## Architecture
 
-- 7-Q total, image-pickable, one Q per screen, tap-to-answer auto-advance.
+- 8-Q total, image-pickable, one Q per screen, tap-to-answer auto-advance.
 - Weighted-bucket scoring: 3 = primary, 2 = shadow, 1 = tertiary, 0 = irrelevant.
 - Tiebreaker: surface primary + shadow archetype rather than forcing a winner.
 - Reveal: 2–3s loading state ("Reading your weave…") before result.
@@ -63,12 +63,12 @@ Synthesised from BuzzFeed quiz-team interviews, Nieman Lab, Typeform research, I
 
 ## Drafting constraints — quiz-specific
 
-- **Final quiz is 7 questions** (Q1–Q7). There is no Q8.
+- **Final quiz is 8 questions** (Q1–Q8).
 - **Banned words for Q stems:**
   - "actual" / "actually" — claimed by Q1 ("It's Sunday morning. Where are you, actually?"). No other Q stem may echo it.
   - Watch for "honestly" and other verbal-tic adjacents — same family of dry-observational tic. One per draft set max.
 - **Stem-construction watch:** the "You're + preposition + [setting]" frame appears in **Q3** ("You're at a friend's housewarming…") and **Q6** ("You're on a road trip…"). A third instance would tip from rhythm into formula — flag and reword on any new stem that lands on the same opener.
-- **Cadence:** one question at a time. Do not batch-draft Q1–Q7 then reconcile. Lock each before moving on.
+- **Cadence:** one question at a time. Do not batch-draft Q1–Q8 then reconcile. Lock each before moving on.
 - Cross-stem verbal-tic check is required on every new Q draft against all locked stems.
 
 ## The 9 archetypes
@@ -206,7 +206,7 @@ Locked. See `docs/saree-dna-archetypes.md`.
 
 ---
 
-## Q5 — LOCKED
+## Q5 — LOCKED (Q5D rewritten in v1.2 pass — Mul → Heir)
 
 **Question:** *It's Friday night. What's the plan?*
 
@@ -215,14 +215,14 @@ Locked. See `docs/saree-dna-archetypes.md`.
 | A | Cooking pasta for two at home. Same person, same record, third Friday in a row. Phone face-down. | Romantic |
 | B | A six-top at the Bandra rooftop that turned into eight chairs by 10pm. Loud table. Most of the laughing is yours. | Maximalist |
 | C | The reservation you made three weeks ago, in the dress you knew you'd wear when you booked it. Group chat moving on your timeline. | Occasionalist |
-| D | In bed by ten with water, alarm set, four pages of the book before you're out. Saturday's run starts early. | Mul |
+| D | Pulao on the stove, steel plates already out, her sister's four-year-old in the chair next to hers. Dinner started when she sat down — nobody had to announce it. | Heir |
 
 **Constraints satisfied:**
 - **Romantic vs. Maximalist split on volume:** A is intimate-warm (two, home, same record); B is loud-warm (eight chairs, loud table, laughing). Hard split.
 - **Occasionalist primary:** C — planned three weeks ahead, dress chosen at booking, owns the group chat tempo.
-- **Gym signal landed on Mul:** D carries the early-rise/discipline cue (in bed by ten, alarm set, Saturday's run starts early). Note: temporal fix from Sunday→Saturday so the run is the *next* morning, consistent with Friday-night frame.
+- **Heir primary on D (v1.2 rewrite):** D is rooted ritual + warmth-of-care — pulao on the stove, steel plates out, the sister's child in the next chair, dinner that doesn't need announcing. Closes the household-led-woman gap surfaced by the Lakshmi stress-test persona. The Mul primary that previously lived on D ("in bed by ten, alarm set, Saturday's run starts early") moves to Q8B in the v1.2 pass — Mul keeps three primaries, Heir gains a fourth.
 
-**Scoring matrix:** TODO — wording is locked. Derive next session from primary mappings above plus secondary/tertiary spread.
+**Scoring matrix:** see § Scoring matrix v1.2 — Q5D primary 3 to Heir, secondaries 1 each to Folklorist (rooted ritual) and Romantic (warmth-of-care).
 
 ---
 
@@ -264,7 +264,7 @@ Locked. See `docs/saree-dna-archetypes.md`.
 | C | "7 or 7:30? if 7:30 i'll grab the wine." | Occasionalist |
 | D | "BABEEEE WAIT WAIT NO STOP 😭😭" — at 11am on a Tuesday. | Maximalist |
 
-**Renumbering note:** Originally drafted as Q8 (text). Now occupies the Q7 slot because the previous Q7 (originally meal-for-six, then a celebrity-question candidate) was cut from plan. **Final quiz is 7 questions: Q1, Q2, Q3, Q4, Q5, Q6, Q7. There is no Q8.**
+**Renumbering note:** This question was originally drafted as Q8 (text-message). It moved to the Q7 slot when the previous Q7 (originally meal-for-six, then a celebrity-question candidate) was cut from plan. The Q8 slot was later refilled in the v1.2 pass with a *new* Q8 ("first afternoon in a new city") — see § Q8 below. **Final quiz is 8 questions: Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8.**
 
 **What each option does:**
 - **A — Modernist.** Two letters, sub-minute reply. Function over warmth, no padding, no emoji. Reads as efficiency, not coldness — she just doesn't perform texting.
@@ -282,7 +282,43 @@ Locked. See `docs/saree-dna-archetypes.md`.
 
 ---
 
-## Scoring matrix v1
+## Q8 — LOCKED (new — first afternoon in a new city, added in v1.2 pass)
+
+**Question:** *First afternoon in a new city. Where is she?*
+
+| | Option | Primary |
+|---|---|---|
+| A | The natural-dye scarf-maker in a back lane in George Town. A friend in Chennai sent the pin last year. | Wanderer |
+| B | Out the door, no maps. She'll figure out which way is the river. | Mul |
+| C | Twenty minutes in front of the Hammershoi at the Ordrupgaard. Then the bookstore from the long-form piece on the flight. | Tussar |
+| D | Itinerary printed. Lunch at Chote Nawab booked. Spa list from the concierge folded into the back. | Occasionalist |
+
+**Why Q8 was added (v1.2 pass):**
+The Lakshmi stress-test persona surfaced two structural problems with v1.1:
+1. **Household-led-woman gap.** Q5 had no rooted-domestic-Heir primary — the matrix couldn't catch a woman whose Friday-night plan is feeding family at home with no fanfare. Fix: Q5D rewritten Mul → Heir.
+2. **Mul primary preservation.** Removing Mul from Q5D would have dropped Mul to two primaries (under the under-served floor of three set in v1.1). Fix: add Q8 with a Mul primary on B.
+
+Q8's secondary job is to give Wanderer a third primary (it had only two in v1.1) and sharpen the curiosity-vs-planning split for the second half of the quiz.
+
+**What each option does:**
+- **A — Wanderer.** Specific craft destination (natural-dye scarf-maker), specific neighbourhood (George Town, Penang), warm-network sourcing (a friend in Chennai sent the pin last year). The trip's planned around a single, narrow, almost obscure thing — and the pin has been waiting a year for this trip.
+- **B — Mul.** No maps, no plan, walking out the door. "She'll figure out which way is the river" lands the unrehearsed-curiosity register — orientation by walking, decision economy, no anxiety about not knowing yet.
+- **C — Tussar.** Specific painting (Hammershoi), specific museum (Ordrupgaard, Copenhagen), pre-flight reading already mapped to a bookstore. Twenty focused minutes in front of one painting. Brain at work; trip as research trail.
+- **D — Occasionalist.** Printed itinerary, lunch booked (Chote Nawab, Mumbai), spa list from the concierge folded into the back of the printout. Planning-for-someone (the system makes the trip pleasurable, not anxious), executed without being uptight about it.
+
+**Cringe test:**
+- A: Modernist (too much hunting for a scarf), Occasionalist (no plan for the rest of the day), Heir (a back lane is not where we go).
+- B: Occasionalist (no plan is not a plan), Tussar (you came all this way to wander), Heir (we know where we're going before we leave the hotel).
+- C: Maximalist (twenty minutes alone with a Danish painting is not a holiday), Mul (the bookstore was on the flight, not in the city), Romantic (where is the wandering).
+- D: Wanderer (a printed itinerary is a cage), Mul (the day was supposed to surprise her), Folklorist (the concierge is not the source).
+
+**Stem check:** "First afternoon in a new city. Where is she?" — uses the third-person frame ("she") that's already established by Q2 ("Pick the bedside that's hers") and Q4 ("Pick the room that's hers"). No "actually," no "you're at/on" preposition-frame collision with Q3/Q6.
+
+**Scoring matrix:** see § Scoring matrix v1.2.
+
+---
+
+## Scoring matrix v1.2
 
 **Model:** Each option awards **3 pts to its primary archetype** plus **1 pt each to 1–2 secondaries**. Secondaries are chosen to (a) feed under-served archetypes (Mul, Wanderer, Heir) and (b) deliberately *avoid* stacking spiritual-adjacent archetypes onto Folklorist primaries (the POC's worst auto-stack).
 
@@ -320,13 +356,13 @@ Locked. See `docs/saree-dna-archetypes.md`.
 | C — Terracotta + plum velvet + paintings | Maximalist | Romantic — velvet, warm light, wine glass | Heir — salon-hung paintings = inheritance wall |
 | D — Whitewashed + indigo + loom + diya | Folklorist | Heir — indigo, brass, lineage | Mul — low daybed, whitewashed simplicity |
 
-**Q5 — Friday night**
+**Q5 — Friday night** *(Q5D rewritten in v1.2 pass — Mul → Heir)*
 | Opt | Primary (3) | Sec A (1) | Sec B (1) |
 |---|---|---|---|
 | A — Pasta for two, same record | Romantic | Mul — phone face-down, no performance | Heir — ritual, repetition, home |
 | B — Bandra rooftop, eight chairs | Maximalist | Wanderer — scene, neighbourhood-fluent | Occasionalist — six-top reservation |
 | C — Reservation 3 weeks ahead | Occasionalist | Modernist — control of timing | Maximalist — group chat on her timeline |
-| D — Bed by ten, run at dawn | Mul | Modernist — discipline | Tussar — four pages of the book |
+| D — Pulao on the stove, niece in the next chair | Heir | Folklorist — rooted ritual, oral-domestic | Romantic — warmth-of-care, tenderness |
 
 **Q6 — Road-trip music**
 | Opt | Primary (3) | Sec A (1) | Sec B (1) |
@@ -344,48 +380,67 @@ Locked. See `docs/saree-dna-archetypes.md`.
 | C — "7 or 7:30? i'll grab the wine" | Occasionalist | Heir — bringing wine = host gesture | Wanderer — lowercase, on the move |
 | D — "BABEEEE WAIT WAIT NO STOP" | Maximalist | Romantic — intimate one-on-one register | Folklorist — chorus-of-emotion, all-caps oral |
 
-### Totals
+**Q8 — First afternoon in a new city** *(new in v1.2 pass)*
+| Opt | Primary (3) | Sec A (1) | Sec B (1) |
+|---|---|---|---|
+| A — Natural-dye scarf-maker, George Town | Wanderer | Tussar — research-trail, named-source | Folklorist — craft destination |
+| B — Out the door, no maps | Mul | Wanderer — curiosity-by-walking | Modernist — decision economy |
+| C — Hammershoi at the Ordrupgaard | Tussar | Modernist — focused, twenty-minute discipline | Wanderer — bookstore-noted, on-the-ground |
+| D — Itinerary printed, lunch booked | Occasionalist | Heir — planning-for-someone, hosted register | Modernist — system, control of timing |
 
-**Primaries per archetype**
+### Totals (v1.2)
+
+**Primaries per archetype (v1.2 — 32 options across Q1–Q8)**
 | Archetype | Primaries | Options |
 |---|---|---|
-| Mul | 3 | Q1A, Q3D, Q5D |
-| Heir | 3 | Q1B, Q3B, Q6B |
-| Wanderer | 2 | Q3C, Q4A |
+| Mul | 3 | Q1A, Q3D, Q8B |
+| Heir | 4 | Q1B, Q3B, Q5D, Q6B |
+| Wanderer | 3 | Q3C, Q4A, Q8A |
 | Maximalist | 5 | Q2A, Q4C, Q5B, Q6D, Q7D |
-| Tussar | 3 | Q2B, Q3A, Q6C |
+| Tussar | 4 | Q2B, Q3A, Q6C, Q8C |
 | Folklorist | 3 | Q2C, Q4D, Q6A |
-| Occasionalist | 3 | Q2D, Q5C, Q7C |
+| Occasionalist | 4 | Q2D, Q5C, Q7C, Q8D |
 | Modernist | 3 | Q1C, Q4B, Q7A |
 | Romantic | 3 | Q1D, Q5A, Q7B |
 
-**Secondaries per archetype**
-| Archetype | Secondaries |
-|---|---|
-| Mul | 8 (Q1D, Q2B, Q2C, Q4A, Q4B, Q4D, Q5A, Q7A) |
-| Heir | 6 (Q2C, Q3A, Q4C, Q4D, Q5A, Q7C) |
-| Wanderer | 8 (Q1A, Q1C, Q2D, Q3D, Q5B, Q6A, Q6D, Q7C) |
-| Maximalist | 3 (Q5C, Q6A, Q7B) |
-| Tussar | 7 (Q1B, Q1D, Q2B, Q3C, Q4A, Q5D, Q7A) |
-| Folklorist | 6 (Q1B, Q3B, Q6B, Q6D, Q7B, Q7D) |
-| Occasionalist | 7 (Q1C, Q2A, Q2D, Q3C, Q4B, Q5B, Q6C) |
-| Modernist | 7 (Q1A, Q2B, Q2D, Q3A, Q5C, Q5D, Q6C) |
-| Romantic | 6 (Q2A, Q3B, Q3D, Q4C, Q6B, Q7D) |
+**Secondaries per archetype (v1.2)**
+| Archetype | Count | Options |
+|---|---|---|
+| Mul | 8 | Q1D, Q2B, Q2C, Q4A, Q4B, Q4D, Q5A, Q7A |
+| Heir | 7 | Q2C, Q3A, Q4C, Q4D, Q5A, Q7C, Q8D |
+| Wanderer | 10 | Q1A, Q1C, Q2D, Q3D, Q5B, Q6A, Q6D, Q7C, Q8B, Q8C |
+| Maximalist | 3 | Q5C, Q6A, Q7B |
+| Tussar | 7 | Q1B, Q1D, Q2B, Q3C, Q4A, Q7A, Q8A |
+| Folklorist | 8 | Q1B, Q3B, Q5D, Q6B, Q6D, Q7B, Q7D, Q8A |
+| Occasionalist | 7 | Q1C, Q2A, Q2D, Q3C, Q4B, Q5B, Q6C |
+| Modernist | 9 | Q1A, Q2B, Q2D, Q3A, Q5C, Q6C, Q8B, Q8C, Q8D |
+| Romantic | 7 | Q2A, Q3B, Q3D, Q4C, Q5D, Q6B, Q7D |
 
-**Max possible total (every primary AND every secondary fires — sanity check)**
-| Archetype | 3×Primaries | + Secondaries | = Max |
+**Max possible total (every primary AND every secondary fires — sanity check, v1.2)**
+| Archetype | 3×Primaries | + Secondaries | = Max ceiling |
 |---|---|---|---|
-| Mul | 9 | 8 | **17** |
-| Heir | 9 | 6 | **15** |
-| Wanderer | 6 | 8 | **14** |
+| Heir | 12 | 7 | **19** |
+| Wanderer | 9 | 10 | **19** |
+| Tussar | 12 | 7 | **19** |
+| Occasionalist | 12 | 7 | **19** |
 | Maximalist | 15 | 3 | **18** |
-| Tussar | 9 | 7 | **16** |
-| Folklorist | 9 | 6 | **15** |
-| Occasionalist | 9 | 7 | **16** |
-| Modernist | 9 | 7 | **16** |
-| Romantic | 9 | 6 | **15** |
+| Modernist | 9 | 9 | **18** |
+| Mul | 9 | 8 | **17** |
+| Folklorist | 9 | 8 | **17** |
+| Romantic | 9 | 7 | **16** |
 
-**Sanity check:** 28 options × (3 primary + ~1.93 avg secondary) = 84 + 54 = 138 pts in the system. Spread is 14–18 — narrow band, no archetype can run away. The under-served (Mul, Wanderer, Heir) are now structurally competitive; Folklorist sits at 15 (mid-pack), not inflated; Maximalist tops the band only because it has 5 primaries (a locked-question structural fact), and it carries the **fewest** secondaries (3) to compensate.
+**Sanity check (v1.2):** 32 options × (3 primary + ~1.94 avg secondary) = 96 + 62 = 158 pts in the system. Spread is **16–19** — tighter than v1.1's 14–18. Heir, Wanderer, Tussar and Occasionalist now top out together at 19 (no single dominant ceiling). The previously under-served archetypes are restored: Wanderer climbs to 19 via Q8 secondaries; Mul keeps three primaries via Q8B (ceiling 17, same as v1.1); Heir gains a fourth primary via the Q5D rewrite. Folklorist sits at 17 (mid-pack, no inflation). Maximalist still carries the fewest secondaries (3) by structural design — five primaries is its compensation.
+
+**v1.2 vs v1.1 deltas:**
+- Heir: 15 → 19 (+4) — gained Q5D primary + Q8D secondary.
+- Wanderer: 14 → 19 (+5) — gained Q8A primary + Q8B and Q8C secondaries.
+- Tussar: 16 → 19 (+3) — gained Q8C primary + Q8A secondary, lost Q5D secondary.
+- Occasionalist: 16 → 19 (+3) — gained Q8D primary.
+- Modernist: 16 → 18 (+2) — gained Q8B/C/D secondaries, lost Q5D secondary.
+- Mul: 17 → 17 (0) — lost Q5D primary, gained Q8B primary (net flat).
+- Folklorist: 15 → 17 (+2) — gained Q5D and Q8A secondaries.
+- Romantic: 15 → 16 (+1) — gained Q5D secondary.
+- Maximalist: 18 → 18 (0) — Q8 left it alone (it didn't need help).
 
 ### Tiebreak rule (v1.1 — four-level hierarchy)
 
@@ -427,8 +482,9 @@ Locked. See `docs/saree-dna-archetypes.md`.
 - ~~Romantic vs. Maximalist tie at end of Q4 — Q5 must split on volume~~ RESOLVED in Q5.
 - ~~Occasionalist needs another primary — Q5 candidate~~ RESOLVED in Q5.
 - ~~Gym/early-rise/discipline signal deferred from Q1 — Q5 candidate~~ RESOLVED in Q5 (landed on Mul, not Modernist).
-- ~~Q3/Q5/Q6/Q7 scoring matrices TODO~~ RESOLVED — see "Scoring matrix v1" section above (3-pt primary + 1-pt secondaries × 1–2, plus tiebreak rule).
-- Re-run POC personas (especially Tara — yoga teacher, expected Mul) against v1 matrix to confirm Mul stops tying with Folklorist/Romantic.
+- ~~Q3/Q5/Q6/Q7 scoring matrices TODO~~ RESOLVED — see "Scoring matrix v1.2" section above (3-pt primary + 1-pt secondaries × 1–2, plus tiebreak rule).
+- ~~Household-led-woman gap (Lakshmi persona)~~ RESOLVED in v1.2 pass — Q5D rewritten Mul → Heir; Q8 added with Mul primary preserved on B.
+- Re-run POC personas (Tara/Lakshmi and the v1.1 stress-test six) against the v1.2 matrix — **stress test v2 pending**.
 - No archetype-card visual language yet (visual identity work pending)
 - Where do illustrations come from? (decision deferred)
 
@@ -444,8 +500,10 @@ Locked. See `docs/saree-dna-archetypes.md`.
 - Q2 locked
 - Q3 locked (v4, behavior frame)
 - Q4 locked (rooms, trimmed)
-- Q5 locked (Friday night plan; Sunday→Saturday temporal fix on D)
+- Q5 locked (Friday night plan; Sunday→Saturday temporal fix on D — and in the v1.2 pass, D rewritten Mul → Heir to close the household-led-woman gap surfaced by the Lakshmi stress-test persona)
 - Original Q7 cut from plan (was: meal-for-six); celebrity-question candidate also dropped
-- Q7 locked (was Q8 — last text she sent); final quiz is 7 questions, no Q8
+- Q7 locked (was the original Q8 draft — last text she sent)
 - Q6 locked (v2 — road-trip music, sonic identity)
+- Q8 locked (NEW — first afternoon in a new city; added in v1.2 pass to preserve Mul primary count after Q5D rewrite and to give Wanderer a third primary)
+- Scoring matrix bumped to v1.2 (32 options across Q1–Q8; ceilings 16–19; tiebreak hierarchy unchanged from v1.1)
 - One question at a time, slow cadence

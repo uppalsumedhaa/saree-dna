@@ -2,6 +2,14 @@
 
 Process failures and what they taught us. Newest at top.
 
+## 2026-04-26 — Q5 had a household-led-woman gap (Lakshmi persona)
+
+**What:** After locking all 7 questions and matrix v1.1, a stress test against the Lakshmi persona (a woman whose Friday night is feeding family at home with no fanfare — rooted ritual + warmth-of-care) surfaced that no Q5 option carried a rooted-domestic-Heir primary. The matrix had four Mul primaries that were over-indexing on solo-quiet patterns (walks, books, alarms) and was structurally blind to the household-led woman.
+
+**Fix:** Rewrote Q5D from "in bed by ten, alarm set, Saturday's run starts early" (Mul) to "pulao on the stove, sister's four-year-old in the chair next to hers, dinner that doesn't need announcing" (Heir). To preserve Mul's primary count, added Q8 ("First afternoon in a new city. Where is she?") with primaries Wanderer/Mul/Tussar/Occasionalist — so Mul keeps three primaries via Q8B and Wanderer gains a needed third primary via Q8A. Bumped matrix to v1.2; ceilings tightened to 16–19 (from 14–18 in v1.1).
+
+**Lesson:** Stress-test with diverse personas BEFORE locking the matrix — the matrix is only as good as the personas it was tested against. The v1.1 stress-test set was six personas but skewed toward solo / observer / curator types; a single household-led woman would have caught the Q5 gap before lock. Build the persona set deliberately for coverage on the dimensions the archetypes are supposed to discriminate (here: solo vs. household-led, planned vs. improvised, intimate vs. public).
+
 ## 2026-04-26 — Banned word "actual"/"actually" in Q stems
 
 **What:** "Actual"/"actually" is claimed by Q1 ("It's Sunday morning. Where are you, actually?"). User enforced the ban mid-Q5 draft when a sub-agent reused it. Cross-stem verbal-tic check is required on every draft — not just within a single sub-agent's output, but across the locked stems already in the doc.

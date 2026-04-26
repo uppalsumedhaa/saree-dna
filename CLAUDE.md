@@ -2,7 +2,7 @@
 
 ## What this project is
 
-A deterministic personality quiz that returns one of nine saree archetypes. Mobile-first, image-pickable, observational voice. See `MASTER.md` for status, `PIVOT.md` for pivot history, `docs/features/quiz-v1.md` for the full quiz scope and structure (question count, stems, scoring, banned words, etc.), `docs/saree-dna-archetypes.md` for hand-written archetype profiles.
+A deterministic 8-question personality quiz (Q1–Q8) that returns one of nine saree archetypes. Mobile-first, image-pickable, observational voice. See `MASTER.md` for status, `PIVOT.md` for pivot history, `docs/features/quiz-v1.md` for the full quiz scope and structure (question count, stems, scoring, banned words, etc.), `docs/saree-dna-archetypes.md` for hand-written archetype profiles.
 
 ## Stack
 

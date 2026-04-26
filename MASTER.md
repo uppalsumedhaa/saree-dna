@@ -4,11 +4,11 @@ A quiz that returns your saree archetype. *Every woman has a saree archetype. Wh
 
 ## Status
 
-Pre-build. Scoping in progress. All 7 questions locked (Q1–Q7). Quiz total: 7 questions. (Original Q7 cut; the text-message question, originally drafted as Q8, now occupies the Q7 slot. There is no Q8.)
+Pre-build. Scoping in progress. **8 questions locked (Q1–Q8). Matrix v1.2 designed. Awaiting stress test v2.**
 
 | Feature | Status | Doc |
 |---|---|---|
-| Quiz v1 (7-question archetype quiz) | All 7 questions locked + scoring matrix v1.1 (four-level tiebreak hierarchy) | [docs/features/quiz-v1.md](docs/features/quiz-v1.md) |
+| Quiz v1 (8-question archetype quiz) | 8 questions locked (Q1–Q8) + scoring matrix v1.2 (four-level tiebreak hierarchy) | [docs/features/quiz-v1.md](docs/features/quiz-v1.md) |
 | Result page | Not started | TBD |
 | Share-card generator | Not started | TBD |
 | Visual identity | Not started — fresh from scratch | TBD |
@@ -31,6 +31,7 @@ See `docs/saree-dna-archetypes.md` for full hand-written profiles by Sumedha.
 
 ### 2026-04-26
 
+- **Q8 LOCKED (new — first afternoon in a new city) + Q5D rewritten Mul → Heir; matrix bumped to v1.2.** Stress test against the Lakshmi persona (household-led woman with rooted ritual + warmth-of-care) surfaced a gap: Q5 had no rooted-domestic-Heir primary, and the four locked Mul primaries were over-indexing on solo-quiet patterns. Fix: rewrite Q5D from "in bed by ten, alarm set" (Mul) to "pulao on the stove, sister's four-year-old in the chair next to hers" (Heir); add Q8 ("First afternoon in a new city. Where is she?") with primaries Wanderer/Mul/Tussar/Occasionalist so Mul keeps its primary count via Q8B. New v1.2 ceilings (verified by recount): Heir 19 (4 primaries), Wanderer 19 (3 primaries, 10 secondaries), Tussar 19 (4 primaries), Occasionalist 19 (4 primaries), Maximalist 18, Modernist 18, Mul 17, Folklorist 17, Romantic 16. Tighter band than v1.1 (16–19 vs 14–18). Tiebreak hierarchy unchanged. See `learnings.md` and `docs/features/quiz-v1.md` § Scoring matrix v1.2.
 - **Scoring matrix v1.1 — third + fourth-level tiebreak rules added.** Stress test against 6 personas produced a 4-way tie at 5 points that the existing two-level hierarchy (more primaries → higher Q3) couldn't resolve. New hierarchy: (1) more primaries triggered, (2) higher Q3, (3) higher Q6, (4) alphabetical by archetype. Q6 chosen for level 3 because its four primaries each land on a different archetype (Folklorist/Heir/Tussar/Maximalist) and its secondaries spread across almost every other archetype — sonic identity split cleanly across all 6 stress-test personas. Alphabetical at level 4 is deterministic (re-runnable) and explainable. Considered and rejected "highest secondary count" — it amplifies adjacency noise and structurally favours secondary-heavy archetypes (Mul 8, Wanderer 8) over leaner ones (Maximalist 3). See `docs/features/quiz-v1.md` § Tiebreak rule (v1.1).
 - **Scoring matrix v1 designed.** All 28 options now mapped: each primary scores 3, plus 1–2 secondaries at 1 each. Secondaries weighted to feed under-served archetypes (Mul +8, Wanderer +8, Heir +6) and break the Folklorist auto-stack flagged by the POC (Folklorist primaries no longer give secondaries to other spiritual-adjacent archetypes; they push to Mul/Heir/Maximalist/Wanderer instead). Max-possible totals land in a tight 14–18 band. Tiebreak rule: more PRIMARIES TRIGGERED wins; second-level tiebreak is Q3 score. Q3/Q5/Q6/Q7 TODOs cleared. See `docs/features/quiz-v1.md` § Scoring matrix v1.
 - **Q6 LOCKED (v2 — road-trip music):** "You're on a road trip. You're handling the music. What's playing?" Four options split on sonic identity: A Nooran Sisters live at Jashn-e-Rekhta, heard forty times, ruining the high note singing along (Folklorist), B Begum Akhtar Hyderabad ghazal, grandmother's kitchen song, on loop since Tuesday (Heir), C *My Favorite Murder* podcast, caught up on every season, opinions on Karen's editing, listening at 1.5x (Tussar), D Diljit "G.O.A.T." windows down, everyone in the car singing the chorus, you picked it (Maximalist). **All 7 questions now locked.**
