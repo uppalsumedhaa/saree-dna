@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -7,12 +8,53 @@ import {
   getArchetypeIndex,
   TOTAL_ARCHETYPES,
 } from "../archetypes";
+import ShareBlock from "./ShareBlock";
+
+// Production origin — OG/Twitter images REQUIRE absolute URLs to unfurl in
+// WhatsApp / iMessage / Slack / Twitter. We hardcode rather than read from
+// env so the metadata is correct in every environment (including local dev),
+// since the unfurl bots fetch the deployed URL anyway.
+const PROD_ORIGIN = "https://saree-dna.vercel.app";
 
 export function generateStaticParams() {
   return archetypes.map((a) => ({ archetype: a.slug }));
 }
 
 type Params = { archetype: string };
+
+// Per-archetype Open Graph + Twitter card. Falls back to /hero.jpg for
+// archetypes whose card illustration hasn't landed yet, so the unfurl
+// preview is never broken.
+export async function generateMetadata({
+  params,
+}: {
+  params: Params;
+}): Promise<Metadata> {
+  const a = getArchetype(params.archetype);
+  if (!a) return {};
+
+  const title = `Saree DNA — ${a.name}`;
+  const description = `${a.tagline} Take the quiz to find yours.`;
+  const image = a.cardImage
+    ? `${PROD_ORIGIN}${a.cardImage}`
+    : `${PROD_ORIGIN}/hero.jpg`;
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      images: [{ url: image, width: 1200, height: 1600 }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [image],
+    },
+  };
+}
 
 function formatNum(n: number): string {
   return n < 10 ? `0${n}` : `${n}`;
@@ -191,6 +233,12 @@ function FullResults({
         <div className="mt-14 flex justify-center sm:mt-16">
           <TakeAgainCTA />
         </div>
+
+        <ShareBlock
+          archetypeName={archetype.name}
+          archetypeSlug={archetype.slug}
+          cardImage={archetype.cardImage}
+        />
       </section>
     </main>
   );
@@ -226,6 +274,12 @@ function PlaceholderResults({
         <div className="mt-14 sm:mt-16">
           <TakeAgainCTA />
         </div>
+
+        <ShareBlock
+          archetypeName={archetype.name}
+          archetypeSlug={archetype.slug}
+          cardImage={archetype.cardImage}
+        />
       </section>
     </main>
   );
