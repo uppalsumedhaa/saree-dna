@@ -26,8 +26,8 @@ export default function Home() {
 
       {/* Dead-center text block. Flex-centered both axes; safe-zone padding for narrow viewports. */}
       <div className="absolute inset-0 flex items-center justify-center px-6 sm:px-10 md:px-16">
-        <div className="flex max-w-4xl flex-col items-center text-center">
-          <h1 className="font-serif text-5xl font-medium leading-[1.05] tracking-tight text-white sm:text-7xl md:text-8xl">
+        <div className="flex max-w-none flex-col items-center text-center">
+          <h1 className="whitespace-nowrap font-serif text-[clamp(1.5rem,6vw,5.5rem)] font-medium leading-[1.05] tracking-tight text-white">
             Every woman has a <em className="italic font-medium">saree</em> type
           </h1>
 
