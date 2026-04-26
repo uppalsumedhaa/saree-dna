@@ -21,7 +21,7 @@
 - C (Wanderer): A bottle of cold-pressed olive oil from that place outside Margao. You were there last week
 - D (Mul): Nothing. You came from a long walk and the river path took longer than you thought
 
-## Q4 — Pick the room that's hers.
+## Q4 — Pick the room that feels like yours.
 
 - A (Wanderer): Red-brick wall, low mustard linen couch, three mismatched lamps in honey light. Filter coffee going cold on stacked books
 - B (Modernist): Limewashed wall, cane-and-teak daybed under one cool arc lamp. Linen throw pushed aside, open notebook face-down

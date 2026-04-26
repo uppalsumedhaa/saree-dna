@@ -70,7 +70,7 @@ export const questions: Question[] = [
   },
   {
     id: 4,
-    stem: "Pick the room that's hers.",
+    stem: "Pick the room that feels like yours.",
     options: [
       {
         id: "A",

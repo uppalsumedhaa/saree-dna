@@ -9,6 +9,7 @@ import {
   TOTAL_ARCHETYPES,
 } from "../archetypes";
 import ShareBlock from "./ShareBlock";
+import ExploreAllArchetypes from "./ExploreAllArchetypes";
 
 // Production origin — OG/Twitter images REQUIRE absolute URLs to unfurl in
 // WhatsApp / iMessage / Slack / Twitter. We hardcode rather than read from
@@ -242,6 +243,8 @@ function FullResults({
           archetypeSlug={archetype.slug}
           cardImage={archetype.cardImage}
         />
+
+        <ExploreAllArchetypes currentSlug={archetype.slug} />
       </section>
     </main>
   );
@@ -283,6 +286,8 @@ function PlaceholderResults({
           archetypeSlug={archetype.slug}
           cardImage={archetype.cardImage}
         />
+
+        <ExploreAllArchetypes currentSlug={archetype.slug} />
       </section>
     </main>
   );

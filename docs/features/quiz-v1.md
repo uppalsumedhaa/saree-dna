@@ -171,7 +171,7 @@ Locked. See `docs/saree-dna-archetypes.md`.
 
 ## Q4 — LOCKED (rooms, trimmed)
 
-**Question:** *Pick the room that's hers.*
+**Question:** *Pick the room that feels like yours.*
 
 | | Option | Primary |
 |---|---|---|
