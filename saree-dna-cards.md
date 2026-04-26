@@ -15,7 +15,7 @@ She's a keeper.
 She has a jeweller, a tailor, and a cook she's been with longer than most marriages. She'll wear a saree her mother wore, and her mother's mother, and tell you about both. She trained in Bharatanatyam from the age of six and still goes back to her guru's house when she's in Chennai. She knows the Margazhi calendar by heart and won't miss the morning concerts at the Music Academy. She can tell real zari by the weight of it, and whose loom it came off, and when. She'll spot a power-loom Kanjeevaram across a room. Navaratri at her house is nine nights of kolu, three changes of saree, and a list of who's coming when.
 
 **Weave**
-Kanjeevaram silk with real zari. Pattu pet, wide kanchi-pet borders, traditional motifs. Bought from the same weaver family. Worn for the recital, the temple, the December concert, the niece's arangetram.
+Kanjeevaram silk with real zari. Pattu pet, wide kanchi-pet borders, traditional motifs. Bought from the same weaver family. Worn for the recital, the temple, the December concert, the niece's arangetram. A Mysore crepe in the cupboard for Saraswati puja, the gold subdued and the drape easier to sit through a long morning in. A Paithani for the Marathi side of the family, peacock pallu, brought out for the wedding she's known about for a year. One Patola, double-ikat from Patan, gifted at her own wedding and worn maybe four times since.
 
 **Drape**
 Nivi, sharp pleats, pallu pinned. Always with a temple jewellery set or polki.
@@ -81,7 +81,7 @@ Always a little too much. Always exactly right.
 She'll show up to a coffee in a saree. She'll send four voice notes when one was the question. She'll find the person standing alone at a party and stay with them ten minutes longer than anyone else would. She'll text you the next day. She'll text you the day after that. She runs warmer than the rest of the room, on purpose.
 
 **Weave**
-Bandhani or leheriya. Tied and dyed, mostly from Bhuj or Jamnagar.
+Bandhani or leheriya. Tied and dyed, mostly from Bhuj or Jamnagar. A phulkari shawl thrown over a plain saree when the evening turns, all marigold and parrot-green threadwork, ten times louder than the saree under it.
 
 **Drape**
 Gujarati, front pallu. Enters before she does.
@@ -103,7 +103,7 @@ She did the reading.
 She knows the weaver's village. She knows the year the co-op was founded and the woman who runs it. She'll quote a paper she read in 2019 and remember it correctly. She doesn't perform her opinions; she's just done the work to have them. She'd rather be at a small dinner than a launch, and she's not coming to the launch.
 
 **Weave**
-Tussar silk, ikat, or vegetable-dyed cotton. Bought direct, often Bhagalpur, Pochampally, or Chanderi.
+Tussar silk, ikat, or vegetable-dyed cotton. Bought direct, often Bhagalpur, Pochampally, or Chanderi. Sometimes a fine Jamdani from Phulia or Shantipur, the motifs floated in by hand, bought on a trip she meant to take for years.
 
 **Drape**
 Bengali, pallu pinned at the shoulder. Practical. Built for sitting and reading.
@@ -191,7 +191,7 @@ She runs the meeting.
 She wears a linen saree to a 9 a.m. and the clients adjust to her. She'll redirect a conversation in two sentences. She'll send the calendar invite before the call ends. She doesn't believe in a saree for occasions. She believes in a saree for Tuesdays. She's quietly rewriting what serious looks like, and nobody's asking her to slow down.
 
 **Weave**
-Linen or fine khadi. Often a contemporary piece, sometimes a co-op weave from Phulia or Bhagalpur.
+Linen or fine khadi. Often a contemporary piece, sometimes a co-op weave from Phulia or Bhagalpur. A Kerala kasavu in the rotation for Onam and the odd embassy lunch, white with the thin gold border, nothing else asked of it.
 
 **Drape**
 Nivi, half-pleat, structured. Holds its line through a stand-up.
