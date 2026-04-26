@@ -387,15 +387,24 @@ Locked. See `docs/saree-dna-archetypes.md`.
 
 **Sanity check:** 28 options × (3 primary + ~1.93 avg secondary) = 84 + 54 = 138 pts in the system. Spread is 14–18 — narrow band, no archetype can run away. The under-served (Mul, Wanderer, Heir) are now structurally competitive; Folklorist sits at 15 (mid-pack), not inflated; Maximalist tops the band only because it has 5 primaries (a locked-question structural fact), and it carries the **fewest** secondaries (3) to compensate.
 
-### Tiebreak rule
+### Tiebreak rule (v1.1 — four-level hierarchy)
 
-**If two archetypes tie on total points, the winner is whichever had MORE PRIMARIES TRIGGERED (more 3-pt hits) on the user's path.**
+**If two or more archetypes tie on total points, resolve in this order:**
 
-**Why:** A primary hit means the user picked the option *for* that archetype — strong signal of conviction. Secondary points are spillover from adjacent content. Two archetypes can tie because one had three primaries and zero secondaries while the other had one primary and six secondaries; the first is structurally a stronger result. Awarding to primary-count rewards conviction over adjacency.
+1. **More PRIMARIES TRIGGERED** (more 3-pt hits) on the user's path wins.
+2. **Higher Q3 score** wins.
+3. **Higher Q6 score** wins.
+4. **Alphabetical by archetype name** (deterministic final fallback).
 
-**Why not Q3-as-discriminator:** The POC named Q3 the strongest discriminator because Q3's options are mutually exclusive *by construction* (you can't bring a book AND nothing). That makes Q3 a great primary-splitter, but as a tiebreak rule it's brittle: if the tied archetypes both score 0 on Q3, the rule does nothing. Primary-count works on every path.
+**Why primary-count first:** A primary hit means the user picked the option *for* that archetype — strong signal of conviction. Secondary points are spillover from adjacent content. Two archetypes can tie because one had three primaries and zero secondaries while the other had one primary and six secondaries; the first is structurally a stronger result. Awarding to primary-count rewards conviction over adjacency.
 
-**Second-level tiebreak (rare, if primary count also ties):** Whichever archetype scored higher on Q3 wins. This combines both signals — primary-conviction first, Q3-discriminator as the backstop.
+**Why Q3 second:** The POC named Q3 the strongest single-question discriminator because Q3's options are mutually exclusive *by construction* (you can't bring a book AND nothing). Q3 is a great primary-splitter, so it earns the second slot. It can be brittle on its own (if both tied archetypes score 0 on Q3 it does nothing), which is why it sits behind primary-count and ahead of a further backstop.
+
+**Why Q6 third (NEW):** A 6-persona stress test produced a 4-way tie at 5 points where the matrix collapsed even after the Q3 backstop. Across all 6 stress-test personas, **Q6 (road-trip music) split cleanly** — sonic identity is a strong, stable signal because Q6's four primaries each land on a *different* archetype (Folklorist, Heir, Tussar, Maximalist) and its secondaries spread across Wanderer, Romantic, Modernist, Occasionalist and Folklorist again. In other words, almost every archetype gets some signal from Q6, so the chance of two tied archetypes both scoring 0 on Q6 is much lower than for any other single question. Better backstop than alphabetical-only.
+
+**Why alphabetical fourth (NEW):** If a tie survives all three signal-based rules, the path genuinely doesn't discriminate between those archetypes. Alphabetical-by-archetype-name is **deterministic** (same inputs always give the same answer, which matters for a quiz that should be re-runnable to the same result) and **explainable** ("we ran out of signal — here is the published tiebreak"). Avoids the worse alternatives: random (non-deterministic, kills shareability), or popularity-weighted (rewards already-overrepresented archetypes).
+
+**Why not "highest secondary count" as the third level:** Considered and rejected. Secondaries are by design adjacency spillover, not conviction. Using secondary-count as a tiebreak amplifies the same noise we deprioritised at level 1, and it would systematically favour archetypes with the largest secondary footprint (Mul 8, Wanderer 8, Modernist 7, Occasionalist 7, Tussar 7) over the leaner ones (Maximalist 3, Romantic 6, Folklorist 6, Heir 6). Q6 is a cleaner signal than secondary-count and doesn't carry that structural bias.
 
 ## Tech stack
 
