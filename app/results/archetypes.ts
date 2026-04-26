@@ -42,7 +42,7 @@ export const archetypes: Archetype[] = [
     drape: "Nivi, open pallu, fluid. No pin if she can help it.",
     palette: "Powder pink. Pearl. Ivory. Late-afternoon gold.",
     wornWellBy: "The friend who writes you letters. The one who notices what you didn't say.",
-    cardImage: null,
+    cardImage: "/cards/romantic.jpg",
   },
   {
     slug: "wanderer",
@@ -55,7 +55,7 @@ export const archetypes: Archetype[] = [
     drape: "Coorgi or seedha pallu, depending on the city. Loose enough to walk in.",
     palette: "Sand. Stone. Ink-blue. Saffron.",
     wornWellBy: "The friend in transit. The one whose voice notes start with the city she's in.",
-    cardImage: null,
+    cardImage: "/cards/wanderer.jpg",
   },
   {
     slug: "maximalist",
@@ -68,7 +68,7 @@ export const archetypes: Archetype[] = [
     drape: "Gujarati, front pallu. Enters before she does.",
     palette: "Hot pink. Marigold. Cobalt. Pomegranate.",
     wornWellBy: "The friend who saw you across the room. The one who made the night.",
-    cardImage: null,
+    cardImage: "/cards/maximalist.jpg",
   },
   {
     slug: "tussar",
@@ -82,7 +82,7 @@ export const archetypes: Archetype[] = [
     palette: "Walnut. Old gold. Off-black. Unbleached.",
     wornWellBy:
       "The friend you call before you write something. The one whose footnotes are better than your essay.",
-    cardImage: null,
+    cardImage: "/cards/tussar.jpg",
   },
   {
     slug: "folklorist",
@@ -94,7 +94,7 @@ export const archetypes: Archetype[] = [
     drape: "Gujarati, with a short jacket or waistcoat layered on top. Silver before gold, always.",
     palette: "Indigo. Madder red. Iron black. Unbleached cream.",
     wornWellBy: "The friend who knows the lyrics. The one who travels with intent.",
-    cardImage: null,
+    cardImage: "/cards/folklorist.jpg",
   },
   {
     slug: "mul",
@@ -107,7 +107,7 @@ export const archetypes: Archetype[] = [
     palette: "Off-white. Indigo. Old brick. Soft black.",
     wornWellBy:
       "The friend who shows up. Careless with her clothes, careful with your heart. On a long walk. On any day, really.",
-    cardImage: null,
+    cardImage: "/cards/mul.jpg",
   },
   {
     slug: "occasionalist",
@@ -134,7 +134,7 @@ export const archetypes: Archetype[] = [
     drape: "Nivi, half-pleat, structured. Holds its line through a stand-up.",
     palette: "Slate. Bone. Rust. Ink.",
     wornWellBy: "The woman the room turns to. The one whose name is on the deck.",
-    cardImage: null,
+    cardImage: "/cards/modernist.jpg",
   },
 ];
 
