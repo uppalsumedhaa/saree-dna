@@ -4,12 +4,13 @@ import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
+  weight: ["300", "400", "500", "600"],
   style: ["normal", "italic"],
   variable: "--font-cormorant",
   display: "swap",
 });
 
+// Kept for the CTA — sans-serif gives textural contrast against the all-serif headline + subhead.
 const dmSans = DM_Sans({
   subsets: ["latin"],
   weight: ["400", "500"],

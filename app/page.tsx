@@ -13,30 +13,31 @@ export default function Home() {
         className="object-cover object-[50%_30%] sm:object-[50%_40%] md:object-center"
       />
 
-      {/* Subtle gradient — only the bottom 40% gets dimmed, so the image up top reads clean. */}
+      {/* All-over dim with a soft radial lift in the center, so the centered text reads
+          without flattening the image. Keeps the women's faces visible up top. */}
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-x-0 bottom-0 h-[40%]"
+        className="pointer-events-none absolute inset-0"
         style={{
           background:
-            "linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.15) 40%, rgba(0,0,0,0.55) 100%)",
+            "radial-gradient(ellipse at center, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.35) 45%, rgba(0,0,0,0.25) 100%)",
         }}
       />
 
-      {/* Bottom-left text block. Editorial, asymmetric. Safe-zone padding scales up on larger screens. */}
-      <div className="absolute inset-x-0 bottom-0 px-6 pb-10 sm:px-10 sm:pb-14 md:px-16 md:pb-20">
-        <div className="max-w-xl">
-          <h1 className="font-serif text-[2.25rem] leading-[1.05] tracking-tight text-white sm:text-5xl md:text-6xl">
-            Every woman has a <em className="italic">saree</em> type
+      {/* Dead-center text block. Flex-centered both axes; safe-zone padding for narrow viewports. */}
+      <div className="absolute inset-0 flex items-center justify-center px-6 sm:px-10 md:px-16">
+        <div className="flex max-w-4xl flex-col items-center text-center">
+          <h1 className="font-serif text-5xl font-medium leading-[1.05] tracking-tight text-white sm:text-7xl md:text-8xl">
+            Every woman has a <em className="italic font-medium">saree</em> type
           </h1>
 
-          <p className="mt-3 font-sans text-sm font-normal text-white/75 sm:mt-4 sm:text-base">
+          <p className="mt-5 font-serif text-lg font-light italic text-white/80 sm:mt-6 sm:text-xl md:text-2xl">
             Come find yours
           </p>
 
           <Link
             href="/quiz"
-            className="mt-7 inline-block border border-white/70 px-7 py-3 font-sans text-[0.7rem] uppercase tracking-[0.32em] text-white transition-colors duration-200 hover:bg-white hover:text-black sm:mt-9 sm:text-xs"
+            className="mt-9 inline-block border border-white/70 px-7 py-3 font-sans text-[0.7rem] uppercase tracking-[0.32em] text-white transition-colors duration-200 hover:bg-white hover:text-black sm:mt-12 sm:text-xs"
           >
             Begin
           </Link>
