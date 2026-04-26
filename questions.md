@@ -1,10 +1,10 @@
 # Saree DNA — The 8 Questions
 
-## Q1 — It's Sunday morning. Where are you, actually?
+## Q1 — It's Sunday morning. Where are you?
 
 - A (Mul): Out walking before the city is up.
-- B (Heir): At the table, filter coffee, someone talking.
-- C (Modernist): Already moving — bag by the door.
+- B (Heir): At the table with your coffee.
+- C (Modernist): Already moving. Bag by the door.
 - D (Romantic): In bed past nine, light through the curtain.
 
 ## Q2 — Pick the bedside that's hers.
@@ -33,21 +33,21 @@
 - A (Romantic): Cooking pasta for two at home. Same person, same record, third Friday in a row. Phone face-down.
 - B (Maximalist): A six-top at the Bandra rooftop that turned into eight chairs by 10pm. Loud table. Most of the laughing is yours.
 - C (Occasionalist): The reservation you made three weeks ago, in the dress you knew you'd wear when you booked it. Group chat moving on your timeline.
-- D (Heir): Pulao on the stove, steel plates already out, her sister's four-year-old in the chair next to hers. Dinner started when she sat down — nobody had to announce it.
+- D (Heir): Pulao on the stove, steel plates already out, her sister's four-year-old in the chair next to hers. Dinner started when she sat down. Nobody had to announce it.
 
 ## Q6 — You're on a road trip. You're handling the music. What's playing?
 
 - A (Folklorist): Nooran Sisters live at Jashn-e-Rekhta. You've heard it forty times. You'll ruin the high note singing along anyway.
-- B (Heir): Begum Akhtar — the Hyderabad ghazal. Your grandmother used to hum it in the kitchen. You've had it on a loop since Tuesday.
+- B (Heir): Begum Akhtar, the Hyderabad ghazal. Your grandmother used to hum it in the kitchen. You've had it on a loop since Tuesday.
 - C (Tussar): *My Favorite Murder*. You're caught up on every season, you have opinions on Karen's editing choices, and you're listening at 1.5x.
 - D (Maximalist): Diljit, "G.O.A.T." Windows down. Everyone in the car singing the chorus. You picked it.
 
 ## Q7 — Show me the last text she sent.
 
-- A (Modernist): "ok" — replied in 30 seconds.
+- A (Modernist): "ok", replied in 30 seconds.
 - B (Romantic): A 4-minute voice note. 1am. To one person.
 - C (Occasionalist): "7 or 7:30? if 7:30 i'll grab the wine."
-- D (Maximalist): "BABEEEE WAIT WAIT NO STOP 😭😭" — at 11am on a Tuesday.
+- D (Maximalist): "BABEEEE WAIT WAIT NO STOP 😭😭" at 11am on a Tuesday.
 
 ## Q8 — First afternoon in a new city. Where is she?
 

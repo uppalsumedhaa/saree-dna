@@ -65,8 +65,8 @@ Synthesised from BuzzFeed quiz-team interviews, Nieman Lab, Typeform research, I
 
 - **Final quiz is 8 questions** (Q1–Q8).
 - **Banned words for Q stems:**
-  - "actual" / "actually" — claimed by Q1 ("It's Sunday morning. Where are you, actually?"). No other Q stem may echo it.
   - Watch for "honestly" and other verbal-tic adjacents — same family of dry-observational tic. One per draft set max.
+  - em-dash (—) banned project-wide as of 2026-04-26 per Sumedha. Use commas, periods, or rephrase.
 - **Stem-construction watch:** the "You're + preposition + [setting]" frame appears in **Q3** ("You're at a friend's housewarming…") and **Q6** ("You're on a road trip…"). A third instance would tip from rhythm into formula — flag and reword on any new stem that lands on the same opener.
 - **Cadence:** one question at a time. Do not batch-draft Q1–Q8 then reconcile. Lock each before moving on.
 - Cross-stem verbal-tic check is required on every new Q draft against all locked stems.
@@ -89,13 +89,13 @@ Locked. See `docs/saree-dna-archetypes.md`.
 
 ## Q1 — LOCKED
 
-**Question:** *It's Sunday morning. Where are you, actually?*
+**Question:** *It's Sunday morning. Where are you?*
 
 | | Option | Visual cue |
 |---|---|---|
 | A | Out walking before the city is up | Empty residential lane at dawn, soft grey light, woman alone, **athletic-leaning** (sneakers, water bottle, hair pulled back). |
-| B | At the table, filter coffee, someone talking | Brass tumbler on wood, folded newspaper, second cup across, suggestion of a relative mid-sentence. |
-| C | Already moving — bag by the door | Packed carry-on, espresso half-drunk, laptop open to a boarding pass. Functional light. |
+| B | At the table with your coffee | Brass tumbler on wood, folded newspaper, second cup across, suggestion of a relative mid-sentence. |
+| C | Already moving. Bag by the door | Packed carry-on, espresso half-drunk, laptop open to a boarding pass. Functional light. |
 | D | In bed past nine, light through the curtain | Unmade linen bed, half-finished tea on the floor, slim book open face-down. No clock. |
 
 **Scoring matrix:**
@@ -108,7 +108,8 @@ Locked. See `docs/saree-dna-archetypes.md`.
 | D | 0 | **3** | 0 | **2** | 1 | 1 | 0 | 0 | 0 |
 
 **Locked decisions:**
-- "actually" in the stem kept (lands the dry observational voice).
+- "actually" dropped from the stem (em-dash/verbal-tic cleanup pass, 2026-04-26).
+- B rewritten from "At the table, filter coffee, someone talking" → "At the table with your coffee" (same pass).
 - "in bed past nine" in D kept (bold, on-tone).
 - A's visual nudged athletic to absorb early-rise/run/gym posture. Fitness signal proper lands in Q5 or Q7.
 
@@ -215,7 +216,7 @@ Locked. See `docs/saree-dna-archetypes.md`.
 | A | Cooking pasta for two at home. Same person, same record, third Friday in a row. Phone face-down. | Romantic |
 | B | A six-top at the Bandra rooftop that turned into eight chairs by 10pm. Loud table. Most of the laughing is yours. | Maximalist |
 | C | The reservation you made three weeks ago, in the dress you knew you'd wear when you booked it. Group chat moving on your timeline. | Occasionalist |
-| D | Pulao on the stove, steel plates already out, her sister's four-year-old in the chair next to hers. Dinner started when she sat down — nobody had to announce it. | Heir |
+| D | Pulao on the stove, steel plates already out, her sister's four-year-old in the chair next to hers. Dinner started when she sat down. Nobody had to announce it. | Heir |
 
 **Constraints satisfied:**
 - **Romantic vs. Maximalist split on volume:** A is intimate-warm (two, home, same record); B is loud-warm (eight chairs, loud table, laughing). Hard split.
@@ -233,7 +234,7 @@ Locked. See `docs/saree-dna-archetypes.md`.
 | | Option | Primary |
 |---|---|---|
 | A | Nooran Sisters live at Jashn-e-Rekhta. You've heard it forty times. You'll ruin the high note singing along anyway. | Folklorist |
-| B | Begum Akhtar — the Hyderabad ghazal. Your grandmother used to hum it in the kitchen. You've had it on a loop since Tuesday. | Heir |
+| B | Begum Akhtar, the Hyderabad ghazal. Your grandmother used to hum it in the kitchen. You've had it on a loop since Tuesday. | Heir |
 | C | *My Favorite Murder*. You're caught up on every season, you have opinions on Karen's editing choices, and you're listening at 1.5x. | Tussar |
 | D | Diljit, "G.O.A.T." Windows down. Everyone in the car singing the chorus. You picked it. | Maximalist |
 
@@ -259,10 +260,10 @@ Locked. See `docs/saree-dna-archetypes.md`.
 
 | | Option | Primary |
 |---|---|---|
-| A | "ok" — replied in 30 seconds. | Modernist |
+| A | "ok", replied in 30 seconds. | Modernist |
 | B | A 4-minute voice note. 1am. To one person. | Romantic |
 | C | "7 or 7:30? if 7:30 i'll grab the wine." | Occasionalist |
-| D | "BABEEEE WAIT WAIT NO STOP 😭😭" — at 11am on a Tuesday. | Maximalist |
+| D | "BABEEEE WAIT WAIT NO STOP 😭😭" at 11am on a Tuesday. | Maximalist |
 
 **Renumbering note:** This question was originally drafted as Q8 (text-message). It moved to the Q7 slot when the previous Q7 (originally meal-for-six, then a celebrity-question candidate) was cut from plan. The Q8 slot was later refilled in the v1.2 pass with a *new* Q8 ("first afternoon in a new city") — see § Q8 below. **Final quiz is 8 questions: Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8.**
 
@@ -330,7 +331,7 @@ Q8's secondary job is to give Wanderer a third primary (it had only two in v1.1)
 | Opt | Primary (3) | Sec A (1) | Sec B (1) |
 |---|---|---|---|
 | A — Walking before city up | Mul | Wanderer — early movement, in-transit posture | Modernist — discipline, early-rise |
-| B — Filter coffee, someone talking | Heir | Folklorist — oral/rooted scene | Tussar — listening, attention to a speaker |
+| B — At the table with your coffee | Heir | Folklorist — oral/rooted scene | Tussar — listening, attention to a speaker |
 | C — Bag by door, boarding pass | Modernist | Wanderer — in transit | Occasionalist — packed, planned |
 | D — Bed past nine, slim book | Romantic | Mul — no clock, easeful | Tussar — book in hand |
 

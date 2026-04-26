@@ -19,11 +19,11 @@ export const TOTAL_QUESTIONS = 8;
 export const questions: Question[] = [
   {
     id: 1,
-    stem: "It's Sunday morning. Where are you, actually?",
+    stem: "It's Sunday morning. Where are you?",
     options: [
       { id: "A", text: "Out walking before the city is up." },
-      { id: "B", text: "At the table, filter coffee, someone talking." },
-      { id: "C", text: "Already moving — bag by the door." },
+      { id: "B", text: "At the table with your coffee." },
+      { id: "C", text: "Already moving. Bag by the door." },
       { id: "D", text: "In bed past nine, light through the curtain." },
     ],
   },
@@ -108,7 +108,7 @@ export const questions: Question[] = [
       },
       {
         id: "D",
-        text: "Pulao on the stove, steel plates already out, her sister's four-year-old in the chair next to hers. Dinner started when she sat down — nobody had to announce it.",
+        text: "Pulao on the stove, steel plates already out, her sister's four-year-old in the chair next to hers. Dinner started when she sat down. Nobody had to announce it.",
       },
     ],
   },
@@ -122,7 +122,7 @@ export const questions: Question[] = [
       },
       {
         id: "B",
-        text: "Begum Akhtar — the Hyderabad ghazal. Your grandmother used to hum it in the kitchen. You've had it on a loop since Tuesday.",
+        text: "Begum Akhtar, the Hyderabad ghazal. Your grandmother used to hum it in the kitchen. You've had it on a loop since Tuesday.",
       },
       {
         id: "C",
@@ -138,10 +138,10 @@ export const questions: Question[] = [
     id: 7,
     stem: "Show me the last text she sent.",
     options: [
-      { id: "A", text: "\"ok\" — replied in 30 seconds." },
+      { id: "A", text: "\"ok\", replied in 30 seconds." },
       { id: "B", text: "A 4-minute voice note. 1am. To one person." },
       { id: "C", text: "\"7 or 7:30? if 7:30 i'll grab the wine.\"" },
-      { id: "D", text: "\"BABEEEE WAIT WAIT NO STOP\" — at 11am on a Tuesday." },
+      { id: "D", text: "\"BABEEEE WAIT WAIT NO STOP\" at 11am on a Tuesday." },
     ],
   },
   {
