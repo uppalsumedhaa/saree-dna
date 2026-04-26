@@ -53,5 +53,5 @@
 
 - A (Wanderer): The natural-dye scarf-maker in a back lane in George Town. A friend in Chennai sent the pin last year.
 - B (Mul): Out the door, no maps. She'll figure out which way is the river.
-- C (Tussar): Twenty minutes in front of the Hammershoi at the Ordrupgaard. Then the bookstore from the long-form piece on the flight.
+- C (Maximalist): Bag dropped at the hotel, three texts out before she's unpacked. By sunset she's at the loudest table on a Mar Mikhael rooftop, two of the four strangers already in her phone.
 - D (Occasionalist): Itinerary printed. Lunch at Chote Nawab booked. Spa list from the concierge folded into the back.

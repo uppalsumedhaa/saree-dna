@@ -2,6 +2,14 @@
 
 Process failures and what they taught us. Newest at top.
 
+## 2026-04-26 — Q8 needed a Maximalist primary (Anjali persona)
+
+**What:** Stress test v2 against the Anjali persona (a clear Maximalist — loud table, room-finds-her, plan-is-people) found she won Maximalist by only +1 on the v1.2 matrix. With no Maximalist primary anywhere in Q8, she was forced onto Q8D (Occasionalist's printed itinerary), which is the opposite of her DNA — the matrix gave her a Heir secondary off Q8D when it should have given her a Max primary off a true Max-traveler option.
+
+**Fix:** Swapped Q8C from Tussar primary ("twenty minutes in front of the Hammershoi at the Ordrupgaard") to Maximalist primary ("Bag dropped at the hotel, three texts out before she's unpacked. By sunset she's at the loudest table on a Mar Mikhael rooftop, two of the four strangers already in her phone."). Tussar drops from 4 to 3 primaries (in line with five other archetypes); Maximalist climbs from 5 to 6 primaries (acceptable — it's the most face-forward archetype and carries the smallest secondary footprint by design). Bumped matrix to v1.3. Ceilings widen from 16–19 to 16–21 (Maximalist now leads at 21).
+
+**Lesson:** Traveler-archetype questions (or any question that splits on a single behavioral domain — here, "what does she do in a new city") can't omit the room-finds-me / city-finds-her energy. The Maximalist's signature behavior in transit isn't "what she goes to see" — it's "who she gathers" — and v1.2's Q8 had no option for that, so a clear Maximalist's Q8 vote landed on the wrong archetype's secondary instead. Future question audits should ask, for each archetype, "what would she actually do here?" before locking — not just "is this archetype represented in the option set?" Representation isn't enough; the option must be the archetype's TRUE primary behavior in that scenario.
+
 ## 2026-04-26 — Q5 had a household-led-woman gap (Lakshmi persona)
 
 **What:** After locking all 7 questions and matrix v1.1, a stress test against the Lakshmi persona (a woman whose Friday night is feeding family at home with no fanfare — rooted ritual + warmth-of-care) surfaced that no Q5 option carried a rooted-domestic-Heir primary. The matrix had four Mul primaries that were over-indexing on solo-quiet patterns (walks, books, alarms) and was structurally blind to the household-led woman.

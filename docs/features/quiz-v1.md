@@ -1,6 +1,6 @@
 # Quiz v1 — Scoping doc
 
-**Status:** ALL 8 QUESTIONS LOCKED (Q1–Q8). Final quiz is 8 questions: Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8. Scoring matrix v1.2. The previous Q7 (originally meal-for-six, then celebrity-question candidate) was cut; the text-message question (originally drafted as Q8) sits at Q7; a new Q8 ("first afternoon in a new city") was added in the v1.2 pass alongside a Q5D rewrite (Mul → Heir) to close a household-led-woman gap surfaced by the Lakshmi stress-test persona.
+**Status:** ALL 8 QUESTIONS LOCKED (Q1–Q8). Final quiz is 8 questions: Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8. Scoring matrix v1.3. The previous Q7 (originally meal-for-six, then celebrity-question candidate) was cut; the text-message question (originally drafted as Q8) sits at Q7; a new Q8 ("first afternoon in a new city") was added in the v1.2 pass alongside a Q5D rewrite (Mul → Heir) to close a household-led-woman gap surfaced by the Lakshmi stress-test persona. **Q8C swapped Tussar → Maximalist in v1.3** to close a Maximalist-traveler gap surfaced by the Anjali stress-test persona (a clear Maximalist who, with no Max primary in Q8, was forced onto Q8D and won by only +1).
 
 ## Product summary
 
@@ -290,7 +290,7 @@ Locked. See `docs/saree-dna-archetypes.md`.
 |---|---|---|
 | A | The natural-dye scarf-maker in a back lane in George Town. A friend in Chennai sent the pin last year. | Wanderer |
 | B | Out the door, no maps. She'll figure out which way is the river. | Mul |
-| C | Twenty minutes in front of the Hammershoi at the Ordrupgaard. Then the bookstore from the long-form piece on the flight. | Tussar |
+| C | Bag dropped at the hotel, three texts out before she's unpacked. By sunset she's at the loudest table on a Mar Mikhael rooftop, two of the four strangers already in her phone. | Maximalist |
 | D | Itinerary printed. Lunch at Chote Nawab booked. Spa list from the concierge folded into the back. | Occasionalist |
 
 **Why Q8 was added (v1.2 pass):**
@@ -300,25 +300,27 @@ The Lakshmi stress-test persona surfaced two structural problems with v1.1:
 
 Q8's secondary job is to give Wanderer a third primary (it had only two in v1.1) and sharpen the curiosity-vs-planning split for the second half of the quiz.
 
+**v1.3 swap (Q8C: Tussar → Maximalist):** The Anjali stress-test persona (a clear Maximalist) won Maximalist by only +1 on the v1.2 matrix because Q8 had no Max primary — she was forced onto Q8D (Occasionalist's printed itinerary), which is the opposite of her DNA. Replacing Q8C closes the gap. Tussar already carried four primaries (Q2B, Q3A, Q6C, Q8C), so dropping Q8C lands Tussar at three primaries (in line with Mul/Wanderer/Folklorist/Modernist/Romantic). Maximalist climbs to six primaries, which is acceptable given it's the most face-forward archetype in the set and its secondary footprint stays the smallest (3) by design.
+
 **What each option does:**
 - **A — Wanderer.** Specific craft destination (natural-dye scarf-maker), specific neighbourhood (George Town, Penang), warm-network sourcing (a friend in Chennai sent the pin last year). The trip's planned around a single, narrow, almost obscure thing — and the pin has been waiting a year for this trip.
 - **B — Mul.** No maps, no plan, walking out the door. "She'll figure out which way is the river" lands the unrehearsed-curiosity register — orientation by walking, decision economy, no anxiety about not knowing yet.
-- **C — Tussar.** Specific painting (Hammershoi), specific museum (Ordrupgaard, Copenhagen), pre-flight reading already mapped to a bookstore. Twenty focused minutes in front of one painting. Brain at work; trip as research trail.
+- **C — Maximalist (v1.3).** Bag at the hotel, texts out before she's unpacked. The room finds her: by sunset she's at the loudest table on a Mar Mikhael rooftop (Beirut — gallerist/designer scene, not tourist Lisbon), with two of the four strangers already saved to her phone. Plan IS people, not place. The hotel is the base of operations, not the destination — Wanderer secondary holds for the new-city register; Occasionalist secondary holds for the hotel-as-system bit.
 - **D — Occasionalist.** Printed itinerary, lunch booked (Chote Nawab, Mumbai), spa list from the concierge folded into the back of the printout. Planning-for-someone (the system makes the trip pleasurable, not anxious), executed without being uptight about it.
 
 **Cringe test:**
 - A: Modernist (too much hunting for a scarf), Occasionalist (no plan for the rest of the day), Heir (a back lane is not where we go).
 - B: Occasionalist (no plan is not a plan), Tussar (you came all this way to wander), Heir (we know where we're going before we leave the hotel).
-- C: Maximalist (twenty minutes alone with a Danish painting is not a holiday), Mul (the bookstore was on the flight, not in the city), Romantic (where is the wandering).
+- C: Wanderer (Mar Mikhael rooftop is not where you go to find a city), Tussar (loudest table on a rooftop is the opposite of a holiday), Mul (three texts before unpacking is a project; the city is right there), Heir (we don't sit with strangers we met an hour ago), Occasionalist (no booking, no plan — one cancellation and she's stranded).
 - D: Wanderer (a printed itinerary is a cage), Mul (the day was supposed to surprise her), Folklorist (the concierge is not the source).
 
 **Stem check:** "First afternoon in a new city. Where is she?" — uses the third-person frame ("she") that's already established by Q2 ("Pick the bedside that's hers") and Q4 ("Pick the room that's hers"). No "actually," no "you're at/on" preposition-frame collision with Q3/Q6.
 
-**Scoring matrix:** see § Scoring matrix v1.2.
+**Scoring matrix:** see § Scoring matrix v1.3.
 
 ---
 
-## Scoring matrix v1.2
+## Scoring matrix v1.3
 
 **Model:** Each option awards **3 pts to its primary archetype** plus **1 pt each to 1–2 secondaries**. Secondaries are chosen to (a) feed under-served archetypes (Mul, Wanderer, Heir) and (b) deliberately *avoid* stacking spiritual-adjacent archetypes onto Folklorist primaries (the POC's worst auto-stack).
 
@@ -380,30 +382,30 @@ Q8's secondary job is to give Wanderer a third primary (it had only two in v1.1)
 | C — "7 or 7:30? i'll grab the wine" | Occasionalist | Heir — bringing wine = host gesture | Wanderer — lowercase, on the move |
 | D — "BABEEEE WAIT WAIT NO STOP" | Maximalist | Romantic — intimate one-on-one register | Folklorist — chorus-of-emotion, all-caps oral |
 
-**Q8 — First afternoon in a new city** *(new in v1.2 pass)*
+**Q8 — First afternoon in a new city** *(new in v1.2 pass; Q8C swapped Tussar → Maximalist in v1.3)*
 | Opt | Primary (3) | Sec A (1) | Sec B (1) |
 |---|---|---|---|
 | A — Natural-dye scarf-maker, George Town | Wanderer | Tussar — research-trail, named-source | Folklorist — craft destination |
 | B — Out the door, no maps | Mul | Wanderer — curiosity-by-walking | Modernist — decision economy |
-| C — Hammershoi at the Ordrupgaard | Tussar | Modernist — focused, twenty-minute discipline | Wanderer — bookstore-noted, on-the-ground |
+| C — Bag at hotel, three texts, Mar Mikhael rooftop *(v1.3)* | Maximalist | Wanderer — still a new-city scene | Occasionalist — hotel as base of operations |
 | D — Itinerary printed, lunch booked | Occasionalist | Heir — planning-for-someone, hosted register | Modernist — system, control of timing |
 
-### Totals (v1.2)
+### Totals (v1.3)
 
-**Primaries per archetype (v1.2 — 32 options across Q1–Q8)**
+**Primaries per archetype (v1.3 — 32 options across Q1–Q8)**
 | Archetype | Primaries | Options |
 |---|---|---|
 | Mul | 3 | Q1A, Q3D, Q8B |
 | Heir | 4 | Q1B, Q3B, Q5D, Q6B |
 | Wanderer | 3 | Q3C, Q4A, Q8A |
-| Maximalist | 5 | Q2A, Q4C, Q5B, Q6D, Q7D |
-| Tussar | 4 | Q2B, Q3A, Q6C, Q8C |
+| Maximalist | **6** | Q2A, Q4C, Q5B, Q6D, Q7D, **Q8C** |
+| Tussar | **3** | Q2B, Q3A, Q6C |
 | Folklorist | 3 | Q2C, Q4D, Q6A |
 | Occasionalist | 4 | Q2D, Q5C, Q7C, Q8D |
 | Modernist | 3 | Q1C, Q4B, Q7A |
 | Romantic | 3 | Q1D, Q5A, Q7B |
 
-**Secondaries per archetype (v1.2)**
+**Secondaries per archetype (v1.3)**
 | Archetype | Count | Options |
 |---|---|---|
 | Mul | 8 | Q1D, Q2B, Q2C, Q4A, Q4B, Q4D, Q5A, Q7A |
@@ -412,35 +414,38 @@ Q8's secondary job is to give Wanderer a third primary (it had only two in v1.1)
 | Maximalist | 3 | Q5C, Q6A, Q7B |
 | Tussar | 7 | Q1B, Q1D, Q2B, Q3C, Q4A, Q7A, Q8A |
 | Folklorist | 8 | Q1B, Q3B, Q5D, Q6B, Q6D, Q7B, Q7D, Q8A |
-| Occasionalist | 7 | Q1C, Q2A, Q2D, Q3C, Q4B, Q5B, Q6C |
-| Modernist | 9 | Q1A, Q2B, Q2D, Q3A, Q5C, Q6C, Q8B, Q8C, Q8D |
+| Occasionalist | **8** | Q1C, Q2A, Q2D, Q3C, Q4B, Q5B, Q6C, **Q8C** |
+| Modernist | **8** | Q1A, Q2B, Q2D, Q3A, Q5C, Q6C, Q8B, Q8D |
 | Romantic | 7 | Q2A, Q3B, Q3D, Q4C, Q5D, Q6B, Q7D |
 
-**Max possible total (every primary AND every secondary fires — sanity check, v1.2)**
+**Max possible total (every primary AND every secondary fires — sanity check, v1.3)**
 | Archetype | 3×Primaries | + Secondaries | = Max ceiling |
 |---|---|---|---|
+| Maximalist | **18** | 3 | **21** |
+| Occasionalist | 12 | 8 | **20** |
 | Heir | 12 | 7 | **19** |
 | Wanderer | 9 | 10 | **19** |
-| Tussar | 12 | 7 | **19** |
-| Occasionalist | 12 | 7 | **19** |
-| Maximalist | 15 | 3 | **18** |
-| Modernist | 9 | 9 | **18** |
 | Mul | 9 | 8 | **17** |
 | Folklorist | 9 | 8 | **17** |
+| Modernist | 9 | 8 | **17** |
+| Tussar | 9 | 7 | **16** |
 | Romantic | 9 | 7 | **16** |
 
-**Sanity check (v1.2):** 32 options × (3 primary + ~1.94 avg secondary) = 96 + 62 = 158 pts in the system. Spread is **16–19** — tighter than v1.1's 14–18. Heir, Wanderer, Tussar and Occasionalist now top out together at 19 (no single dominant ceiling). The previously under-served archetypes are restored: Wanderer climbs to 19 via Q8 secondaries; Mul keeps three primaries via Q8B (ceiling 17, same as v1.1); Heir gains a fourth primary via the Q5D rewrite. Folklorist sits at 17 (mid-pack, no inflation). Maximalist still carries the fewest secondaries (3) by structural design — five primaries is its compensation.
+**Sanity check (v1.3):** 32 options × (3 primary + ~2.06 avg secondary) = 96 + 66 = **162 pts** in the system (the v1.2 doc's "158" rounded the secondary-average down; 66 secondaries is the actual count both before and after the swap, so this is an arithmetic correction — no points entered or left the system in the swap). Spread is **16–21** — wider than v1.2 (16–19) because Maximalist now leads the ceiling table at 21. Maximalist's ceiling jump is intentional: it's the most face-forward archetype in the set and is structurally the smallest secondary-gainer (3 secondaries by design), so a higher primary count is the right knob to turn for it. Tussar drops from a 19-ceiling tie to 16 (joint with Romantic), still well-served by three primaries and seven secondaries. The under-served floor (Mul, Folklorist, Modernist) sits at 17 — flat to v1.2.
 
-**v1.2 vs v1.1 deltas:**
-- Heir: 15 → 19 (+4) — gained Q5D primary + Q8D secondary.
-- Wanderer: 14 → 19 (+5) — gained Q8A primary + Q8B and Q8C secondaries.
-- Tussar: 16 → 19 (+3) — gained Q8C primary + Q8A secondary, lost Q5D secondary.
-- Occasionalist: 16 → 19 (+3) — gained Q8D primary.
-- Modernist: 16 → 18 (+2) — gained Q8B/C/D secondaries, lost Q5D secondary.
-- Mul: 17 → 17 (0) — lost Q5D primary, gained Q8B primary (net flat).
-- Folklorist: 15 → 17 (+2) — gained Q5D and Q8A secondaries.
-- Romantic: 15 → 16 (+1) — gained Q5D secondary.
-- Maximalist: 18 → 18 (0) — Q8 left it alone (it didn't need help).
+**v1.3 vs v1.2 deltas (one-question swap, Q8C only):**
+- Maximalist: 18 → **21** (+3) — gained Q8C primary (was nothing in Q8 before).
+- Tussar: 19 → **16** (−3) — lost Q8C primary.
+- Occasionalist: 19 → **20** (+1) — gained Q8C secondary.
+- Modernist: 18 → **17** (−1) — lost Q8C secondary.
+- All others: unchanged.
+
+**Why this swap is structurally healthy:**
+- The Anjali stress-test path (a Maximalist who chose Q1D + Q2A + Q3 secondary + Q4C + Q5B + Q6D + Q7D) was winning Maximalist by only +1 because Q8 forced her onto Q8D (Occasionalist). With Q8C now Max-primary, the Maximalist path through Q8 is direct (+3 instead of +1 for Q8D's secondary on Heir), restoring conviction-margin to the result.
+- Tussar at three primaries is in line with five other archetypes (Mul, Wanderer, Folklorist, Modernist, Romantic) — no archetype is starved.
+- Maximalist's 21 ceiling is the highest, but only triggerable on a path that picks the Max primary in all six questions (Q2A, Q4C, Q5B, Q6D, Q7D, Q8C) — a Maximalist conviction-path. Mixed-archetype paths can't accidentally tip Max.
+
+**Pending stress test v3:** Re-run the existing six personas + Anjali against v1.3 to confirm no new collisions.
 
 ### Tiebreak rule (v1.1 — four-level hierarchy)
 
@@ -484,7 +489,8 @@ Q8's secondary job is to give Wanderer a third primary (it had only two in v1.1)
 - ~~Gym/early-rise/discipline signal deferred from Q1 — Q5 candidate~~ RESOLVED in Q5 (landed on Mul, not Modernist).
 - ~~Q3/Q5/Q6/Q7 scoring matrices TODO~~ RESOLVED — see "Scoring matrix v1.2" section above (3-pt primary + 1-pt secondaries × 1–2, plus tiebreak rule).
 - ~~Household-led-woman gap (Lakshmi persona)~~ RESOLVED in v1.2 pass — Q5D rewritten Mul → Heir; Q8 added with Mul primary preserved on B.
-- Re-run POC personas (Tara/Lakshmi and the v1.1 stress-test six) against the v1.2 matrix — **stress test v2 pending**.
+- ~~Maximalist-traveler gap (Anjali persona) — Q8 had no Max primary; Anjali was forced onto Q8D and won by only +1~~ RESOLVED in v1.3 pass — Q8C swapped Tussar → Maximalist.
+- Re-run POC personas (Tara/Lakshmi/Anjali and the v1.1 stress-test six) against the v1.3 matrix — **stress test v3 pending**.
 - No archetype-card visual language yet (visual identity work pending)
 - Where do illustrations come from? (decision deferred)
 
@@ -506,4 +512,5 @@ Q8's secondary job is to give Wanderer a third primary (it had only two in v1.1)
 - Q6 locked (v2 — road-trip music, sonic identity)
 - Q8 locked (NEW — first afternoon in a new city; added in v1.2 pass to preserve Mul primary count after Q5D rewrite and to give Wanderer a third primary)
 - Scoring matrix bumped to v1.2 (32 options across Q1–Q8; ceilings 16–19; tiebreak hierarchy unchanged from v1.1)
+- Q8C swapped Tussar → Maximalist; matrix bumped to v1.3 (ceilings 16–21; tiebreak hierarchy unchanged). Closes Maximalist-traveler gap surfaced by the Anjali stress-test persona.
 - One question at a time, slow cadence
