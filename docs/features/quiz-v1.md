@@ -282,6 +282,121 @@ Locked. See `docs/saree-dna-archetypes.md`.
 
 ---
 
+## Scoring matrix v1
+
+**Model:** Each option awards **3 pts to its primary archetype** plus **1 pt each to 1–2 secondaries**. Secondaries are chosen to (a) feed under-served archetypes (Mul, Wanderer, Heir) and (b) deliberately *avoid* stacking spiritual-adjacent archetypes onto Folklorist primaries (the POC's worst auto-stack).
+
+### Per-option breakdown
+
+**Q1 — Sunday morning**
+| Opt | Primary (3) | Sec A (1) | Sec B (1) |
+|---|---|---|---|
+| A — Walking before city up | Mul | Wanderer — early movement, in-transit posture | Modernist — discipline, early-rise |
+| B — Filter coffee, someone talking | Heir | Folklorist — oral/rooted scene | Tussar — listening, attention to a speaker |
+| C — Bag by door, boarding pass | Modernist | Wanderer — in transit | Occasionalist — packed, planned |
+| D — Bed past nine, slim book | Romantic | Mul — no clock, easeful | Tussar — book in hand |
+
+**Q2 — Bedside**
+| Opt | Primary (3) | Sec A (1) | Sec B (1) |
+|---|---|---|---|
+| A — Lipstick, mismatched earrings | Maximalist | Romantic — sensory mess of a real night | Occasionalist — single earring from Tuesday |
+| B — Three books, margins full | Tussar | Modernist — focused work | Mul — books as use, not décor |
+| C — Silver rings, agarbatti, clay cup | Folklorist | Heir — silver as inheritance | Mul — clay cup, soft-worn, plain |
+| D — Apple Watch, hand cream | Occasionalist | Modernist — function-first surface | Wanderer — earring-from-Tuesday in-and-out life |
+
+**Q3 — Housewarming, in your hand**
+| Opt | Primary (3) | Sec A (1) | Sec B (1) |
+|---|---|---|---|
+| A — Arundhati Roy book | Tussar | Modernist — intentional, brought-on-purpose | Heir — gift given with care |
+| B — Steel dabba of besan ladoos | Heir | Folklorist — handed-down craft | Romantic — warm, tender gesture |
+| C — Cold-pressed olive oil from Margao | Wanderer | Tussar — provenance/origin | Occasionalist — host-gift logic |
+| D — Nothing, came from a long walk | Mul | Wanderer — the long walk itself | Romantic — drifted, lost time to light |
+
+**Q4 — Her room**
+| Opt | Primary (3) | Sec A (1) | Sec B (1) |
+|---|---|---|---|
+| A — Brick + mustard couch + lamps | Wanderer | Tussar — books on the floor | Mul — lived-in, not staged |
+| B — Limewashed + cane daybed | Modernist | Mul — calm, unfussy materials | Occasionalist — clean lines, ordered |
+| C — Terracotta + plum velvet + paintings | Maximalist | Romantic — velvet, warm light, wine glass | Heir — salon-hung paintings = inheritance wall |
+| D — Whitewashed + indigo + loom + diya | Folklorist | Heir — indigo, brass, lineage | Mul — low daybed, whitewashed simplicity |
+
+**Q5 — Friday night**
+| Opt | Primary (3) | Sec A (1) | Sec B (1) |
+|---|---|---|---|
+| A — Pasta for two, same record | Romantic | Mul — phone face-down, no performance | Heir — ritual, repetition, home |
+| B — Bandra rooftop, eight chairs | Maximalist | Wanderer — scene, neighbourhood-fluent | Occasionalist — six-top reservation |
+| C — Reservation 3 weeks ahead | Occasionalist | Modernist — control of timing | Maximalist — group chat on her timeline |
+| D — Bed by ten, run at dawn | Mul | Modernist — discipline | Tussar — four pages of the book |
+
+**Q6 — Road-trip music**
+| Opt | Primary (3) | Sec A (1) | Sec B (1) |
+|---|---|---|---|
+| A — Nooran Sisters live | Folklorist | Maximalist — singing along, volume, participation | Wanderer — Jashn-e-Rekhta live-circuit |
+| B — Begum Akhtar ghazal | Heir | Romantic — on loop since Tuesday, tender | Folklorist — oral inheritance |
+| C — *My Favorite Murder* podcast | Tussar | Modernist — 1.5x efficiency | Occasionalist — completionist scheduling |
+| D — Diljit, windows down | Maximalist | Wanderer — road-trip energy, windows open | Folklorist — Punjabi roots, sing-along participation |
+
+**Q7 — Last text**
+| Opt | Primary (3) | Sec A (1) | Sec B (1) |
+|---|---|---|---|
+| A — "ok" in 30 seconds | Modernist | Mul — no performance | Tussar — no padding, signal-only |
+| B — 4-minute voice note, 1am | Romantic | Folklorist — voice over text, oral register | Maximalist — 4 minutes is a lot |
+| C — "7 or 7:30? i'll grab the wine" | Occasionalist | Heir — bringing wine = host gesture | Wanderer — lowercase, on the move |
+| D — "BABEEEE WAIT WAIT NO STOP" | Maximalist | Romantic — intimate one-on-one register | Folklorist — chorus-of-emotion, all-caps oral |
+
+### Totals
+
+**Primaries per archetype**
+| Archetype | Primaries | Options |
+|---|---|---|
+| Mul | 3 | Q1A, Q3D, Q5D |
+| Heir | 3 | Q1B, Q3B, Q6B |
+| Wanderer | 2 | Q3C, Q4A |
+| Maximalist | 5 | Q2A, Q4C, Q5B, Q6D, Q7D |
+| Tussar | 3 | Q2B, Q3A, Q6C |
+| Folklorist | 3 | Q2C, Q4D, Q6A |
+| Occasionalist | 3 | Q2D, Q5C, Q7C |
+| Modernist | 3 | Q1C, Q4B, Q7A |
+| Romantic | 3 | Q1D, Q5A, Q7B |
+
+**Secondaries per archetype**
+| Archetype | Secondaries |
+|---|---|
+| Mul | 8 (Q1D, Q2B, Q2C, Q4A, Q4B, Q4D, Q5A, Q7A) |
+| Heir | 6 (Q2C, Q3A, Q4C, Q4D, Q5A, Q7C) |
+| Wanderer | 8 (Q1A, Q1C, Q2D, Q3D, Q5B, Q6A, Q6D, Q7C) |
+| Maximalist | 3 (Q5C, Q6A, Q7B) |
+| Tussar | 7 (Q1B, Q1D, Q2B, Q3C, Q4A, Q5D, Q7A) |
+| Folklorist | 6 (Q1B, Q3B, Q6B, Q6D, Q7B, Q7D) |
+| Occasionalist | 7 (Q1C, Q2A, Q2D, Q3C, Q4B, Q5B, Q6C) |
+| Modernist | 7 (Q1A, Q2B, Q2D, Q3A, Q5C, Q5D, Q6C) |
+| Romantic | 6 (Q2A, Q3B, Q3D, Q4C, Q6B, Q7D) |
+
+**Max possible total (every primary AND every secondary fires — sanity check)**
+| Archetype | 3×Primaries | + Secondaries | = Max |
+|---|---|---|---|
+| Mul | 9 | 8 | **17** |
+| Heir | 9 | 6 | **15** |
+| Wanderer | 6 | 8 | **14** |
+| Maximalist | 15 | 3 | **18** |
+| Tussar | 9 | 7 | **16** |
+| Folklorist | 9 | 6 | **15** |
+| Occasionalist | 9 | 7 | **16** |
+| Modernist | 9 | 7 | **16** |
+| Romantic | 9 | 6 | **15** |
+
+**Sanity check:** 28 options × (3 primary + ~1.93 avg secondary) = 84 + 54 = 138 pts in the system. Spread is 14–18 — narrow band, no archetype can run away. The under-served (Mul, Wanderer, Heir) are now structurally competitive; Folklorist sits at 15 (mid-pack), not inflated; Maximalist tops the band only because it has 5 primaries (a locked-question structural fact), and it carries the **fewest** secondaries (3) to compensate.
+
+### Tiebreak rule
+
+**If two archetypes tie on total points, the winner is whichever had MORE PRIMARIES TRIGGERED (more 3-pt hits) on the user's path.**
+
+**Why:** A primary hit means the user picked the option *for* that archetype — strong signal of conviction. Secondary points are spillover from adjacent content. Two archetypes can tie because one had three primaries and zero secondaries while the other had one primary and six secondaries; the first is structurally a stronger result. Awarding to primary-count rewards conviction over adjacency.
+
+**Why not Q3-as-discriminator:** The POC named Q3 the strongest discriminator because Q3's options are mutually exclusive *by construction* (you can't bring a book AND nothing). That makes Q3 a great primary-splitter, but as a tiebreak rule it's brittle: if the tied archetypes both score 0 on Q3, the rule does nothing. Primary-count works on every path.
+
+**Second-level tiebreak (rare, if primary count also ties):** Whichever archetype scored higher on Q3 wins. This combines both signals — primary-conviction first, Q3-discriminator as the backstop.
+
 ## Tech stack
 
 - Next.js 14 (App Router) + TypeScript
@@ -303,9 +418,8 @@ Locked. See `docs/saree-dna-archetypes.md`.
 - ~~Romantic vs. Maximalist tie at end of Q4 — Q5 must split on volume~~ RESOLVED in Q5.
 - ~~Occasionalist needs another primary — Q5 candidate~~ RESOLVED in Q5.
 - ~~Gym/early-rise/discipline signal deferred from Q1 — Q5 candidate~~ RESOLVED in Q5 (landed on Mul, not Modernist).
-- Q5 scoring matrix still TODO.
-- Q6 scoring matrix still TODO (wording locked).
-- Q7 scoring matrix still TODO (wording locked).
+- ~~Q3/Q5/Q6/Q7 scoring matrices TODO~~ RESOLVED — see "Scoring matrix v1" section above (3-pt primary + 1-pt secondaries × 1–2, plus tiebreak rule).
+- Re-run POC personas (especially Tara — yoga teacher, expected Mul) against v1 matrix to confirm Mul stops tying with Folklorist/Romantic.
 - No archetype-card visual language yet (visual identity work pending)
 - Where do illustrations come from? (decision deferred)
 

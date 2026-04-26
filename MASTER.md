@@ -8,7 +8,7 @@ Pre-build. Scoping in progress. All 7 questions locked (Q1–Q7). Quiz total: 7 
 
 | Feature | Status | Doc |
 |---|---|---|
-| Quiz v1 (7-question archetype quiz) | All 7 questions locked (Q1–Q7) | [docs/features/quiz-v1.md](docs/features/quiz-v1.md) |
+| Quiz v1 (7-question archetype quiz) | All 7 questions locked + scoring matrix v1 designed (Q3/Q5/Q6/Q7 TODOs cleared) | [docs/features/quiz-v1.md](docs/features/quiz-v1.md) |
 | Result page | Not started | TBD |
 | Share-card generator | Not started | TBD |
 | Visual identity | Not started — fresh from scratch | TBD |
@@ -31,6 +31,7 @@ See `docs/saree-dna-archetypes.md` for full hand-written profiles by Sumedha.
 
 ### 2026-04-26
 
+- **Scoring matrix v1 designed.** All 28 options now mapped: each primary scores 3, plus 1–2 secondaries at 1 each. Secondaries weighted to feed under-served archetypes (Mul +8, Wanderer +8, Heir +6) and break the Folklorist auto-stack flagged by the POC (Folklorist primaries no longer give secondaries to other spiritual-adjacent archetypes; they push to Mul/Heir/Maximalist/Wanderer instead). Max-possible totals land in a tight 14–18 band. Tiebreak rule: more PRIMARIES TRIGGERED wins; second-level tiebreak is Q3 score. Q3/Q5/Q6/Q7 TODOs cleared. See `docs/features/quiz-v1.md` § Scoring matrix v1.
 - **Q6 LOCKED (v2 — road-trip music):** "You're on a road trip. You're handling the music. What's playing?" Four options split on sonic identity: A Nooran Sisters live at Jashn-e-Rekhta, heard forty times, ruining the high note singing along (Folklorist), B Begum Akhtar Hyderabad ghazal, grandmother's kitchen song, on loop since Tuesday (Heir), C *My Favorite Murder* podcast, caught up on every season, opinions on Karen's editing, listening at 1.5x (Tussar), D Diljit "G.O.A.T." windows down, everyone in the car singing the chorus, you picked it (Maximalist). **All 7 questions now locked.**
 - **Q7 LOCKED (was Q8 — text message):** "Show me the last text she sent." Four options split on rhythm/voice: A "ok" replied in 30 seconds (Modernist), B 4-minute voice note at 1am to one person (Romantic), C "7 or 7:30? if 7:30 i'll grab the wine" (Occasionalist), D "BABEEEE WAIT WAIT NO STOP 😭😭" at 11am on a Tuesday (Maximalist). Renumbered from Q8 to Q7 because the previous Q7 (celebrity question) was cut from plan. **Final quiz is 7 questions: Q1, Q2, Q3, Q4, Q5, Q6, Q7. There is no Q8.**
 - **Q5 LOCKED:** "It's Friday night. What's the plan?" Satisfies all three captured constraints — Romantic/Maximalist split on volume (A intimate-warm vs B loud-warm), Occasionalist gets a primary on C (the booked-three-weeks-ago reservation), gym signal landed on Mul on D (in bed by ten, Saturday's run starts early). Sunday→Saturday temporal fix applied to D so the run is the next morning.
