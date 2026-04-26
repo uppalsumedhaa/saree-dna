@@ -4,13 +4,13 @@ A quiz that returns your saree archetype. *Every woman has a saree archetype. Wh
 
 ## Status
 
-**Phase 1 — homepage built; quiz UI next.** Scoping ongoing in parallel: 8 questions locked (Q1–Q8), matrix v1.3 designed, awaiting stress test v3.
+**Phase 1 — homepage built; quiz UI shell live for all 8 Qs.** Scoping ongoing in parallel: 8 questions locked (Q1–Q8), matrix v1.3 designed, awaiting stress test v3.
 
 | Feature | Status | Doc |
 |---|---|---|
 | Scaffold (Next.js 14 + TS + Tailwind, Vercel-ready) | Built. Hero homepage live at `/` (full-bleed image + serif headline + CTA). | `app/page.tsx`, `app/layout.tsx` |
-| Quiz v1 (8-question archetype quiz) | 8 questions locked (Q1–Q8) + scoring matrix v1.3 (four-level tiebreak hierarchy). UI not started. | [docs/features/quiz-v1.md](docs/features/quiz-v1.md) |
-| Result page | Not started | TBD |
+| Quiz v1 (8-question archetype quiz) | 8 questions locked (Q1–Q8) + scoring matrix v1.3. Q1 design template now replicated across Q2–Q8 with auto-advance + lineart background. Scoring not wired (Q8 → `/results-placeholder`). | [docs/features/quiz-v1.md](docs/features/quiz-v1.md) |
+| Result page | Placeholder live at `/results-placeholder`. Real per-archetype pages not started. | TBD |
 | Share-card generator | Not started | TBD |
 | Visual identity | Not started — fresh from scratch | TBD |
 
@@ -37,6 +37,7 @@ See `docs/saree-dna-archetypes.md` for full hand-written profiles by Sumedha.
 
 ### 2026-04-26
 
+- **Quiz UI shell now spans all 8 Qs + lineart background + Q1 stem rephrase.** Q1 stem updated "It's Sunday morning. Where are you?" → "Sunday morning. Where would we find you?" across `app/quiz/questions.ts`, `questions.md`, `docs/features/quiz-v1.md`. Removed the `id !== 1` placeholder guard from `app/quiz/[id]/page.tsx`; Q2–Q8 now render the same template. Auto-advance steps Q1 → Q2 → … → Q8 → `/results-placeholder` (new page, off-white treatment, "Results coming soon"). Progress indicator dynamic with leading-zero formatting ("01 / 08"). Back arrow stays linked to `/` on every question (kept simple). Lineart added as subtle background on all question pages — hybrid: full-bleed at opacity-[0.12] on mobile (Option A), right-side-anchored at opacity-[0.18] with a left-fading mask on `md:+` (Option B). Off-white base preserved. Image copied from `Lineart no watermark.png` to `public/lineart.png` (4.9MB — flagged for compression to ~300KB before launch). Build clean.
 - **Q1 copy edits + em-dash banned project-wide.** Q1 stem dropped trailing "actually" ("Where are you?"); Q1B rewritten "At the table, filter coffee, someone talking" → "At the table with your coffee"; em-dashes stripped from all Q stems/options across `questions.md` + `app/quiz/questions.ts` (Q1C, Q5D, Q6B, Q7A, Q7D) and replaced with periods/commas; banned-word list updated — "actually" entry removed (no longer in Q1), em-dash added project-wide. "honestly" stays banned.
 - **Hero image rights confirmed.** ANKA permission confirmed by Sumedha (verbal — friend's brand); placeholder TODOs removed from `app/page.tsx` and Open TODOs.
 - **Phase 1 shipped — homepage built.** Scaffolded Next.js 14 (App Router) + TS + Tailwind v3 manually into the docs-only repo (without clobbering existing markdown). `/app/page.tsx` is a full-bleed hero: ANKA Instagram image (placeholder, flagged in code + TODO above), Cormorant Garamond serif headline ("Every woman has a *saree* type" — italic on "saree" is the visual joke), DM Sans subhead, thin-bordered uppercase CTA "Begin" linking to `/quiz` (not yet built). Bottom-left text block, gradient overlay only on bottom 40% so the upper image reads clean. Mobile object-position tuned to keep the women's faces in frame at 375px. shadcn init attempted and rolled back — defaulted to v4 stack incompatible with our v3 Tailwind; will re-init when first component is actually needed. Next build green, dev server boots, page renders.

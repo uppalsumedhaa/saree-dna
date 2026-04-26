@@ -1,6 +1,6 @@
 # Saree DNA — The 8 Questions
 
-## Q1 — It's Sunday morning. Where are you?
+## Q1 — Sunday morning. Where would we find you?
 
 - A (Mul): Out walking before the city is up.
 - B (Heir): At the table with your coffee.

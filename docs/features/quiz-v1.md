@@ -89,7 +89,7 @@ Locked. See `docs/saree-dna-archetypes.md`.
 
 ## Q1 — LOCKED
 
-**Question:** *It's Sunday morning. Where are you?*
+**Question:** *Sunday morning. Where would we find you?*
 
 | | Option | Visual cue |
 |---|---|---|

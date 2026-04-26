@@ -19,7 +19,7 @@ export const TOTAL_QUESTIONS = 8;
 export const questions: Question[] = [
   {
     id: 1,
-    stem: "It's Sunday morning. Where are you?",
+    stem: "Sunday morning. Where would we find you?",
     options: [
       { id: "A", text: "Out walking before the city is up." },
       { id: "B", text: "At the table with your coffee." },
