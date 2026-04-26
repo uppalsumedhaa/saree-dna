@@ -103,20 +103,6 @@ function Label({ children }: { children: React.ReactNode }) {
   );
 }
 
-// Inline label variant for one-line fields (Drape, Palette). Renders as
-// LABEL · content on a single row so the bottom of the page doesn't stack
-// label-above-content blocks for content that's only a sentence long.
-function InlineRow({ label, children }: { label: string; children: React.ReactNode }) {
-  return (
-    <p className="font-serif text-base leading-7 text-stone-800">
-      <span className="mr-3 align-middle font-sans text-[0.6rem] uppercase tracking-[0.24em] text-stone-400">
-        {label}
-      </span>
-      {children}
-    </p>
-  );
-}
-
 function TakeAgainCTA() {
   return (
     <Link
@@ -221,18 +207,29 @@ function FullResults({
               </p>
             </div>
 
-            {/* Drape and Palette stay inline — each is a single short line and
-                the inline (LABEL · content) form reads tighter than a block. */}
-            <InlineRow label="Drape">{archetype.drape}</InlineRow>
+            {/* Drape, Palette, Worn well by — stacked label-above-content to
+                match Weave/Description rhythm. Consistent format across all
+                spec sections reads cleaner than mixing inline + stacked. */}
+            <div className="space-y-1.5">
+              <Label>Drape</Label>
+              <p className="font-serif text-base leading-7 text-stone-800">
+                {archetype.drape}
+              </p>
+            </div>
 
-            <InlineRow label="Palette">{archetype.palette}</InlineRow>
+            <div className="space-y-1.5">
+              <Label>Palette</Label>
+              <p className="font-serif text-base leading-7 text-stone-800">
+                {archetype.palette}
+              </p>
+            </div>
 
-            {/* Worn well by — kept inline to match Drape/Palette rhythm. The
-                ~120-char content wraps to 2 lines on max-w-2xl, but the inline
-                LABEL · content form keeps the four spec items reading as one
-                coherent rhythm rather than introducing a heavier label-block
-                at the bottom of the card. */}
-            <InlineRow label="Worn well by">{archetype.wornWellBy}</InlineRow>
+            <div className="space-y-1.5">
+              <Label>Worn well by</Label>
+              <p className="font-serif text-base leading-7 text-stone-800">
+                {archetype.wornWellBy}
+              </p>
+            </div>
           </div>
         </div>
 
