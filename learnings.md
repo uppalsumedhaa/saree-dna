@@ -2,6 +2,10 @@
 
 Process failures and what they taught us. Newest at top.
 
+## 2026-04-26 — Banned word "actual"/"actually" in Q stems
+
+**What:** "Actual"/"actually" is claimed by Q1 ("It's Sunday morning. Where are you, actually?"). User enforced the ban mid-Q5 draft when a sub-agent reused it. Cross-stem verbal-tic check is required on every draft — not just within a single sub-agent's output, but across the locked stems already in the doc.
+
 ## 2026-04-26 — Misread frame fails because misreads are universal
 
 **What:** Three drafts of Q3 using a "what people get wrong about you" / compliment frame failed cringe-test because the misreads ("too much," "cold," "intimidating," "low-effort") overlap across archetypes. Every woman has been called these things. The frame collapsed because self-perception isn't mutually exclusive.

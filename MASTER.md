@@ -4,11 +4,11 @@ A quiz that returns your saree archetype. *Every woman has a saree archetype. Wh
 
 ## Status
 
-Pre-build. Scoping in progress. Q1–Q4 locked. Q5–Q8 pending. Q3 frame pivoted from misread to behavior. Q5 has hard constraints captured (split Romantic vs Maximalist on volume, give Occasionalist a primary, land the gym signal).
+Pre-build. Scoping in progress. Q1–Q5 locked. Q7 cut from plan (was: meal-for-six). New Q7 candidate: celebrity question (in workshop). Q6 (music) and Q8 (text) mapped, drafters not yet spawned.
 
 | Feature | Status | Doc |
 |---|---|---|
-| Quiz v1 (8-question archetype quiz) | Q1–Q4 locked, Q5–Q8 pending | [docs/features/quiz-v1.md](docs/features/quiz-v1.md) |
+| Quiz v1 (8-question archetype quiz) | Q1–Q5 locked; Q7 cut, celebrity Q in workshop; Q6/Q8 mapped | [docs/features/quiz-v1.md](docs/features/quiz-v1.md) |
 | Result page | Not started | TBD |
 | Share-card generator | Not started | TBD |
 | Visual identity | Not started — fresh from scratch | TBD |
@@ -31,6 +31,10 @@ See `docs/saree-dna-archetypes.md` for full hand-written profiles by Sumedha.
 
 ### 2026-04-26
 
+- **Q5 LOCKED:** "It's Friday night. What's the plan?" Satisfies all three captured constraints — Romantic/Maximalist split on volume (A intimate-warm vs B loud-warm), Occasionalist gets a primary on C (the booked-three-weeks-ago reservation), gym signal landed on Mul on D (in bed by ten, Saturday's run starts early). Sunday→Saturday temporal fix applied to D so the run is the next morning.
+- **Q7 cut from plan.** Original "meal she'd cook for six friends" cut. New Q7 candidate: celebrity question (in workshop).
+- **Q6 (music) and Q8 (text) mapped.** Drafters not yet spawned.
+- **New rule captured to CLAUDE.md:** banned-word "actual"/"actually" in Q stems (claimed by Q1). Cross-stem verbal-tic check is required on every draft.
 - **Project pivoted** from `sareesbysumedha` (Claude-driven intake flow, Convex-backed) to `saree-dna` (deterministic 8-question quiz). New repo, fresh docs. See `PIVOT.md`.
 - **Tech stack locked:** Next.js 14 + Tailwind + shadcn/ui on Vercel. No Convex, no Anthropic SDK. Deterministic scoring.
 - **Quiz is the whole v1.** Standalone — not a front door to curation/commerce.

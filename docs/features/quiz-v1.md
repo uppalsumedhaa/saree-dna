@@ -1,6 +1,6 @@
 # Quiz v1 — Scoping doc
 
-**Status:** Q1–Q4 LOCKED. Q5–Q8 not yet drafted.
+**Status:** Q1–Q5 LOCKED. Q7 cut from plan (was: meal-for-six). New Q7 candidate: celebrity question (in workshop). Q6 (music) and Q8 (text) mapped, drafters not yet spawned.
 
 ## Product summary
 
@@ -196,18 +196,33 @@ Locked. See `docs/saree-dna-archetypes.md`.
 
 ---
 
-## Q5–Q8 — pending
+## Q5 — LOCKED
 
-**Q5 hard constraints:**
-- Must split Romantic vs. Maximalist on volume (Romantic = intimate-warm, Maximalist = loud-warm). They tie on Romantic's natural path through Q4.
-- Must give Occasionalist a primary.
-- Must land the gym/early-rise/discipline signal we deferred from Q1 (probably as Modernist's free-time signature: long runs).
+**Question:** *It's Friday night. What's the plan?*
 
-**Q6/Q7/Q8 candidate themes:**
-- A meal she'd cook for six friends (taste, hosting style)
-- What plays in her car (sonic identity)
-- An afternoon with no plans (default state — can carry the fitness signal)
-- The last text she sent (rhythm, voice)
+| | Option | Primary |
+|---|---|---|
+| A | Cooking pasta for two at home. Same person, same record, third Friday in a row. Phone face-down. | Romantic |
+| B | A six-top at the Bandra rooftop that turned into eight chairs by 10pm. Loud table. Most of the laughing is yours. | Maximalist |
+| C | The reservation you made three weeks ago, in the dress you knew you'd wear when you booked it. Group chat moving on your timeline. | Occasionalist |
+| D | In bed by ten with water, alarm set, four pages of the book before you're out. Saturday's run starts early. | Mul |
+
+**Constraints satisfied:**
+- **Romantic vs. Maximalist split on volume:** A is intimate-warm (two, home, same record); B is loud-warm (eight chairs, loud table, laughing). Hard split.
+- **Occasionalist primary:** C — planned three weeks ahead, dress chosen at booking, owns the group chat tempo.
+- **Gym signal landed on Mul:** D carries the early-rise/discipline cue (in bed by ten, alarm set, Saturday's run starts early). Note: temporal fix from Sunday→Saturday so the run is the *next* morning, consistent with Friday-night frame.
+
+**Scoring matrix:** TODO — wording is locked. Derive next session from primary mappings above plus secondary/tertiary spread.
+
+---
+
+## Q6–Q8 — pending
+
+**Q6 (music) — mapped, drafter not yet spawned.** What plays in her car (sonic identity).
+
+**Q7 — cut from plan.** Original "meal she'd cook for six friends" cut. **New Q7 candidate: celebrity question (in workshop).**
+
+**Q8 (text) — mapped, drafter not yet spawned.** The last text she sent (rhythm, voice).
 
 Q8 may be cut to 7 if the work is done by then.
 
@@ -231,9 +246,12 @@ Q8 may be cut to 7 if the work is done by then.
 
 ## Open questions / known issues
 
-- Romantic vs. Maximalist tie at end of Q4 — Q5 must split on volume
-- Occasionalist needs another primary — Q5 candidate
-- Gym/early-rise/discipline signal deferred from Q1 — Q5 candidate (likely Modernist)
+- ~~Romantic vs. Maximalist tie at end of Q4 — Q5 must split on volume~~ RESOLVED in Q5.
+- ~~Occasionalist needs another primary — Q5 candidate~~ RESOLVED in Q5.
+- ~~Gym/early-rise/discipline signal deferred from Q1 — Q5 candidate~~ RESOLVED in Q5 (landed on Mul, not Modernist).
+- Q5 scoring matrix still TODO.
+- Q7 (celebrity question) needs draft.
+- Q6 (music) and Q8 (text) drafters not yet spawned.
 - No archetype-card visual language yet (visual identity work pending)
 - Where do illustrations come from? (decision deferred)
 
@@ -249,4 +267,6 @@ Q8 may be cut to 7 if the work is done by then.
 - Q2 locked
 - Q3 locked (v4, behavior frame)
 - Q4 locked (rooms, trimmed)
+- Q5 locked (Friday night plan; Sunday→Saturday temporal fix on D)
+- Q7 cut from plan (was: meal-for-six); celebrity question now in workshop as new Q7
 - One question at a time, slow cadence

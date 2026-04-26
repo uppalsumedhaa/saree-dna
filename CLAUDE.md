@@ -26,7 +26,7 @@ From Sumedha's own archetype document:
 
 1. **Polarising over tasteful.** Each option must clearly belong to ONE kind of person; others should cringe at it. Apply the cringe test: "who would actively NOT pick this?" If no one cringes, the option's not doing work. (Failed three times this session — Q2 v1, Q3 v1, Q3 v2.)
 
-2. **No verbal-tic mirroring.** When drafting items in a sequence (questions, headlines, taglines), vary the rhythm. One signature flourish per draft set max. Q1 used "actually" — no other Q should echo it.
+2. **No verbal-tic mirroring.** When drafting items in a sequence (questions, headlines, taglines), vary the rhythm. One signature flourish per draft set max. Q1 used "actually" — no other Q should echo it. **Banned-word list for Q stems: "actual"/"actually" (claimed by Q1). Cross-stem verbal-tic check is required on every new draft against all locked stems.**
 
 3. **Show thinking before executing.** For non-trivial draft, edit, or build work, walk Sumedha through the approach + trade-offs in main thread first. Get sign-off, THEN spawn the sub-agent.
 
