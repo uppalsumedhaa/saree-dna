@@ -209,24 +209,30 @@ function FullResults({
             </p>
           </div>
 
-          <div className="space-y-1.5">
-            <Label>Weave</Label>
-            <p className="font-serif text-base leading-7 text-stone-800">
-              {archetype.weave}
-            </p>
-          </div>
+          {/* Specimen card — Weave / Drape / Palette / Worn well by grouped
+              as the saree's physical specification, distinct from Description
+              (personality) above. Sharp corners + thin border read like a
+              museum specimen card, not a UI panel. */}
+          <div className="space-y-5 border border-stone-200 bg-white p-6 sm:space-y-6 sm:p-8 md:p-10">
+            <div className="space-y-1.5">
+              <Label>Weave</Label>
+              <p className="font-serif text-base leading-7 text-stone-800">
+                {archetype.weave}
+              </p>
+            </div>
 
-          {/* Drape and Palette stay inline — each is a single short line and
-              the inline (LABEL · content) form reads tighter than a block. */}
-          <InlineRow label="Drape">{archetype.drape}</InlineRow>
+            {/* Drape and Palette stay inline — each is a single short line and
+                the inline (LABEL · content) form reads tighter than a block. */}
+            <InlineRow label="Drape">{archetype.drape}</InlineRow>
 
-          <InlineRow label="Palette">{archetype.palette}</InlineRow>
+            <InlineRow label="Palette">{archetype.palette}</InlineRow>
 
-          <div className="space-y-1.5">
-            <Label>Worn well by</Label>
-            <p className="font-serif text-base leading-7 text-stone-800">
-              {archetype.wornWellBy}
-            </p>
+            {/* Worn well by — kept inline to match Drape/Palette rhythm. The
+                ~120-char content wraps to 2 lines on max-w-2xl, but the inline
+                LABEL · content form keeps the four spec items reading as one
+                coherent rhythm rather than introducing a heavier label-block
+                at the bottom of the card. */}
+            <InlineRow label="Worn well by">{archetype.wornWellBy}</InlineRow>
           </div>
         </div>
 
