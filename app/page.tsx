@@ -4,8 +4,6 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="relative h-[100svh] w-screen overflow-hidden bg-black">
-      {/* TODO: PLACEHOLDER IMAGE — pending license/replacement.
-          Source: ANKA Instagram. Must replace before public launch. */}
       <Image
         src="/hero.png"
         alt=""
