@@ -103,7 +103,7 @@ export default function QuestionView({ question }: Props) {
         className="pointer-events-none absolute inset-0 z-0 md:hidden"
       >
         <Image
-          src="/lineart.png"
+          src="/lineart.webp"
           alt=""
           fill
           priority={false}
@@ -122,7 +122,7 @@ export default function QuestionView({ question }: Props) {
         }}
       >
         <Image
-          src="/lineart.png"
+          src="/lineart.webp"
           alt=""
           fill
           priority={false}
@@ -131,11 +131,14 @@ export default function QuestionView({ question }: Props) {
         />
       </div>
 
-      {/* Top bar — minimal. Back arrow left, progress right. */}
+      {/* Top bar — minimal. Back arrow left, progress right.
+          Q1 returns to homepage; Q2-Q8 step back one question. State is in
+          localStorage and the prior pick gets overwritten on re-select, so
+          there's no need to pre-restore the selection visually. */}
       <header className="relative z-10 flex items-center justify-between px-5 pt-6 sm:px-10 sm:pt-8">
         <Link
-          href="/"
-          aria-label="Back to home"
+          href={question.id === 1 ? "/" : `/quiz/${question.id - 1}`}
+          aria-label={question.id === 1 ? "Back to home" : "Previous question"}
           className="group inline-flex items-center text-stone-500 transition-colors duration-200 hover:text-stone-900"
         >
           <svg

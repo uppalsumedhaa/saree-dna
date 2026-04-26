@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="relative h-[100svh] w-screen overflow-hidden bg-black">
       <Image
-        src="/hero.jpg"
+        src="/hero.webp"
         alt=""
         fill
         priority

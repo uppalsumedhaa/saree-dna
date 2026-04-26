@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Saree DNA favicon — paisley / buta motif.
+
+  Two non-overlapping paths:
+    1. Outer body — a clean asymmetric teardrop, no self-intersection.
+    2. Curl — a small spiral negative-space carved with a separate path
+       using even-odd fill on the same color (renders as a hole).
+
+  Color: #A0322D (deep terracotta — warm saree-palette).
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!--
+    Single path with TWO subpaths and even-odd fill rule:
+      Subpath 1 (outer): asymmetric teardrop body, traced clockwise.
+      Subpath 2 (inner): tight spiral, traced counter-clockwise so the
+                         even-odd rule renders it as a hole, creating the
+                         classic paisley curl negative space.
+
+    The outer subpath does not self-intersect — that was the source of the
+    earlier right-edge notch. The asymmetric egg-shape with a flat-ish top
+    and bulbous lower-left already reads as a buta silhouette, and the
+    inner curl seals the textile-motif feel.
+  -->
+  <path
+    fill="#A0322D"
+    fill-rule="evenodd"
+    d="
+      M 12 20
+      C 18 8, 36 4, 48 12
+      C 60 20, 60 36, 52 46
+      C 44 56, 28 60, 16 54
+      C 4 48, 4 32, 12 20
+      Z
+      M 36 22
+      C 30 22, 26 26, 26 32
+      C 26 38, 32 40, 36 36
+      C 38 34, 38 30, 36 30
+      C 34 30, 34 32, 36 32
+      C 32 36, 28 32, 30 28
+      C 32 24, 38 24, 40 28
+      C 44 34, 38 42, 30 40
+      C 22 38, 22 26, 30 22
+      C 32 21, 34 21, 36 22
+      Z
+    "
+  />
+</svg>
