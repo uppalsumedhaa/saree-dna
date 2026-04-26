@@ -141,7 +141,7 @@ export const questions: Question[] = [
       { id: "A", text: "\"ok\", replied in 30 seconds." },
       { id: "B", text: "A 4-minute voice note. 1am. To one person." },
       { id: "C", text: "\"7 or 7:30? if 7:30 i'll grab the wine.\"" },
-      { id: "D", text: "\"BABEEEE WAIT WAIT NO STOP\" at 11am on a Tuesday." },
+      { id: "D", text: "\"BABEEEE WAIT WAIT NO STOP 😭😭\" at 11am on a Tuesday." },
     ],
   },
   {

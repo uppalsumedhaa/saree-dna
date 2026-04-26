@@ -20,3 +20,11 @@ next-env.d.ts.bak
 
 # typescript
 *.tsbuildinfo
+
+# Source assets — should not ship
+/Lineart.png
+/Lineart no watermark.png
+/No watermark.png
+/No watermark (1).png
+/Gemini_Generated_Image_*.png
+/app/Lineart.png
