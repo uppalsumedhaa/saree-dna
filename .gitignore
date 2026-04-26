@@ -28,4 +28,13 @@ next-env.d.ts.bak
 /No watermark (1).png
 /Gemini_Generated_Image_*.png
 /app/Lineart.png
+# Source archetype card PNGs (working files). Production cards live in /public/cards/*.jpg.
+/Kanjeevaram Heir.png
+/Banarsi Occasionalist.png
+/Organza Romantic.png
+/Chanderi wanderer.png
+/The Bandhani Maximilist.png
+/Ajrakh Folklorist.png
+/Tussar Intellectual.png
+/Mul unrehearsed.png
 .vercel

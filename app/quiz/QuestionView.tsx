@@ -27,9 +27,11 @@ export default function QuestionView({ question }: Props) {
     if (selected) return;
     setSelected(optionId);
     const next = question.id + 1;
-    // After Q8, routes to a placeholder until the real /results page lands.
+    // After Q8, lands on the Heir sample results page so the end-to-end
+    // flow is testable. Temporary until quiz scoring is wired and we route
+    // to the actual computed archetype.
     const dest =
-      next > TOTAL_QUESTIONS ? "/results-placeholder" : `/quiz/${next}`;
+      next > TOTAL_QUESTIONS ? "/results/heir" : `/quiz/${next}`;
     window.setTimeout(() => router.push(dest), HIGHLIGHT_MS);
   };
 
