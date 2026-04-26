@@ -8,14 +8,20 @@ Brand voice: observational, dry, slightly funny, never aspirational. Never menti
 
 ## 1. The Kanjeevaram Heir
 
+<!-- Removed 2026-04-26 per Sumedha:
+- Bharatanatyam / Margazhi / Music Academy beat (Description)
+- Navaratri nine nights beat (Description + Worn Well By)
+- Patola/Paithani/Mysore extended weave list (Weave)
+-->
+
 **Tagline**
 She's a keeper.
 
 **Description**
-She has a jeweller, a tailor, and a cook she's been with longer than most marriages. She'll wear a saree her mother wore, and her mother's mother, and tell you about both. She trained in Bharatanatyam from the age of six and still goes back to her guru's house when she's in Chennai. She knows the Margazhi calendar by heart and won't miss the morning concerts at the Music Academy. She can tell real zari by the weight of it, and whose loom it came off, and when. She'll spot a power-loom Kanjeevaram across a room. Navaratri at her house is nine nights of kolu, three changes of saree, and a list of who's coming when.
+She has a jeweller, a tailor, and a cook she's been with longer than most marriages. She'll wear a saree her mother wore, and her mother's mother, and tell you about both. She can tell real zari by the weight of it, and whose loom it came off, and when. She'll spot a power-loom Kanjeevaram across a room.
 
 **Weave**
-Kanjeevaram silk with real zari. Pattu pet, wide kanchi-pet borders, traditional motifs. Bought from the same weaver family. Worn for the recital, the temple, the December concert, the niece's arangetram. A Mysore crepe in the cupboard for Saraswati puja, the gold subdued and the drape easier to sit through a long morning in. A Paithani for the Marathi side of the family, peacock pallu, brought out for the wedding she's known about for a year. One Patola, double-ikat from Patan, gifted at her own wedding and worn maybe four times since.
+Kanjeevaram silk with real zari. Pattu pet, wide kanchi-pet borders, traditional motifs. Bought from the same weaver family.
 
 **Drape**
 Nivi, sharp pleats, pallu pinned. Always with a temple jewellery set or polki.
@@ -24,7 +30,7 @@ Nivi, sharp pleats, pallu pinned. Always with a temple jewellery set or polki.
 Deep red. Ochre. Forest green. Old cream.
 
 **Worn well by**
-The woman whose home you visit and stay too long at. The one who feeds you before she asks how you are. The one running Navaratri at her house, nine nights, kolu in the corner.
+The woman whose home you visit and stay too long at. The one who feeds you before she asks how you are.
 
 ---
 
