@@ -55,9 +55,23 @@ function TopBar({ index }: { index: number }) {
 // so the body copy (serif) carries the page.
 function Label({ children }: { children: React.ReactNode }) {
   return (
-    <div className="font-sans text-[0.68rem] uppercase tracking-[0.28em] text-stone-500">
+    <div className="font-sans text-[0.6rem] uppercase tracking-[0.24em] text-stone-400">
       {children}
     </div>
+  );
+}
+
+// Inline label variant for one-line fields (Drape, Palette). Renders as
+// LABEL · content on a single row so the bottom of the page doesn't stack
+// label-above-content blocks for content that's only a sentence long.
+function InlineRow({ label, children }: { label: string; children: React.ReactNode }) {
+  return (
+    <p className="font-serif text-base leading-7 text-stone-800">
+      <span className="mr-3 align-middle font-sans text-[0.6rem] uppercase tracking-[0.24em] text-stone-400">
+        {label}
+      </span>
+      {children}
+    </p>
   );
 }
 
@@ -119,65 +133,58 @@ function FullResults({
       <section className="mx-auto w-full max-w-6xl px-5 pb-24 pt-10 sm:px-10 sm:pt-14 md:pt-16">
         <Headline name={archetype.name} />
 
-        <p className="mt-5 text-center font-serif text-lg italic text-stone-600 sm:mt-6 sm:text-xl md:text-2xl">
+        <p className="mt-2 text-center font-serif text-lg italic text-stone-600 sm:mt-3 sm:text-xl md:text-2xl">
           {archetype.tagline}
         </p>
 
         {/* Mobile: card stacks above the body. Desktop: two-column with image left.
             Image col is fixed-ish width on desktop (max-w-sm) so detail stays legible
             without dominating; text col gets the larger share. */}
-        <div className="mt-12 grid grid-cols-1 gap-12 sm:mt-16 md:mt-20 md:grid-cols-12 md:gap-14 lg:gap-20">
-          <div className="md:col-span-5 md:pt-2">
-            <div className="mx-auto w-full max-w-[70vw] sm:max-w-xs md:mx-0 md:max-w-sm">
+        <div className="mt-8 grid grid-cols-1 gap-10 sm:mt-10 md:mt-12 md:grid-cols-12 md:gap-12 lg:gap-16">
+          <div className="md:col-span-5 md:pt-1">
+            <div className="mx-auto w-full max-w-[60vw] sm:max-w-xs md:mx-0 md:max-w-sm">
               <Image
                 src={cardImage}
                 alt={`${archetype.name} card illustration`}
                 width={964}
                 height={1600}
                 priority
-                sizes="(min-width: 768px) 24rem, 70vw"
+                sizes="(min-width: 768px) 24rem, 60vw"
                 className="h-auto w-full border border-stone-200 shadow-[0_1px_2px_rgba(0,0,0,0.04),0_8px_24px_-12px_rgba(0,0,0,0.18)]"
               />
             </div>
           </div>
 
           <div className="md:col-span-7">
-            <div className="space-y-10 sm:space-y-12">
-              <p className="font-serif text-lg leading-relaxed text-stone-800 sm:text-xl sm:leading-[1.7]">
+            <div className="space-y-6 sm:space-y-7">
+              <p className="font-serif text-base leading-7 text-stone-800 sm:text-lg sm:leading-[1.6]">
                 {archetype.description}
               </p>
 
-              <div className="space-y-8">
-                <div className="space-y-2">
+              <div className="space-y-5 sm:space-y-6">
+                <div className="space-y-1.5">
                   <Label>Weave</Label>
-                  <p className="font-serif text-base leading-relaxed text-stone-800 sm:text-lg sm:leading-[1.7]">
+                  <p className="font-serif text-base leading-7 text-stone-800">
                     {archetype.weave}
                   </p>
                 </div>
 
-                <div className="space-y-2">
-                  <Label>Drape</Label>
-                  <p className="font-serif text-base leading-relaxed text-stone-800 sm:text-lg sm:leading-[1.7]">
-                    {archetype.drape}
-                  </p>
-                </div>
+                {/* Drape and Palette are each a single short line — render
+                    inline (LABEL · content) so they don't claim block-sized
+                    real estate at the bottom of the page. */}
+                <InlineRow label="Drape">{archetype.drape}</InlineRow>
 
-                <div className="space-y-2">
-                  <Label>Palette</Label>
-                  <p className="font-serif text-base leading-relaxed text-stone-800 sm:text-lg sm:leading-[1.7]">
-                    {archetype.palette}
-                  </p>
-                </div>
+                <InlineRow label="Palette">{archetype.palette}</InlineRow>
 
-                <div className="space-y-2">
+                <div className="space-y-1.5">
                   <Label>Worn well by</Label>
-                  <p className="font-serif text-base leading-relaxed text-stone-800 sm:text-lg sm:leading-[1.7]">
+                  <p className="font-serif text-base leading-7 text-stone-800">
                     {archetype.wornWellBy}
                   </p>
                 </div>
               </div>
 
-              <div className="pt-2">
+              <div className="pt-1">
                 <TakeAgainCTA />
               </div>
             </div>
