@@ -58,8 +58,18 @@ Synthesised from BuzzFeed quiz-team interviews, Nieman Lab, Typeform research, I
 - **Never aspirational.** Generic warmth is the enemy.
 - Specific over general. India-rooted detail (weave names, regional drape, occasion contexts) is the moat.
 - Friend-not-brand register.
-- **Polarising over tasteful** — every option must pass the cringe test ("who would actively NOT pick this?").
+- **Polarising over tasteful** — every option must pass the cringe test ("who would actively NOT pick this?"). Failed three times this session — Q2 v1, Q3 v1, Q3 v2.
 - **No verbal-tic mirroring** across questions.
+
+## Drafting constraints — quiz-specific
+
+- **Final quiz is 7 questions** (Q1–Q7). There is no Q8.
+- **Banned words for Q stems:**
+  - "actual" / "actually" — claimed by Q1 ("It's Sunday morning. Where are you, actually?"). No other Q stem may echo it.
+  - Watch for "honestly" and other verbal-tic adjacents — same family of dry-observational tic. One per draft set max.
+- **Stem-construction watch:** the "You're + preposition + [setting]" frame appears in **Q3** ("You're at a friend's housewarming…") and **Q6** ("You're on a road trip…"). A third instance would tip from rhythm into formula — flag and reword on any new stem that lands on the same opener.
+- **Cadence:** one question at a time. Do not batch-draft Q1–Q7 then reconcile. Lock each before moving on.
+- Cross-stem verbal-tic check is required on every new Q draft against all locked stems.
 
 ## The 9 archetypes
 
