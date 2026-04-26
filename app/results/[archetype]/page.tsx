@@ -108,16 +108,17 @@ function TakeAgainCTA() {
 function Headline({ name }: { name: string }) {
   return (
     <h1 className="text-center font-serif font-medium leading-[1.05] tracking-tight text-stone-900">
-      <span className="block text-3xl sm:text-5xl md:text-6xl">You are the</span>
-      <span className="mt-2 block text-4xl italic sm:mt-3 sm:text-6xl md:mt-4 md:text-7xl">
+      <span className="block text-3xl sm:text-4xl md:text-5xl">You are the</span>
+      <span className="mt-2 block text-4xl italic sm:mt-3 sm:text-5xl md:mt-3 md:text-6xl">
         {name}.
       </span>
     </h1>
   );
 }
 
-// The full results layout — used when an archetype has a card image.
-// Two-column on md+, single column on mobile with the card pulled up top.
+// The full results layout — vertical hero. Card centered up top as the
+// moment, then headline + tagline, then a single narrow column of body
+// copy below. Same on mobile and desktop; only sizes scale.
 function FullResults({
   archetype,
   index,
@@ -130,65 +131,65 @@ function FullResults({
     <main className="relative min-h-[100svh] w-full bg-stone-50 text-stone-900">
       <TopBar index={index} />
 
-      <section className="mx-auto w-full max-w-6xl px-5 pb-24 pt-10 sm:px-10 sm:pt-14 md:pt-16">
-        <Headline name={archetype.name} />
+      <section className="mx-auto w-full px-5 pb-24 pt-10 sm:px-10 sm:pt-14 md:pt-16">
+        {/* Card — centered, large, portrait. Sized so it's the moment without
+            dominating the fold. 75vw on mobile keeps it visible without forcing
+            a scroll to read the headline; max-w-md on desktop keeps detail
+            legible at arm's length. */}
+        <div className="mx-auto w-full max-w-[75vw] sm:max-w-sm md:max-w-md">
+          <Image
+            src={cardImage}
+            alt={`${archetype.name} card illustration`}
+            width={964}
+            height={1600}
+            priority
+            sizes="(min-width: 768px) 28rem, 75vw"
+            className="h-auto w-full border border-stone-200 shadow-[0_1px_2px_rgba(0,0,0,0.04),0_8px_24px_-12px_rgba(0,0,0,0.18)]"
+          />
+        </div>
 
-        <p className="mt-2 text-center font-serif text-lg italic text-stone-600 sm:mt-3 sm:text-xl md:text-2xl">
+        <div className="mt-10 sm:mt-12 md:mt-14">
+          <Headline name={archetype.name} />
+        </div>
+
+        <p className="mt-3 text-center font-serif text-lg italic text-stone-600 sm:mt-4 sm:text-xl">
           {archetype.tagline}
         </p>
 
-        {/* Mobile: card stacks above the body. Desktop: two-column with image left.
-            Image col is fixed-ish width on desktop (max-w-sm) so detail stays legible
-            without dominating; text col gets the larger share. */}
-        <div className="mt-8 grid grid-cols-1 gap-10 sm:mt-10 md:mt-12 md:grid-cols-12 md:gap-12 lg:gap-16">
-          <div className="md:col-span-5 md:pt-1">
-            <div className="mx-auto w-full max-w-[60vw] sm:max-w-xs md:mx-0 md:max-w-sm">
-              <Image
-                src={cardImage}
-                alt={`${archetype.name} card illustration`}
-                width={964}
-                height={1600}
-                priority
-                sizes="(min-width: 768px) 24rem, 60vw"
-                className="h-auto w-full border border-stone-200 shadow-[0_1px_2px_rgba(0,0,0,0.04),0_8px_24px_-12px_rgba(0,0,0,0.18)]"
-              />
-            </div>
+        {/* Body — single narrow column for comfortable reading line length.
+            DESCRIPTION sits first (option b): the description IS the portrait,
+            weave is the spec. Label stays per the no-invention rule. */}
+        <div className="mx-auto mt-14 w-full max-w-2xl space-y-7 sm:mt-16 sm:space-y-8">
+          <div className="space-y-1.5">
+            <Label>Description</Label>
+            <p className="font-serif text-base leading-7 text-stone-800">
+              {archetype.description}
+            </p>
           </div>
 
-          <div className="md:col-span-7">
-            <div className="space-y-6 sm:space-y-7">
-              <p className="font-serif text-base leading-7 text-stone-800 sm:text-lg sm:leading-[1.6]">
-                {archetype.description}
-              </p>
-
-              <div className="space-y-5 sm:space-y-6">
-                <div className="space-y-1.5">
-                  <Label>Weave</Label>
-                  <p className="font-serif text-base leading-7 text-stone-800">
-                    {archetype.weave}
-                  </p>
-                </div>
-
-                {/* Drape and Palette are each a single short line — render
-                    inline (LABEL · content) so they don't claim block-sized
-                    real estate at the bottom of the page. */}
-                <InlineRow label="Drape">{archetype.drape}</InlineRow>
-
-                <InlineRow label="Palette">{archetype.palette}</InlineRow>
-
-                <div className="space-y-1.5">
-                  <Label>Worn well by</Label>
-                  <p className="font-serif text-base leading-7 text-stone-800">
-                    {archetype.wornWellBy}
-                  </p>
-                </div>
-              </div>
-
-              <div className="pt-1">
-                <TakeAgainCTA />
-              </div>
-            </div>
+          <div className="space-y-1.5">
+            <Label>Weave</Label>
+            <p className="font-serif text-base leading-7 text-stone-800">
+              {archetype.weave}
+            </p>
           </div>
+
+          {/* Drape and Palette stay inline — each is a single short line and
+              the inline (LABEL · content) form reads tighter than a block. */}
+          <InlineRow label="Drape">{archetype.drape}</InlineRow>
+
+          <InlineRow label="Palette">{archetype.palette}</InlineRow>
+
+          <div className="space-y-1.5">
+            <Label>Worn well by</Label>
+            <p className="font-serif text-base leading-7 text-stone-800">
+              {archetype.wornWellBy}
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-14 flex justify-center sm:mt-16">
+          <TakeAgainCTA />
         </div>
       </section>
     </main>
