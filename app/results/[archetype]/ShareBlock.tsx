@@ -77,7 +77,9 @@ function LinkIcon() {
 // micro-tracking, stone palette. Underline + icon row reads as a sibling control,
 // not a separate UI vocabulary.
 function buttonClass() {
-  return "group inline-flex items-center gap-2 font-sans text-[0.7rem] uppercase tracking-[0.32em] text-stone-700 transition-colors duration-200 hover:text-stone-900";
+  // min-h-[44px] + py-3 px-2 ensures comfortable tap targets on mobile
+  // without changing the visual register (text + underline still leads).
+  return "group inline-flex min-h-[44px] items-center gap-2 px-2 py-3 font-sans text-[0.7rem] uppercase tracking-[0.32em] text-stone-700 transition-colors duration-200 hover:text-stone-900";
 }
 
 function underlineClass() {
@@ -97,14 +99,14 @@ export default function ShareBlock({ archetypeName, archetypeSlug, cardImage }: 
     }
   }, []);
 
-  const blurb = `I'm the ${archetypeName}. Take the quiz to find yours! ${PROD_ORIGIN}`;
+  const blurb = `Just found out my saree DNA! I'm a ${archetypeName}. Take the quiz to find yours. ${PROD_ORIGIN}`;
   const whatsappHref = `https://wa.me/?text=${encodeURIComponent(blurb)}`;
 
   const handleNativeShare = useCallback(async () => {
     if (typeof navigator === "undefined" || typeof navigator.share !== "function") return;
 
     const title = `Saree DNA — ${archetypeName}`;
-    const text = `I'm the ${archetypeName}. Take the quiz to find yours!`;
+    const text = `Just found out my saree DNA! I'm a ${archetypeName}. Take the quiz to find yours.`;
     const url = typeof window !== "undefined" ? window.location.href : `${PROD_ORIGIN}/results/${archetypeSlug}`;
 
     // Try to attach the card image as a file so iOS/Android share sheets can

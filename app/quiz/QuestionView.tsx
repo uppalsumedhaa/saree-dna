@@ -135,11 +135,11 @@ export default function QuestionView({ question }: Props) {
           Q1 returns to homepage; Q2-Q8 step back one question. State is in
           localStorage and the prior pick gets overwritten on re-select, so
           there's no need to pre-restore the selection visually. */}
-      <header className="relative z-10 flex items-center justify-between px-5 pt-6 sm:px-10 sm:pt-8">
+      <header className="relative z-10 flex items-center justify-between px-3 pt-4 sm:px-10 sm:pt-8">
         <Link
           href={question.id === 1 ? "/" : `/quiz/${question.id - 1}`}
           aria-label={question.id === 1 ? "Back to home" : "Previous question"}
-          className="group inline-flex items-center text-stone-500 transition-colors duration-200 hover:text-stone-900"
+          className="group -ml-1 inline-flex h-11 w-11 items-center justify-center text-stone-500 transition-colors duration-200 hover:text-stone-900 sm:-ml-2"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

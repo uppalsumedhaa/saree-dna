@@ -35,11 +35,16 @@ export default function Home() {
             Discover your saree DNA
           </p>
 
+          {/* CTA register: sentence case, not uppercase. "TAKE THE QUIZ" at
+              0.32em tracking reads commercial/aggressive against the editorial
+              italic headline + subhead. Sentence case + tighter tracking sits
+              inside the voice (friend, not brand). DM Sans weight kept. Min
+              tap height ~44px via py-3.5 + base text. */}
           <Link
             href="/quiz"
-            className="mt-10 inline-block border border-white/70 px-7 py-3 font-sans text-[0.7rem] uppercase tracking-[0.32em] text-white transition-colors duration-200 hover:bg-white hover:text-black sm:mt-12 sm:text-xs"
+            className="mt-10 inline-block border border-white/70 px-8 py-3.5 font-sans text-sm tracking-[0.04em] text-white transition-colors duration-200 hover:bg-white hover:text-black sm:mt-12 sm:text-base"
           >
-            Begin
+            Take the quiz
           </Link>
         </div>
       </div>

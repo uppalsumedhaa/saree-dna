@@ -26,7 +26,7 @@ export default function TakeAgainButton() {
     <button
       type="button"
       onClick={handleClick}
-      className="group inline-flex items-center gap-2 font-sans text-[0.7rem] uppercase tracking-[0.32em] text-stone-700 transition-colors duration-200 hover:text-stone-900"
+      className="group inline-flex min-h-[44px] items-center gap-2 px-2 py-3 font-sans text-[0.7rem] uppercase tracking-[0.32em] text-stone-700 transition-colors duration-200 hover:text-stone-900"
     >
       <span className="border-b border-stone-400 pb-1 group-hover:border-stone-900">
         Take again
