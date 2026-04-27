@@ -23,10 +23,10 @@
 
 ## Q4 — Pick the room that feels like yours.
 
-- A (Wanderer): Red-brick wall, low mustard linen couch, three mismatched lamps in honey light. Filter coffee going cold on stacked books
-- B (Modernist): Limewashed wall, cane-and-teak daybed under one cool arc lamp. Linen throw pushed aside, open notebook face-down
-- C (Maximalist): Terracotta wall, plum velvet sofa, paintings salon-hung to the ceiling, coloured-glass lamps low and warm. Wine glass on the floor
-- D (Folklorist): Whitewashed brick, low indigo daybed, clay diya lit beside a paper lamp. Half-woven loom in the corner, agarbatti and sandalwood
+- A (Wanderer): Books in three languages. A brass lamp from Lisbon. Half-unpacked
+- B (Modernist): One arc lamp. One chair. One bowl. Nothing else
+- C (Maximalist): Plum velvet. Paintings to the ceiling. Last night's wine glass
+- D (Folklorist): Half-woven loom. Indigo daybed. Agarbatti
 
 ## Q5 — It's Friday night. What's the plan?
 

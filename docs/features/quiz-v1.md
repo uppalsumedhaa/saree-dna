@@ -175,10 +175,10 @@ Locked. See `docs/saree-dna-archetypes.md`.
 
 | | Option | Primary |
 |---|---|---|
-| A | Red-brick wall, low mustard linen couch, three mismatched lamps in honey light. Filter coffee going cold on stacked books. | Wanderer |
-| B | Limewashed wall, cane-and-teak daybed under one cool arc lamp. Linen throw pushed aside, open notebook face-down. | Modernist |
-| C | Terracotta wall, plum velvet sofa, paintings salon-hung to the ceiling, coloured-glass lamps low and warm. Wine glass on the floor. | Maximalist |
-| D | Whitewashed brick, low indigo daybed, clay diya lit beside a paper lamp. Half-woven loom in the corner, agarbatti and sandalwood. | Folklorist |
+| A | Books in three languages. A brass lamp from Lisbon. Half-unpacked | Wanderer |
+| B | One arc lamp. One chair. One bowl. Nothing else | Modernist |
+| C | Plum velvet. Paintings to the ceiling. Last night's wine glass | Maximalist |
+| D | Half-woven loom. Indigo daybed. Agarbatti | Folklorist |
 
 **Visual cues (illustrator brief):**
 - **A — Wanderer.** Exposed red-brick, slightly uneven mortar. Low mustard linen couch, broken-in. Kilim half-rolled. Three mismatched lamps lit (floor lamp, desk lamp on book stack, paper lantern). Warm honey light ~2700K. Books in three languages stacked horizontally on the floor. Filter coffee. Domestic, transitional, alive.

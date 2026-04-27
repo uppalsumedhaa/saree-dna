@@ -74,19 +74,19 @@ export const questions: Question[] = [
     options: [
       {
         id: "A",
-        text: "Red-brick wall, low mustard linen couch, three mismatched lamps in honey light. Filter coffee going cold on stacked books",
+        text: "Books in three languages. A brass lamp from Lisbon. Half-unpacked",
       },
       {
         id: "B",
-        text: "Limewashed wall, cane-and-teak daybed under one cool arc lamp. Linen throw pushed aside, open notebook face-down",
+        text: "One arc lamp. One chair. One bowl. Nothing else",
       },
       {
         id: "C",
-        text: "Terracotta wall, plum velvet sofa, paintings salon-hung to the ceiling, coloured-glass lamps low and warm. Wine glass on the floor",
+        text: "Plum velvet. Paintings to the ceiling. Last night's wine glass",
       },
       {
         id: "D",
-        text: "Whitewashed brick, low indigo daybed, clay diya lit beside a paper lamp. Half-woven loom in the corner, agarbatti and sandalwood",
+        text: "Half-woven loom. Indigo daybed. Agarbatti",
       },
     ],
   },
