@@ -65,9 +65,10 @@ async function main() {
     { timeout: 10000 },
   );
 
-  // Loader runs ~4.8s (PHASE1=2.0 + PHASE2=1.8 + PHASE3=1.0).
-  // Hold for ~6s so the final caption + winner card sit a beat at the end.
-  await page.waitForTimeout(6000);
+  // LaunchLoader runs PHASE1=2.0 + PHASE2=1.8 + PHASE3=0.7 = 4.5s of motion,
+  // then we want ~1.8s of fullscreen hold on the Maximalist card. Total ~6.5s.
+  // Add a small tail so the final frame settles cleanly before we close.
+  await page.waitForTimeout(6800);
 
   await context.close(); // forces video flush
   await browser.close();

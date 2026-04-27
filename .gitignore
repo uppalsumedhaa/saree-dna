@@ -18,6 +18,9 @@ next-env.d.ts.bak
 *.log
 .vercel/
 
+# Capture-script video output (launch-loader marketing recordings)
+/*.mp4
+
 # typescript
 *.tsbuildinfo
 
