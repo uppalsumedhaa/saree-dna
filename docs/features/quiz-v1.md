@@ -193,7 +193,7 @@ Locked. See `docs/saree-dna-archetypes.md`.
 |---|---|---|---|---|---|---|---|---|---|
 | A — Brick + mustard couch + lamps | 0 | 1 | **3** | 0 | 2 | 1 | 2 | 0 | 0 |
 | B — Limewashed + cane daybed + cool lamp | 1 | 0 | 0 | 0 | 1 | 0 | 1 | 2 | **3** |
-| C — Terracotta + plum velvet + paintings | 1 | 2 | 0 | **3** | 0 | 1 | 0 | 1 | 0 |
+| C — Terracotta + plum velvet + paintings | **3** | 1 | 0 | 1 | 0 | 1 | 0 | 1 | 0 |
 | D — Whitewashed brick + indigo daybed + loom | 2 | 1 | 1 | 1 | 1 | **3** | 1 | 0 | 0 |
 
 **Cringe test:**
@@ -322,7 +322,7 @@ Q8's secondary job is to give Wanderer a third primary (it had only two in v1.1)
 
 ---
 
-## Scoring matrix v1.4
+## Scoring matrix v1.5
 
 **Model:** Each option awards **3 pts to its primary archetype** plus **1 pt each to 1–2 secondaries**. Secondaries are chosen to (a) feed under-served archetypes (Mul, Wanderer, Heir) and (b) deliberately *avoid* stacking spiritual-adjacent archetypes onto Folklorist primaries (the POC's worst auto-stack).
 
@@ -357,7 +357,7 @@ Q8's secondary job is to give Wanderer a third primary (it had only two in v1.1)
 |---|---|---|---|
 | A — Brick + mustard couch + lamps | Wanderer | Tussar — books on the floor | Mul — lived-in, not staged |
 | B — Limewashed + cane daybed | Modernist | Mul — calm, unfussy materials | Occasionalist — clean lines, ordered |
-| C — Terracotta + plum velvet + paintings | Maximalist | Romantic — velvet, warm light, wine glass | Heir — salon-hung paintings = inheritance wall |
+| C — Terracotta + plum velvet + paintings | Heir | Romantic — velvet, warm light, wine glass | Maximalist — salon-hung paintings, plum-velvet volume |
 | D — Whitewashed + indigo + loom + diya | Folklorist | Heir — indigo, brass, lineage | Mul — low daybed, whitewashed simplicity |
 
 **Q5 — Friday night** *(Q5D rewritten in v1.2 pass — Mul → Heir)*
@@ -392,15 +392,15 @@ Q8's secondary job is to give Wanderer a third primary (it had only two in v1.1)
 | C — Bag at hotel, three texts, Mar Mikhael rooftop *(v1.3)* | Maximalist | Wanderer — still a new-city scene | Occasionalist — hotel as base of operations |
 | D — Itinerary printed, lunch booked | Occasionalist | Heir — planning-for-someone, hosted register | Modernist — system, control of timing |
 
-### Totals (v1.4)
+### Totals (v1.5)
 
-**Primaries per archetype (v1.4 — 32 options across Q1–Q8)**
+**Primaries per archetype (v1.5 — 32 options across Q1–Q8)**
 | Archetype | Primaries | Options |
 |---|---|---|
 | Mul | 3 | Q1A, Q3D, Q8B |
-| Heir | **3** | Q3B, Q5D, Q6B |
+| Heir | **4** | Q3B, **Q4C**, Q5D, Q6B |
 | Wanderer | 3 | Q3C, Q4A, Q8A |
-| Maximalist | **6** | Q2A, Q4C, Q5B, Q6D, Q7D, Q8C |
+| Maximalist | **5** | Q2A, Q5B, Q6D, Q7D, Q8C |
 | Tussar | 3 | Q2B, Q3A, Q6C |
 | Folklorist | **4** | **Q1B**, Q2C, Q4D, Q6A |
 | Occasionalist | 4 | Q2D, Q5C, Q7C, Q8D |

@@ -150,7 +150,9 @@ function FullResults({
               on desktop it occupies the left 5/12 columns and is vertically
               centered in its track via self-start + sticky-ish placement so
               it feels anchored against the scrolling text on the right.
-              max-w-sm/md keeps detail legible without overwhelming the text. */}
+              max-w-sm/md keeps detail legible without overwhelming the text.
+              On desktop the share block lives directly under the image so the
+              left column reads as: image → share, anchored. */}
           <div className="md:col-span-5 md:self-start">
             <div className="mx-auto w-full max-w-[75vw] sm:max-w-sm md:sticky md:top-10 md:max-w-md">
               <Image
@@ -162,6 +164,17 @@ function FullResults({
                 sizes="(min-width: 768px) 28rem, 75vw"
                 className="h-auto w-full border border-stone-200 shadow-[0_1px_2px_rgba(0,0,0,0.04),0_8px_24px_-12px_rgba(0,0,0,0.18)]"
               />
+
+              {/* DESKTOP-ONLY share block — sits centered under the card image.
+                  Mobile renders the share block at the bottom of the right
+                  column instead (see md:hidden instance below). */}
+              <div className="hidden md:block">
+                <ShareBlock
+                  archetypeName={archetype.name}
+                  archetypeSlug={archetype.slug}
+                  cardImage={archetype.cardImage}
+                />
+              </div>
             </div>
           </div>
 
@@ -238,11 +251,16 @@ function FullResults({
               <TakeAgainButton />
             </div>
 
-            <ShareBlock
-              archetypeName={archetype.name}
-              archetypeSlug={archetype.slug}
-              cardImage={archetype.cardImage}
-            />
+            {/* MOBILE-ONLY share block — bottom of the vertical stack (unchanged
+                from the original layout). On desktop this renders under the
+                card image in the left column (see hidden md:block instance above). */}
+            <div className="md:hidden">
+              <ShareBlock
+                archetypeName={archetype.name}
+                archetypeSlug={archetype.slug}
+                cardImage={archetype.cardImage}
+              />
+            </div>
           </div>
         </div>
       </section>
