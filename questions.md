@@ -3,7 +3,7 @@
 ## Q1 — It's a sunday morning - where are we likely to find you?
 
 - A (Mul): Out walking before the city is up
-- B (Folklorist): Already at the Sunday flea market, three voice notes deep
+- B (Folklorist): Already at the Sunday flea market
 - C (Modernist): Already moving. Bag by the door
 - D (Romantic): In bed past nine, light through the curtain
 

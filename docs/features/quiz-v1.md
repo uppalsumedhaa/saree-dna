@@ -94,7 +94,7 @@ Locked. See `docs/saree-dna-archetypes.md`.
 | | Option | Visual cue |
 |---|---|---|
 | A | Out walking before the city is up | Empty residential lane at dawn, soft grey light, woman alone, **athletic-leaning** (sneakers, water bottle, hair pulled back). |
-| B | Already at the Sunday flea market, three voice notes deep | Sunday-morning Chor Bazaar / Sunder Nagar lane: brass trinkets and block-print bundles on a tarp, phone in hand mid voice-note, a stack of two finds under the arm, vendor visible in soft side-light. |
+| B | Already at the Sunday flea market | Sunday-morning Chor Bazaar / Sunder Nagar lane: brass trinkets and block-print bundles on a tarp, phone in hand mid voice-note, a stack of two finds under the arm, vendor visible in soft side-light. |
 | C | Already moving. Bag by the door | Packed carry-on, espresso half-drunk, laptop open to a boarding pass. Functional light. |
 | D | In bed past nine, light through the curtain | Unmade linen bed, half-finished tea on the floor, slim book open face-down. No clock. |
 
@@ -332,7 +332,7 @@ Q8's secondary job is to give Wanderer a third primary (it had only two in v1.1)
 | Opt | Primary (3) | Sec A (1) | Sec B (1) |
 |---|---|---|---|
 | A — Walking before city up | Mul | Wanderer — early movement, in-transit posture | Modernist — discipline, early-rise |
-| B — Sunday flea market, three voice notes deep | Folklorist | Wanderer — out-and-about register | Maximalist — voice-note volume, broadcast energy |
+| B — Sunday flea market | Folklorist | Wanderer — out-and-about register | Maximalist — voice-note volume, broadcast energy |
 | C — Bag by door, boarding pass | Modernist | Wanderer — in transit | Occasionalist — packed, planned |
 | D — Bed past nine, slim book | Romantic | Mul — no clock, easeful | Tussar — book in hand |
 
