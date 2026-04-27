@@ -38,7 +38,7 @@ export const questions: Question[] = [
       { id: "B", text: "Three books open at once, cold tea, margins full" },
       {
         id: "C",
-        text: "Stacked silver rings, clay cup, agarbatti gone to ash",
+        text: "Stacked silver rings, clay cup, a kohl pencil older than the relationship",
       },
       {
         id: "D",

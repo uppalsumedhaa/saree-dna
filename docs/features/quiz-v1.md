@@ -124,7 +124,7 @@ Locked. See `docs/saree-dna-archetypes.md`.
 |---|---|---|
 | A | Uncapped lipstick. Mismatched earrings. Last night's water glass. | Dark walnut, warm low lamp, lipstick smear on wood, earring on a folded receipt, water glass with lipstick rim, bobby pin abandoned. Slightly sticky. *Maximalist primary.* |
 | B | Three books open at once. Cold tea. A printout, margins full. | Pale north-facing morning light, hardback face-down, paperback with pencil in gutter, slim third on top, stapled printout with green-ink underline, cup of tea with film on top. *Tussar primary.* |
-| C | Stacked silver rings. A clay cup. Agarbatti gone to ash. | Low wooden stool, indigo block-print runner, three oxidised silver rings stacked, terracotta cup, agarbatti holder with grey ash. Honey afternoon light. *Folklorist primary.* |
+| C | Stacked silver rings. A clay cup. A kohl pencil older than the relationship. | Low wooden stool, indigo block-print runner, three oxidised silver rings stacked, terracotta cup, a worn kohl pencil. Honey afternoon light. *Folklorist primary.* |
 | D | Apple Watch on charge. Hand cream. One earring from Tuesday. | Glass-topped table, sharp overhead light, Apple Watch on puck, hand cream (drugstore-not-luxury), single gold stud, folded receipt, phone face-down. Functional. *Occasionalist primary.* |
 
 **Scoring matrix:**
@@ -341,7 +341,7 @@ Q8's secondary job is to give Wanderer a third primary (it had only two in v1.1)
 |---|---|---|---|
 | A — Lipstick, mismatched earrings | Maximalist | Romantic — sensory mess of a real night | Occasionalist — single earring from Tuesday |
 | B — Three books, margins full | Tussar | Modernist — focused work | Mul — books as use, not décor |
-| C — Silver rings, agarbatti, clay cup | Folklorist | Heir — silver as inheritance | Mul — clay cup, soft-worn, plain |
+| C — Silver rings, kohl pencil, clay cup | Folklorist | Heir — silver as inheritance | Mul — clay cup, soft-worn, plain |
 | D — Apple Watch, hand cream | Occasionalist | Modernist — function-first surface | Wanderer — earring-from-Tuesday in-and-out life |
 
 **Q3 — Housewarming, in your hand**

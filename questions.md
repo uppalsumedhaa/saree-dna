@@ -11,7 +11,7 @@
 
 - A (Maximalist): Uncapped lipstick, mismatched earrings, last night's water glass
 - B (Tussar): Three books open at once, cold tea, margins full
-- C (Folklorist): Stacked silver rings, clay cup, agarbatti gone to ash
+- C (Folklorist): Stacked silver rings, clay cup, a kohl pencil older than the relationship
 - D (Occasionalist): Apple Watch on charge, hand cream, one earring from Tuesday
 
 ## Q3 — You're at a friend's housewarming. What's in your hand?
