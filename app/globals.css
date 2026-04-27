@@ -5,8 +5,8 @@
 html,
 body {
   height: 100%;
-  background: #000;
-  color: #fff;
+  background: #FAFAF9;
+  color: #1c1917;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
