@@ -10,3 +10,43 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/*
+  Quiz option — selected state pulse.
+
+  Fires once when a card is chosen. Total ~280ms so it lands right as the
+  router.push kicks in (HIGHLIGHT_MS in QuestionView.tsx). The card has
+  already inverted to dark via Tailwind; this keyframe layers a quick
+  scale punch + ring sweep over that, so the click reads physically.
+
+  - Frame 0: snap in at 0.96 (compresses)
+  - Frame 40%: rebound to 1.02 with a soft outer ring (color sweep)
+  - Frame 100%: settle at 1.0, ring fades
+
+  The ring is drawn via box-shadow (not outline, so it doesn't affect
+  layout) and uses stone-900 at low alpha so it reads on the cream bg.
+*/
+@keyframes optionSelectedPulse {
+  0% {
+    transform: scale(0.96);
+    box-shadow: 0 0 0 0 rgba(28, 25, 23, 0);
+  }
+  40% {
+    transform: scale(1.02);
+    box-shadow: 0 0 0 6px rgba(28, 25, 23, 0.18);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(28, 25, 23, 0);
+  }
+}
+
+.option-selected-pulse {
+  animation: optionSelectedPulse 280ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .option-selected-pulse {
+    animation: none;
+  }
+}

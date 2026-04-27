@@ -12,13 +12,16 @@ type Props = {
 };
 
 // Two-phase reveal modeled on Milla Nova "Chapter the Bride".
-//   Phase 1 (0.0s – 1.6s): countdown. Faded serif percentage 0 → 100, italic % glyph.
-//   Phase 2 (1.6s – 3.0s): cards fly in from edges, staggered, layered like
+//   Phase 1 (0.0s – 2.0s): countdown. Faded serif percentage 0 → 100, italic % glyph.
+//   Phase 2 (2.0s – 3.8s): cards fly in from edges, staggered, layered like
 //                          posters thrown onto a table.
-//   Phase 3 (3.0s – 3.8s): winner scales forward, others dim. Hold, then exit.
-const PHASE1_MS = 1600;
-const PHASE2_MS = 1400;
-const PHASE3_MS = 800;
+//   Phase 3 (3.8s – 4.8s): winner scales forward, others dim. Hold, then exit.
+// Pacing nudged slower across the board (was 3.8s total) so the moment
+// breathes — countdown lingers on the build, cards have a longer stagger
+// so each card lands distinctly, and the winner reveal has time to settle.
+const PHASE1_MS = 2000;
+const PHASE2_MS = 1800;
+const PHASE3_MS = 1000;
 const TOTAL_MS = PHASE1_MS + PHASE2_MS + PHASE3_MS;
 
 type CardChoreography = {
@@ -163,7 +166,7 @@ export default function ResultLoader({ winnerSlug, onComplete }: Props) {
         {phase >= 2 &&
           ordered.map(({ a, slot }, i) => {
             const isWinner = a.slug === winnerSlug;
-            const flightDelay = i * 0.07; // 70ms stagger
+            const flightDelay = i * 0.1; // 100ms stagger — each card reads as its own arrival
             return (
               <motion.div
                 key={a.slug}
@@ -200,7 +203,7 @@ export default function ResultLoader({ winnerSlug, onComplete }: Props) {
                 transition={
                   phase === 3
                     ? {
-                        duration: 0.55,
+                        duration: 0.7,
                         ease: [0.22, 0.61, 0.36, 1],
                       }
                     : {

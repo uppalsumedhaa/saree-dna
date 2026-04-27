@@ -14,7 +14,8 @@ type Props = {
 };
 
 // Briefly highlights the chosen card before routing forward. Keeps the
-// auto-advance feeling intentional, not jumpy.
+// auto-advance feeling intentional, not jumpy. Bumped slightly so the
+// selection pulse (border + scale) actually registers before nav.
 const HIGHLIGHT_MS = 280;
 
 // localStorage key for the in-progress picks array. Cleared by the
@@ -75,6 +76,19 @@ export default function QuestionView({ question }: Props) {
 
   const handleChoose = (optionId: string) => {
     if (selected) return;
+
+    // Haptic — Android Chrome/Firefox respect this; iOS Safari has it
+    // permanently disabled and silently no-ops. The API returns false
+    // when the platform refuses; either way it doesn't throw, so a
+    // try/catch isn't needed. 15ms = a single quick tap, not a buzz.
+    if (typeof navigator !== "undefined" && "vibrate" in navigator) {
+      try {
+        navigator.vibrate(15);
+      } catch {
+        // Some old WebViews can throw on locked-down policies.
+      }
+    }
+
     setSelected(optionId);
 
     const newPick: Pick = {
@@ -201,14 +215,31 @@ export default function QuestionView({ question }: Props) {
                 type="button"
                 onClick={() => handleChoose(opt.id)}
                 aria-label={opt.text}
+                // Press feedback layered in three parts:
+                //   - hover (desktop only via media query): subtle lift +
+                //     border darken, current behavior preserved.
+                //   - active: physical press — scale to 0.97, inset ring
+                //     for the dark-pressed-into-paper feel.
+                //   - selected: full invert + a one-shot pulse animation
+                //     defined in globals.css (.option-selected-pulse).
+                // We disable the active scale on the selected card so the
+                // pulse doesn't fight the press.
                 className={[
-                  "group flex min-h-[88px] w-full items-center rounded-sm border p-6 text-left backdrop-blur-[1px] transition-all duration-200 md:p-8",
+                  "group relative flex min-h-[88px] w-full items-center rounded-sm border p-6 text-left backdrop-blur-[1px] transition-all duration-200 ease-out md:p-8",
+                  "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-stone-900 focus-visible:ring-offset-2 focus-visible:ring-offset-stone-50",
                   isSelected
-                    ? "border-stone-900 bg-stone-900 text-white"
-                    : "border-stone-200 bg-stone-50/80 text-stone-900 hover:-translate-y-0.5 hover:border-stone-900 hover:bg-stone-50",
+                    ? "option-selected-pulse border-stone-900 bg-stone-900 text-white"
+                    : [
+                        "border-stone-200 bg-stone-50/80 text-stone-900",
+                        // Hover only on devices with a real pointer.
+                        "[@media(hover:hover)]:hover:-translate-y-0.5 [@media(hover:hover)]:hover:border-stone-900 [@media(hover:hover)]:hover:bg-stone-50",
+                        // Active = pressed in. Slight scale-down + darker
+                        // border + inset shadow.
+                        "active:scale-[0.97] active:border-stone-900 active:shadow-[inset_0_1px_3px_rgba(28,25,23,0.12)] active:transition-transform active:duration-75",
+                      ].join(" "),
                 ].join(" ")}
               >
-                <span className="font-serif text-base leading-snug md:text-lg">
+                <span className="font-sans text-base font-normal leading-snug tracking-[-0.005em] md:text-lg">
                   {opt.text}
                 </span>
               </button>
