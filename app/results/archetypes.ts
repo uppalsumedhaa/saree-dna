@@ -112,7 +112,7 @@ export const archetypes: Archetype[] = [
   {
     slug: "occasionalist",
     name: "Banarasi Occasionalist",
-    tagline: "Three sarees, eight occasions, one airtight system.",
+    tagline: "She is what the occasion calls for",
     description:
       "She's at the tailor the day before Diwali, every year, with the same panic, and somehow it always works out. She owns fewer blouses than sarees, and she rotates them with intent: the gold one goes with two, the black one stretches across three. None of them were impulse buys. Each one came from somewhere, a wedding, a trip, a grandmother. The rest of the year, she's in trousers.",
     weave:

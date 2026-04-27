@@ -169,7 +169,7 @@ The friend who shows up. Careless with her clothes, careful with your heart. On 
 ## 8. The Banarasi Occasionalist
 
 **Tagline**
-Three sarees, eight occasions, one airtight system.
+She is what the occasion calls for
 
 **Description**
 She's at the tailor the day before Diwali, every year, with the same panic, and somehow it always works out. She owns fewer blouses than sarees, and she rotates them with intent: the gold one goes with two, the black one stretches across three. None of them were impulse buys. Each one came from somewhere, a wedding, a trip, a grandmother. The rest of the year, she's in trousers.
