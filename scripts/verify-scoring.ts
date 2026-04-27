@@ -1,4 +1,4 @@
-// Persona verification for scoring matrix v1.4.
+// Persona verification for scoring matrix v1.6.
 // Run: npx tsx scripts/verify-scoring.ts
 
 import { computeWinner, MATRIX, type Pick, type OptionId, type Slug } from "../app/quiz/scoring";
@@ -19,7 +19,12 @@ const personas: Persona[] = [
   },
   {
     name: "Anjali",
-    picks: ["C", "A", "C", "C", "B", "D", "D", "C"],
+    // v1.6 persona-update: Anjali's Q7 pick was D (the BABEEEE caps text — old
+    // Maximalist primary). New Q7D is a Wanderer travel photo, which a Khan
+    // Market gallerist who lives loud in groups wouldn't pick. Q7B (4-min
+    // voice note at 1am, to one person) lines up with her persona — she
+    // sends long voice notes — and is the most authentic next pick for her.
+    picks: ["C", "A", "C", "C", "B", "D", "B", "C"],
     expected: "maximalist",
   },
   {

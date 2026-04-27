@@ -47,7 +47,7 @@
 - A (Modernist): "ok", replied in 30 seconds
 - B (Romantic): A 4-minute voice note. 1am. To one person
 - C (Occasionalist): "7 or 7:30? if 7:30 i'll grab the wine."
-- D (Maximalist): "BABEEEE WAIT WAIT NO STOP 😭😭" at 11am on a Tuesday
+- D (Wanderer): A photo from a city you didn't tell anyone you were in
 
 ## Q8 — First afternoon in a new city. Where are you?
 

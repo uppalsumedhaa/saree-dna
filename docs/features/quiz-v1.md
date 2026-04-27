@@ -1,6 +1,6 @@
 # Quiz v1 — Scoping doc
 
-**Status:** ALL 8 QUESTIONS LOCKED (Q1–Q8). Final quiz is 8 questions: Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8. Scoring matrix v1.4. The previous Q7 (originally meal-for-six, then celebrity-question candidate) was cut; the text-message question (originally drafted as Q8) sits at Q7; a new Q8 ("first afternoon in a new city") was added in the v1.2 pass alongside a Q5D rewrite (Mul → Heir) to close a household-led-woman gap surfaced by the Lakshmi stress-test persona. **Q8C swapped Tussar → Maximalist in v1.3** to close a Maximalist-traveler gap surfaced by the Anjali stress-test persona (a clear Maximalist who, with no Max primary in Q8, was forced onto Q8D and won by only +1). **Q1B swapped Heir → Folklorist in v1.4** ("At the table with your coffee" → "Already at the Sunday flea market, three voice notes deep"); rebalances Heir 4 → 3 primaries and Folklorist 3 → 4 primaries.
+**Status:** ALL 8 QUESTIONS LOCKED (Q1–Q8). Final quiz is 8 questions: Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8. Scoring matrix v1.6. The previous Q7 (originally meal-for-six, then celebrity-question candidate) was cut; the text-message question (originally drafted as Q8) sits at Q7; a new Q8 ("first afternoon in a new city") was added in the v1.2 pass alongside a Q5D rewrite (Mul → Heir) to close a household-led-woman gap surfaced by the Lakshmi stress-test persona. **Q8C swapped Tussar → Maximalist in v1.3** to close a Maximalist-traveler gap surfaced by the Anjali stress-test persona (a clear Maximalist who, with no Max primary in Q8, was forced onto Q8D and won by only +1). **Q1B swapped Heir → Folklorist in v1.4** ("At the table with your coffee" → "Already at the Sunday flea market, three voice notes deep"); rebalances Heir 4 → 3 primaries and Folklorist 3 → 4 primaries.
 
 ## Product summary
 
@@ -264,7 +264,7 @@ Locked. See `docs/saree-dna-archetypes.md`.
 | A | "ok", replied in 30 seconds. | Modernist |
 | B | A 4-minute voice note. 1am. To one person. | Romantic |
 | C | "7 or 7:30? if 7:30 i'll grab the wine." | Occasionalist |
-| D | "BABEEEE WAIT WAIT NO STOP 😭😭" at 11am on a Tuesday. | Maximalist |
+| D | A photo from a city you didn't tell anyone you were in | Wanderer |
 
 **Renumbering note:** This question was originally drafted as Q8 (text-message). It moved to the Q7 slot when the previous Q7 (originally meal-for-six, then a celebrity-question candidate) was cut from plan. The Q8 slot was later refilled in the v1.2 pass with a *new* Q8 ("first afternoon in a new city") — see § Q8 below. **Final quiz is 8 questions: Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8.**
 
@@ -272,13 +272,13 @@ Locked. See `docs/saree-dna-archetypes.md`.
 - **A — Modernist.** Two letters, sub-minute reply. Function over warmth, no padding, no emoji. Reads as efficiency, not coldness — she just doesn't perform texting.
 - **B — Romantic.** Voice note over text. 4 minutes (long, but precisely-bounded — not a 22-minute monologue). 1am (tender hour, not chaos hour). To one person (intimate, not broadcast).
 - **C — Occasionalist.** Logistics with timing precision (7 vs 7:30) and a contingent action (the wine). Plans the evening on the way to the evening. Lowercase — relaxed but executing.
-- **D — Maximalist.** All-caps, no punctuation, escalating emoji, sent at a non-event hour (11am Tuesday — middle of the workday) which makes it land as pure expressive overflow rather than crisis. Volume as default state.
+- **D — Wanderer (v1.6).** A photo from a city you didn't tell anyone you were in. The trip wasn't announced, the photo isn't a post — it's sent quietly to one person who'll know what it means. Curiosity over performance, intimacy over broadcast.
 
 **Cringe test:**
 - A: Romantic (chilling), Maximalist (corpse text), Folklorist (where is the warmth).
 - B: Modernist (a four-minute audio file is a war crime), Occasionalist (just type the question), Heir (1am voice notes are not a thing we do).
 - C: Maximalist (no exclamation marks), Romantic (too transactional), Mul (the half-hour does not matter).
-- D: Modernist (please stop), Heir (decorum), Tussar (this is who I share an office with).
+- D: Maximalist (where is the announcement), Occasionalist (a trip nobody knew about is logistically incoherent), Heir (we tell our people where we are).
 
 **Scoring matrix:** TODO — wording is locked. Derive next session from primary mappings above plus secondary/tertiary spread.
 
@@ -322,7 +322,7 @@ Q8's secondary job is to give Wanderer a third primary (it had only two in v1.1)
 
 ---
 
-## Scoring matrix v1.5
+## Scoring matrix v1.6
 
 **Model:** Each option awards **3 pts to its primary archetype** plus **1 pt each to 1–2 secondaries**. Secondaries are chosen to (a) feed under-served archetypes (Mul, Wanderer, Heir) and (b) deliberately *avoid* stacking spiritual-adjacent archetypes onto Folklorist primaries (the POC's worst auto-stack).
 
@@ -382,7 +382,7 @@ Q8's secondary job is to give Wanderer a third primary (it had only two in v1.1)
 | A — "ok" in 30 seconds | Modernist | Mul — no performance | Tussar — no padding, signal-only |
 | B — 4-minute voice note, 1am | Romantic | Folklorist — voice over text, oral register | Maximalist — 4 minutes is a lot |
 | C — "7 or 7:30? i'll grab the wine" | Occasionalist | Heir — bringing wine = host gesture | Wanderer — lowercase, on the move |
-| D — "BABEEEE WAIT WAIT NO STOP" | Maximalist | Romantic — intimate one-on-one register | Folklorist — chorus-of-emotion, all-caps oral |
+| D — Photo from a city you didn't tell anyone you were in | Wanderer | Mul — didn't perform/announce the trip | Romantic — sent to one person, intimate |
 
 **Q8 — First afternoon in a new city** *(new in v1.2 pass; Q8C swapped Tussar → Maximalist in v1.3)*
 | Opt | Primary (3) | Sec A (1) | Sec B (1) |
@@ -392,15 +392,15 @@ Q8's secondary job is to give Wanderer a third primary (it had only two in v1.1)
 | C — Bag at hotel, three texts, Mar Mikhael rooftop *(v1.3)* | Maximalist | Wanderer — still a new-city scene | Occasionalist — hotel as base of operations |
 | D — Itinerary printed, lunch booked | Occasionalist | Heir — planning-for-someone, hosted register | Modernist — system, control of timing |
 
-### Totals (v1.5)
+### Totals (v1.6)
 
-**Primaries per archetype (v1.5 — 32 options across Q1–Q8)**
+**Primaries per archetype (v1.6 — 32 options across Q1–Q8)**
 | Archetype | Primaries | Options |
 |---|---|---|
 | Mul | 3 | Q1A, Q3D, Q8B |
 | Heir | **4** | Q3B, **Q4C**, Q5D, Q6B |
-| Wanderer | 3 | Q3C, Q4A, Q8A |
-| Maximalist | **5** | Q2A, Q5B, Q6D, Q7D, Q8C |
+| Wanderer | **4** | Q3C, Q4A, **Q7D**, Q8A |
+| Maximalist | 4 | Q2A, Q5B, Q6D, Q8C |
 | Tussar | 3 | Q2B, Q3A, Q6C |
 | Folklorist | **4** | **Q1B**, Q2C, Q4D, Q6A |
 | Occasionalist | 4 | Q2D, Q5C, Q7C, Q8D |
@@ -526,4 +526,5 @@ Q8's secondary job is to give Wanderer a third primary (it had only two in v1.1)
 - Scoring matrix bumped to v1.2 (32 options across Q1–Q8; ceilings 16–19; tiebreak hierarchy unchanged from v1.1)
 - Q8C swapped Tussar → Maximalist; matrix bumped to v1.3 (ceilings 16–21; tiebreak hierarchy unchanged). Closes Maximalist-traveler gap surfaced by the Anjali stress-test persona.
 - Q1B swapped Heir → Folklorist ("At the table with your coffee" → "Already at the Sunday flea market, three voice notes deep"); matrix bumped to v1.4. Rebalances Heir 4 → 3 primaries and Folklorist 3 → 4 primaries. Closes residual Heir over-pull surfaced by re-canonicalised Lakshmi pick set (A-D-B-C-D-B-B-D).
+- Q7D swapped Maximalist → Wanderer ("BABEEEE WAIT WAIT NO STOP" → "A photo from a city you didn't tell anyone you were in"); matrix bumped to v1.6. Rebalances Maximalist 5 → 4 primaries and Wanderer 3 → 4 primaries. Closes Wanderer under-service surfaced by post-v1.5 review — Wanderer was previously capped below most other archetypes.
 - One question at a time, slow cadence
