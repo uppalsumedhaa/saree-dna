@@ -6,7 +6,8 @@ import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import type { Question } from "./questions";
 import { TOTAL_QUESTIONS } from "./questions";
-import { computeWinner, type OptionId, type Pick } from "./scoring";
+import ResultLoader from "./ResultLoader";
+import { computeWinner, type OptionId, type Pick, type Slug } from "./scoring";
 
 type Props = {
   question: Question;
@@ -59,6 +60,10 @@ function writePicks(picks: Pick[]): void {
 export default function QuestionView({ question }: Props) {
   const router = useRouter();
   const [selected, setSelected] = useState<string | null>(null);
+  // When set, the pre-result loader is shown (Q8 only). On its onComplete
+  // we navigate to /results/<slug>. Kept separate from `selected` so the
+  // chosen-option highlight still pulses underneath until navigation runs.
+  const [loaderWinner, setLoaderWinner] = useState<Slug | null>(null);
   const picksRef = useRef<Pick[]>([]);
 
   // Hydrate the picks ref from localStorage on mount so going back to an
@@ -84,15 +89,34 @@ export default function QuestionView({ question }: Props) {
     writePicks(updated);
 
     const next = question.id + 1;
-    const dest =
-      next > TOTAL_QUESTIONS
-        ? `/results/${computeWinner(updated)}`
-        : `/quiz/${next}`;
+    if (next > TOTAL_QUESTIONS) {
+      // Q8 → results: kick off the tarot-shuffle loader. Prefetch the
+      // results page first so the navigation at the end of the animation
+      // is instant (no second loading state). The loader handles its own
+      // ~2.5s timing and calls router.push via onComplete.
+      const winner = computeWinner(updated);
+      router.prefetch(`/results/${winner}`);
+      setLoaderWinner(winner);
+      return;
+    }
+
+    const dest = `/quiz/${next}`;
     window.setTimeout(() => router.push(dest), HIGHLIGHT_MS);
   };
 
   return (
     <main className="relative min-h-[100svh] w-full overflow-hidden bg-stone-50 text-stone-900">
+      {/* Pre-result loader. Only rendered after the Q8 pick. The loader
+          sits on top of the question screen at z-50, plays for ~2.5s, then
+          calls router.push via onComplete. The results page is prefetched
+          in handleChoose so the navigation at the end is instant. */}
+      {loaderWinner && (
+        <ResultLoader
+          winnerSlug={loaderWinner}
+          onComplete={() => router.push(`/results/${loaderWinner}`)}
+        />
+      )}
+
       {/* Lineart background — hybrid treatment.
           Mobile: full-bleed at low opacity (Option A) — safer when there's no
           room to side-anchor cleanly.
