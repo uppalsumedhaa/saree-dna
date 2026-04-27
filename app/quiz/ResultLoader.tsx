@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { motion, useReducedMotion } from "framer-motion";
-import { useEffect, useMemo } from "react";
+import { motion, useMotionValue, useReducedMotion, animate } from "framer-motion";
+import { useEffect, useMemo, useState } from "react";
 import { archetypes } from "../results/archetypes";
 import type { Slug } from "./scoring";
 
@@ -11,245 +11,244 @@ type Props = {
   onComplete: () => void;
 };
 
-// Total animation budget: 2.5s. Punchy — anticipatory, not cinematic.
-//   Phase 1 (0.0s  – 1.5s): shuffle. Cards translate/rotate/restack.
-//   Phase 2 (1.5s  – 2.2s): settle. Losers fan back; winner glides forward.
-//   Phase 3 (2.2s  – 2.5s): hero. Winner held briefly; copy switches.
-const SHUFFLE_END = 1.5;
-const SETTLE_END = 2.2;
-const TOTAL = 2.5;
+// Two-phase reveal modeled on Milla Nova "Chapter the Bride".
+//   Phase 1 (0.0s – 1.6s): countdown. Faded serif percentage 0 → 100, italic % glyph.
+//   Phase 2 (1.6s – 3.0s): cards fly in from edges, staggered, layered like
+//                          posters thrown onto a table.
+//   Phase 3 (3.0s – 3.8s): winner scales forward, others dim. Hold, then exit.
+const PHASE1_MS = 1600;
+const PHASE2_MS = 1400;
+const PHASE3_MS = 800;
+const TOTAL_MS = PHASE1_MS + PHASE2_MS + PHASE3_MS;
 
-// Deterministic pseudo-random so the shuffle pattern is stable per render
-// (no hydration / re-render jitter). Seeded by the slug index in archetypes.
-function seededOffsets(seed: number) {
-  // Tiny LCG. Returns a function we call repeatedly.
-  let s = (seed * 9301 + 49297) % 233280;
-  return () => {
-    s = (s * 9301 + 49297) % 233280;
-    return s / 233280;
-  };
-}
-
-type CardLayout = {
-  slug: string;
-  cardImage: string;
-  // Shuffle phase keyframes — small chaotic dance.
-  shuffleX: number[];
-  shuffleY: number[];
-  shuffleR: number[];
-  // Resting fan position (settle phase) for non-winners.
-  fanX: number;
-  fanY: number;
-  fanR: number;
-  // Initial z-order during shuffle so cards swap layers.
-  baseZ: number;
+type CardChoreography = {
+  // Off-screen origin. Mix of edges + corners so it reads "thrown in".
+  fromX: number; // px
+  fromY: number; // px
+  fromR: number; // deg, larger so the spin is visible mid-flight
+  // Resting position in the pile, relative to the stage center.
+  toX: number;
+  toY: number;
+  toR: number;
+  // Z-stack within the pile.
+  z: number;
 };
 
-function useCardLayouts(winnerSlug: Slug): CardLayout[] {
-  return useMemo(() => {
-    return archetypes.map((a, i) => {
-      const rng = seededOffsets(i + 1);
-      // Shuffle keyframes: 4 stops within +/- 80px / +/- 18deg.
-      const shuffleX = [0, (rng() - 0.5) * 160, (rng() - 0.5) * 160, (rng() - 0.5) * 160];
-      const shuffleY = [0, (rng() - 0.5) * 80, (rng() - 0.5) * 80, (rng() - 0.5) * 80];
-      const shuffleR = [
-        (rng() - 0.5) * 24,
-        (rng() - 0.5) * 36,
-        (rng() - 0.5) * 36,
-        (rng() - 0.5) * 36,
-      ];
-      // Fan position for losers: spread across an arc behind the winner.
-      // 8 losers span -56deg .. +56deg. We compute the loser-only index later.
-      return {
-        slug: a.slug,
-        cardImage: a.cardImage ?? "/cards/heir.jpg",
-        shuffleX,
-        shuffleY,
-        shuffleR,
-        fanX: 0, // overridden below
-        fanY: 0, // overridden below
-        fanR: 0, // overridden below
-        baseZ: i,
-      };
-    }).map((c, _, all) => {
-      // Re-pass: assign fan slot based on loser order.
-      const losers = all.filter((x) => x.slug !== winnerSlug);
-      const loserIdx = losers.findIndex((x) => x.slug === c.slug);
-      if (c.slug === winnerSlug) {
-        return { ...c, fanX: 0, fanY: 0, fanR: 0 };
-      }
-      const total = losers.length; // 8
-      // Centered offset around 0; arc from -1 to +1.
-      const t = total === 1 ? 0 : (loserIdx / (total - 1)) * 2 - 1;
-      return {
-        ...c,
-        fanX: t * 220, // px
-        fanY: Math.abs(t) * 14, // dip outer cards slightly
-        fanR: t * 14, // degrees
-      };
-    });
-  }, [winnerSlug]);
-}
+// 9 hand-tuned slots. Two prominent foreground cards (matching frame 07/08
+// composition where two cards lead and the rest trail behind/around). Origins
+// alternate corners and edges.
+const CHOREOGRAPHY: CardChoreography[] = [
+  // 0 — back-left, peeks behind
+  { fromX: -700, fromY: -500, fromR: -45, toX: -180, toY: -40, toR: -18, z: 1 },
+  // 1 — back-right, peeks behind
+  { fromX: 700, fromY: -500, fromR: 40, toX: 180, toY: -50, toR: 16, z: 2 },
+  // 2 — top center, slight tilt
+  { fromX: 0, fromY: -700, fromR: -8, toX: 20, toY: -90, toR: -6, z: 3 },
+  // 3 — far left, low
+  { fromX: -800, fromY: 200, fromR: -25, toX: -130, toY: 70, toR: -22, z: 4 },
+  // 4 — far right, low
+  { fromX: 800, fromY: 250, fromR: 28, toX: 150, toY: 80, toR: 20, z: 5 },
+  // 5 — bottom-left
+  { fromX: -600, fromY: 700, fromR: -18, toX: -70, toY: 120, toR: -10, z: 6 },
+  // 6 — bottom-right
+  { fromX: 600, fromY: 700, fromR: 18, toX: 90, toY: 110, toR: 12, z: 7 },
+  // 7 — left foreground (one of the two prominent leaders)
+  { fromX: -900, fromY: 100, fromR: -55, toX: -85, toY: 30, toR: -14, z: 14 },
+  // 8 — right foreground (other prominent leader)
+  { fromX: 900, fromY: -100, fromR: 50, toX: 95, toY: 10, toR: 11, z: 15 },
+];
 
 export default function ResultLoader({ winnerSlug, onComplete }: Props) {
-  const layouts = useCardLayouts(winnerSlug);
   const reduce = useReducedMotion();
+  const [phase, setPhase] = useState<1 | 2 | 3>(1);
 
-  // Drive navigation off a single timer so the animation can't strand the
-  // user if a particular variant misfires its `onAnimationComplete`.
+  // Counter is a motion value so we don't re-render React on every frame.
+  const counter = useMotionValue(0);
+  const [counterText, setCounterText] = useState("0");
+
+  // Order cards so the WINNER lands last — it should be on top of the pile
+  // before phase 3, ready to scale forward. Choreography slots are fixed,
+  // so we map archetypes to slots with the winner taking slot 8 (the
+  // right-foreground "leader" with highest z-index).
+  const ordered = useMemo(() => {
+    const winner = archetypes.find((a) => a.slug === winnerSlug);
+    const others = archetypes.filter((a) => a.slug !== winnerSlug);
+    if (!winner) return archetypes.map((a, i) => ({ a, slot: CHOREOGRAPHY[i] }));
+    return [
+      ...others.map((a, i) => ({ a, slot: CHOREOGRAPHY[i] })),
+      { a: winner, slot: CHOREOGRAPHY[8] },
+    ];
+  }, [winnerSlug]);
+
+  const winnerName = useMemo(
+    () => archetypes.find((a) => a.slug === winnerSlug)?.name ?? "",
+    [winnerSlug],
+  );
+
+  // Drive the counter 0 → 100 over PHASE1_MS, then advance phases on a
+  // single timer chain so a stuck animation can't strand the user.
   useEffect(() => {
-    const ms = reduce ? 600 : TOTAL * 1000;
-    const id = window.setTimeout(onComplete, ms);
-    return () => window.clearTimeout(id);
-  }, [onComplete, reduce]);
+    if (reduce) {
+      // Reduced motion: skip straight through with a brief hold.
+      const id = window.setTimeout(onComplete, 700);
+      return () => window.clearTimeout(id);
+    }
+
+    const unsubscribe = counter.on("change", (v) => {
+      setCounterText(String(Math.round(v)));
+    });
+    const controls = animate(counter, 100, {
+      duration: PHASE1_MS / 1000,
+      ease: [0.22, 0.61, 0.36, 1], // slow-build, classical
+    });
+
+    const t2 = window.setTimeout(() => setPhase(2), PHASE1_MS);
+    const t3 = window.setTimeout(() => setPhase(3), PHASE1_MS + PHASE2_MS);
+    const tEnd = window.setTimeout(onComplete, TOTAL_MS);
+
+    return () => {
+      controls.stop();
+      unsubscribe();
+      window.clearTimeout(t2);
+      window.clearTimeout(t3);
+      window.clearTimeout(tEnd);
+    };
+  }, [counter, onComplete, reduce]);
+
+  if (reduce) {
+    return (
+      <div
+        role="status"
+        aria-live="polite"
+        aria-label="Reading your saree DNA"
+        className="fixed inset-0 z-50 flex items-center justify-center bg-stone-50"
+      >
+        <p className="font-serif text-2xl italic text-stone-500">
+          You are the {winnerName}…
+        </p>
+      </div>
+    );
+  }
 
   return (
     <div
       role="status"
       aria-live="polite"
       aria-label="Reading your saree DNA"
-      className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-stone-50"
+      className="fixed inset-0 z-50 flex items-center justify-center overflow-hidden bg-stone-50"
     >
-      {/* Card stage. The cards are absolutely positioned and animate
-          relative to this center. Sized to give 200px-wide cards on
-          desktop, ~150px on mobile, with breathing room around the fan. */}
-      <div className="relative h-[300px] w-[300px] sm:h-[360px] sm:w-[400px]">
-        {layouts.map((card, i) => {
-          const isWinner = card.slug === winnerSlug;
-          // Stagger shuffle starts so cards aren't all moving in lockstep.
-          const startDelay = (i % 9) * 0.04;
+      {/* Phase 1 — countdown. Cormorant serif, very faded, italic % glyph
+          like the reference. Fades out as phase 2 begins. */}
+      <motion.div
+        className="absolute inset-0 flex items-center justify-center"
+        animate={{ opacity: phase === 1 ? 1 : 0 }}
+        transition={{ duration: 0.4, ease: "easeOut" }}
+      >
+        <div className="flex items-baseline gap-1 font-serif text-stone-300 sm:gap-2">
+          <span className="text-[7rem] leading-none tracking-tight sm:text-[10rem]">
+            {counterText}
+          </span>
+          <span className="font-serif text-[5rem] italic leading-none sm:text-[7rem]">
+            %
+          </span>
+        </div>
+      </motion.div>
 
-          if (reduce) {
-            // Reduced-motion: skip the dance, fade the winner up briefly.
-            return isWinner ? (
+      {/* Phase 2/3 — card pile. Stage is a centered point; cards translate
+          relative to it. Slight perspective so rotations feel physical. */}
+      <div
+        className="relative h-0 w-0"
+        style={{ perspective: "1200px" }}
+      >
+        {phase >= 2 &&
+          ordered.map(({ a, slot }, i) => {
+            const isWinner = a.slug === winnerSlug;
+            const flightDelay = i * 0.07; // 70ms stagger
+            return (
               <motion.div
-                key={card.slug}
-                className="absolute left-1/2 top-1/2"
-                initial={{ x: "-50%", y: "-50%", opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.4 }}
+                key={a.slug}
+                className="absolute left-0 top-0"
+                style={{
+                  zIndex: isWinner && phase === 3 ? 50 : slot.z,
+                  transformOrigin: "center center",
+                }}
+                initial={{
+                  x: slot.fromX,
+                  y: slot.fromY,
+                  rotate: slot.fromR,
+                  opacity: 0,
+                  scale: 0.95,
+                }}
+                animate={
+                  phase === 3
+                    ? {
+                        // Winner rises center, others dim and drift slightly back.
+                        x: isWinner ? 0 : slot.toX * 1.08,
+                        y: isWinner ? 0 : slot.toY * 1.08,
+                        rotate: isWinner ? 0 : slot.toR,
+                        opacity: isWinner ? 1 : 0.45,
+                        scale: isWinner ? 1.08 : 0.94,
+                      }
+                    : {
+                        x: slot.toX,
+                        y: slot.toY,
+                        rotate: slot.toR,
+                        opacity: 1,
+                        scale: 1,
+                      }
+                }
+                transition={
+                  phase === 3
+                    ? {
+                        duration: 0.55,
+                        ease: [0.22, 0.61, 0.36, 1],
+                      }
+                    : {
+                        // Spring with a small overshoot so each card lands
+                        // and settles, like a thrown poster.
+                        type: "spring",
+                        stiffness: 110,
+                        damping: 16,
+                        mass: 0.9,
+                        delay: flightDelay,
+                      }
+                }
               >
-                <CardImage cardImage={card.cardImage} priority />
+                <CardImage cardImage={a.cardImage ?? "/cards/heir.jpg"} priority />
               </motion.div>
-            ) : null;
-          }
-
-          return (
-            <motion.div
-              key={card.slug}
-              className="absolute left-1/2 top-1/2"
-              style={{ zIndex: isWinner ? 50 : 10 + card.baseZ }}
-              initial={{
-                x: "-50%",
-                y: "-50%",
-                rotate: 0,
-                opacity: 0,
-                scale: 0.96,
-              }}
-              animate={{
-                // Phase 1 keyframes (shuffle), then phase 2 settle, then phase 3 hero.
-                x: [
-                  "-50%",
-                  `calc(-50% + ${card.shuffleX[1]}px)`,
-                  `calc(-50% + ${card.shuffleX[2]}px)`,
-                  `calc(-50% + ${card.shuffleX[3]}px)`,
-                  // Settle: losers go to fan, winner to center.
-                  `calc(-50% + ${isWinner ? 0 : card.fanX}px)`,
-                  `calc(-50% + ${isWinner ? 0 : card.fanX}px)`,
-                ],
-                y: [
-                  "-50%",
-                  `calc(-50% + ${card.shuffleY[1]}px)`,
-                  `calc(-50% + ${card.shuffleY[2]}px)`,
-                  `calc(-50% + ${card.shuffleY[3]}px)`,
-                  `calc(-50% + ${isWinner ? 0 : card.fanY}px)`,
-                  `calc(-50% + ${isWinner ? 0 : card.fanY}px)`,
-                ],
-                rotate: [
-                  0,
-                  card.shuffleR[1],
-                  card.shuffleR[2],
-                  card.shuffleR[3],
-                  isWinner ? 0 : card.fanR,
-                  isWinner ? 0 : card.fanR,
-                ],
-                opacity: [
-                  0,
-                  1,
-                  0.85,
-                  1,
-                  isWinner ? 1 : 0.55,
-                  isWinner ? 1 : 0.45,
-                ],
-                scale: [
-                  0.96,
-                  1,
-                  0.98,
-                  1,
-                  isWinner ? 1.06 : 0.9,
-                  isWinner ? 1.08 : 0.88,
-                ],
-              }}
-              transition={{
-                duration: TOTAL,
-                delay: startDelay,
-                // Keyframe spacing: shuffle eats up to 1.5/2.5 = 0.6, settle to 2.2/2.5 = 0.88, hero through 1.0.
-                times: [0, 0.2, 0.42, 0.6, 0.88, 1],
-                ease: ["easeOut", "easeInOut", "easeInOut", "easeOut", "easeOut"],
-              }}
-            >
-              <CardImage cardImage={card.cardImage} priority={isWinner} />
-            </motion.div>
-          );
-        })}
+            );
+          })}
       </div>
 
-      {/* Subtle copy. Two stanzas: shuffle line, then reveal line.
-          The reveal line gets the archetype name to set up the next page. */}
-      <div className="mt-10 h-6 text-center sm:mt-14">
-        <motion.p
-          key="shuffle-copy"
-          className="font-serif text-base italic text-stone-500 sm:text-lg"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: [0, 1, 1, 0] }}
-          transition={{
-            duration: TOTAL,
-            times: [0, 0.12, 0.7, 0.82],
-          }}
-        >
-          Reading your saree DNA…
-        </motion.p>
-        <motion.p
-          className="-mt-6 font-serif text-base italic text-stone-700 sm:text-lg"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: [0, 0, 1] }}
-          transition={{
-            duration: TOTAL,
-            times: [0, 0.84, 0.96],
-          }}
-        >
-          You are the {archetypeName(winnerSlug)}…
-        </motion.p>
-      </div>
+      {/* Phase 3 caption. Sits below the pile, fades in once the winner is
+          forward. Same italic serif register as the rest of the app. */}
+      <motion.p
+        className="absolute bottom-[14%] left-0 right-0 text-center font-serif text-base italic text-stone-600 sm:text-lg"
+        initial={{ opacity: 0, y: 6 }}
+        animate={{
+          opacity: phase === 3 ? 1 : 0,
+          y: phase === 3 ? 0 : 6,
+        }}
+        transition={{ duration: 0.4, delay: phase === 3 ? 0.2 : 0, ease: "easeOut" }}
+      >
+        You are the {winnerName}…
+      </motion.p>
     </div>
   );
-}
-
-function archetypeName(slug: string): string {
-  return archetypes.find((a) => a.slug === slug)?.name ?? "";
 }
 
 function CardImage({ cardImage, priority }: { cardImage: string; priority?: boolean }) {
   return (
     <div
-      className="relative h-[210px] w-[140px] overflow-hidden rounded-sm shadow-[0_18px_40px_-18px_rgba(28,25,23,0.45)] ring-1 ring-stone-900/5 sm:h-[260px] sm:w-[180px]"
-      style={{ backgroundColor: "#f5f5f4" }}
+      // Card sized to fit nicely in the pile. ~150x220 mobile, ~190x280 desktop.
+      // Subtle paper-edge shadow + faint ring; no harsh drop shadow.
+      className="relative -translate-x-1/2 -translate-y-1/2 h-[220px] w-[150px] overflow-hidden rounded-sm bg-stone-100 shadow-[0_22px_50px_-22px_rgba(28,25,23,0.55)] ring-1 ring-stone-900/5 sm:h-[280px] sm:w-[190px]"
     >
       <Image
         src={cardImage}
         alt=""
         fill
-        sizes="(min-width: 640px) 180px, 140px"
+        sizes="(min-width: 640px) 190px, 150px"
         className="object-cover"
         priority={priority}
       />
