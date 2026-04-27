@@ -3,8 +3,8 @@
 import { useCallback, useEffect, useState } from "react";
 
 // Share controls for the results page. Lives below the "Take again" CTA.
-// Three actions: WhatsApp deep link, Web Share API (native sheet, hidden on
-// browsers that don't support it), and Copy link with a 2s "Copied" state.
+// Two actions: WhatsApp deep link and Web Share API (native sheet, hidden on
+// browsers that don't support it).
 //
 // Kept as a client component so the rest of the page can stay server-rendered
 // and `generateMetadata` continues to drive the OG unfurl cleanly.
@@ -19,7 +19,7 @@ type Props = {
 
 // Inline SVG icons — kept small (16px) and stroked at 1.5 to sit comfortably
 // next to the DM Sans labels. Filled WA glyph because that's the recognisable
-// silhouette; outlined share + link to match the rest of the page's iconography.
+// silhouette; outlined share to match the rest of the page's iconography.
 function WhatsAppIcon() {
   return (
     <svg
@@ -54,25 +54,6 @@ function ShareIcon() {
   );
 }
 
-function LinkIcon() {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className="h-4 w-4"
-      aria-hidden
-    >
-      <path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5" />
-      <path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5" />
-    </svg>
-  );
-}
-
 // Same visual register as TakeAgainCTA: thin underline border, DM Sans uppercase
 // micro-tracking, stone palette. Underline + icon row reads as a sibling control,
 // not a separate UI vocabulary.
@@ -87,7 +68,6 @@ function underlineClass() {
 }
 
 export default function ShareBlock({ archetypeName, archetypeSlug, cardImage }: Props) {
-  const [copied, setCopied] = useState(false);
   const [canNativeShare, setCanNativeShare] = useState(false);
 
   // navigator.share is undefined on most desktop browsers — hide the button
@@ -138,33 +118,9 @@ export default function ShareBlock({ archetypeName, archetypeSlug, cardImage }: 
       await navigator.share({ title, text, url });
     } catch (err) {
       if ((err as DOMException)?.name === "AbortError") return;
-      // Anything else — silently swallow; the user can still use Copy link.
+      // Anything else — silently swallow.
     }
   }, [archetypeName, archetypeSlug, cardImage]);
-
-  const handleCopy = useCallback(async () => {
-    if (typeof window === "undefined") return;
-    const url = window.location.href;
-    try {
-      if (navigator.clipboard?.writeText) {
-        await navigator.clipboard.writeText(url);
-      } else {
-        // Older browsers fallback — uses a hidden textarea + execCommand.
-        const ta = document.createElement("textarea");
-        ta.value = url;
-        ta.style.position = "fixed";
-        ta.style.opacity = "0";
-        document.body.appendChild(ta);
-        ta.select();
-        document.execCommand("copy");
-        document.body.removeChild(ta);
-      }
-      setCopied(true);
-      window.setTimeout(() => setCopied(false), 2000);
-    } catch {
-      // Permissions failure — leave button label unchanged.
-    }
-  }, []);
 
   return (
     <div className="mt-12 flex flex-col items-center sm:mt-14">
@@ -172,7 +128,7 @@ export default function ShareBlock({ archetypeName, archetypeSlug, cardImage }: 
         Share your saree DNA
       </div>
 
-      <div className="mt-5 flex flex-wrap items-center justify-center gap-x-7 gap-y-4 sm:mt-6 sm:gap-x-9">
+      <div className="mt-5 flex flex-wrap items-center justify-center gap-x-8 gap-y-4 sm:mt-6 sm:gap-x-10">
         <a
           href={whatsappHref}
           target="_blank"
@@ -195,17 +151,6 @@ export default function ShareBlock({ archetypeName, archetypeSlug, cardImage }: 
             <span className={underlineClass()}>Share</span>
           </button>
         )}
-
-        <button
-          type="button"
-          onClick={handleCopy}
-          aria-label="Copy link to clipboard"
-          aria-live="polite"
-          className={buttonClass()}
-        >
-          <LinkIcon />
-          <span className={underlineClass()}>{copied ? "Copied" : "Copy link"}</span>
-        </button>
       </div>
     </div>
   );
