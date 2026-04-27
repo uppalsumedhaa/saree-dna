@@ -1,4 +1,4 @@
-// Scoring matrix v1.3 — ported verbatim from docs/features/quiz-v1.md.
+// Scoring matrix v1.4 — ported verbatim from docs/features/quiz-v1.md.
 // 32 options across Q1–Q8. Each option awards 3 pts to its primary archetype
 // plus 1 pt each to 1–2 secondaries. Tiebreak hierarchy (v1.1, four-level):
 //   1. More PRIMARIES TRIGGERED on the user's path wins.
@@ -26,7 +26,7 @@ type ScoreEntry = { primary: Slug; secondaries: Slug[] };
 // Key format: '<questionId><optionId>' e.g. '1A', '8D'.
 export const MATRIX: Record<string, ScoreEntry> = {
   "1A": { primary: "mul", secondaries: ["wanderer", "modernist"] },
-  "1B": { primary: "heir", secondaries: ["folklorist", "tussar"] },
+  "1B": { primary: "folklorist", secondaries: ["wanderer", "maximalist"] },
   "1C": { primary: "modernist", secondaries: ["wanderer", "occasionalist"] },
   "1D": { primary: "romantic", secondaries: ["mul", "tussar"] },
   "2A": { primary: "maximalist", secondaries: ["romantic", "occasionalist"] },

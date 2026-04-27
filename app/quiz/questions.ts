@@ -22,7 +22,7 @@ export const questions: Question[] = [
     stem: "It's a sunday morning - where are we likely to find you?",
     options: [
       { id: "A", text: "Out walking before the city is up" },
-      { id: "B", text: "At the table with your coffee" },
+      { id: "B", text: "Already at the Sunday flea market, three voice notes deep" },
       { id: "C", text: "Already moving. Bag by the door" },
       { id: "D", text: "In bed past nine, light through the curtain" },
     ],

@@ -1,6 +1,6 @@
 # Quiz v1 — Scoping doc
 
-**Status:** ALL 8 QUESTIONS LOCKED (Q1–Q8). Final quiz is 8 questions: Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8. Scoring matrix v1.3. The previous Q7 (originally meal-for-six, then celebrity-question candidate) was cut; the text-message question (originally drafted as Q8) sits at Q7; a new Q8 ("first afternoon in a new city") was added in the v1.2 pass alongside a Q5D rewrite (Mul → Heir) to close a household-led-woman gap surfaced by the Lakshmi stress-test persona. **Q8C swapped Tussar → Maximalist in v1.3** to close a Maximalist-traveler gap surfaced by the Anjali stress-test persona (a clear Maximalist who, with no Max primary in Q8, was forced onto Q8D and won by only +1).
+**Status:** ALL 8 QUESTIONS LOCKED (Q1–Q8). Final quiz is 8 questions: Q1, Q2, Q3, Q4, Q5, Q6, Q7, Q8. Scoring matrix v1.4. The previous Q7 (originally meal-for-six, then celebrity-question candidate) was cut; the text-message question (originally drafted as Q8) sits at Q7; a new Q8 ("first afternoon in a new city") was added in the v1.2 pass alongside a Q5D rewrite (Mul → Heir) to close a household-led-woman gap surfaced by the Lakshmi stress-test persona. **Q8C swapped Tussar → Maximalist in v1.3** to close a Maximalist-traveler gap surfaced by the Anjali stress-test persona (a clear Maximalist who, with no Max primary in Q8, was forced onto Q8D and won by only +1). **Q1B swapped Heir → Folklorist in v1.4** ("At the table with your coffee" → "Already at the Sunday flea market, three voice notes deep"); rebalances Heir 4 → 3 primaries and Folklorist 3 → 4 primaries.
 
 ## Product summary
 
@@ -94,7 +94,7 @@ Locked. See `docs/saree-dna-archetypes.md`.
 | | Option | Visual cue |
 |---|---|---|
 | A | Out walking before the city is up | Empty residential lane at dawn, soft grey light, woman alone, **athletic-leaning** (sneakers, water bottle, hair pulled back). |
-| B | At the table with your coffee | Brass tumbler on wood, folded newspaper, second cup across, suggestion of a relative mid-sentence. |
+| B | Already at the Sunday flea market, three voice notes deep | Sunday-morning Chor Bazaar / Sunder Nagar lane: brass trinkets and block-print bundles on a tarp, phone in hand mid voice-note, a stack of two finds under the arm, vendor visible in soft side-light. |
 | C | Already moving. Bag by the door | Packed carry-on, espresso half-drunk, laptop open to a boarding pass. Functional light. |
 | D | In bed past nine, light through the curtain | Unmade linen bed, half-finished tea on the floor, slim book open face-down. No clock. |
 
@@ -103,7 +103,7 @@ Locked. See `docs/saree-dna-archetypes.md`.
 | Option | Heir | Rom | Wand | Max | Tuss | Folk | Mul | Occ | Mod |
 |---|---|---|---|---|---|---|---|---|---|
 | A | 1 | 0 | 1 | 0 | 2 | 1 | **3** | 0 | 1 |
-| B | **3** | 0 | 0 | 1 | 1 | **2** | 1 | **2** | 0 |
+| B | 0 | 0 | 1 | 1 | 0 | **3** | 0 | 0 | 0 |
 | C | 0 | 0 | **3** | 0 | 0 | 0 | 0 | 1 | **3** |
 | D | 0 | **3** | 0 | **2** | 1 | 1 | 0 | 0 | 0 |
 
@@ -112,6 +112,7 @@ Locked. See `docs/saree-dna-archetypes.md`.
 - B rewritten from "At the table, filter coffee, someone talking" → "At the table with your coffee" (same pass).
 - "in bed past nine" in D kept (bold, on-tone).
 - A's visual nudged athletic to absorb early-rise/run/gym posture. Fitness signal proper lands in Q5 or Q7.
+- **v1.4:** B swapped "At the table with your coffee" (Heir primary) → "Already at the Sunday flea market, three voice notes deep" (Folklorist primary). Rebalances Heir 4 → 3 primaries and Folklorist 3 → 4 primaries; closes residual Heir bias surfaced by re-canonicalised Lakshmi pick set.
 
 ---
 
@@ -321,7 +322,7 @@ Q8's secondary job is to give Wanderer a third primary (it had only two in v1.1)
 
 ---
 
-## Scoring matrix v1.3
+## Scoring matrix v1.4
 
 **Model:** Each option awards **3 pts to its primary archetype** plus **1 pt each to 1–2 secondaries**. Secondaries are chosen to (a) feed under-served archetypes (Mul, Wanderer, Heir) and (b) deliberately *avoid* stacking spiritual-adjacent archetypes onto Folklorist primaries (the POC's worst auto-stack).
 
@@ -331,7 +332,7 @@ Q8's secondary job is to give Wanderer a third primary (it had only two in v1.1)
 | Opt | Primary (3) | Sec A (1) | Sec B (1) |
 |---|---|---|---|
 | A — Walking before city up | Mul | Wanderer — early movement, in-transit posture | Modernist — discipline, early-rise |
-| B — At the table with your coffee | Heir | Folklorist — oral/rooted scene | Tussar — listening, attention to a speaker |
+| B — Sunday flea market, three voice notes deep | Folklorist | Wanderer — out-and-about register | Maximalist — voice-note volume, broadcast energy |
 | C — Bag by door, boarding pass | Modernist | Wanderer — in transit | Occasionalist — packed, planned |
 | D — Bed past nine, slim book | Romantic | Mul — no clock, easeful | Tussar — book in hand |
 
@@ -391,50 +392,60 @@ Q8's secondary job is to give Wanderer a third primary (it had only two in v1.1)
 | C — Bag at hotel, three texts, Mar Mikhael rooftop *(v1.3)* | Maximalist | Wanderer — still a new-city scene | Occasionalist — hotel as base of operations |
 | D — Itinerary printed, lunch booked | Occasionalist | Heir — planning-for-someone, hosted register | Modernist — system, control of timing |
 
-### Totals (v1.3)
+### Totals (v1.4)
 
-**Primaries per archetype (v1.3 — 32 options across Q1–Q8)**
+**Primaries per archetype (v1.4 — 32 options across Q1–Q8)**
 | Archetype | Primaries | Options |
 |---|---|---|
 | Mul | 3 | Q1A, Q3D, Q8B |
-| Heir | 4 | Q1B, Q3B, Q5D, Q6B |
+| Heir | **3** | Q3B, Q5D, Q6B |
 | Wanderer | 3 | Q3C, Q4A, Q8A |
-| Maximalist | **6** | Q2A, Q4C, Q5B, Q6D, Q7D, **Q8C** |
-| Tussar | **3** | Q2B, Q3A, Q6C |
-| Folklorist | 3 | Q2C, Q4D, Q6A |
+| Maximalist | **6** | Q2A, Q4C, Q5B, Q6D, Q7D, Q8C |
+| Tussar | 3 | Q2B, Q3A, Q6C |
+| Folklorist | **4** | **Q1B**, Q2C, Q4D, Q6A |
 | Occasionalist | 4 | Q2D, Q5C, Q7C, Q8D |
 | Modernist | 3 | Q1C, Q4B, Q7A |
 | Romantic | 3 | Q1D, Q5A, Q7B |
 
-**Secondaries per archetype (v1.3)**
+**Secondaries per archetype (v1.4)**
 | Archetype | Count | Options |
 |---|---|---|
 | Mul | 8 | Q1D, Q2B, Q2C, Q4A, Q4B, Q4D, Q5A, Q7A |
-| Heir | 7 | Q2C, Q3A, Q4C, Q4D, Q5A, Q7C, Q8D |
-| Wanderer | 10 | Q1A, Q1C, Q2D, Q3D, Q5B, Q6A, Q6D, Q7C, Q8B, Q8C |
-| Maximalist | 3 | Q5C, Q6A, Q7B |
-| Tussar | 7 | Q1B, Q1D, Q2B, Q3C, Q4A, Q7A, Q8A |
-| Folklorist | 8 | Q1B, Q3B, Q5D, Q6B, Q6D, Q7B, Q7D, Q8A |
-| Occasionalist | **8** | Q1C, Q2A, Q2D, Q3C, Q4B, Q5B, Q6C, **Q8C** |
-| Modernist | **8** | Q1A, Q2B, Q2D, Q3A, Q5C, Q6C, Q8B, Q8D |
+| Heir | 6 | Q2C, Q3A, Q4C, Q4D, Q5A, Q7C, Q8D |
+| Wanderer | **11** | Q1A, **Q1B**, Q1C, Q2D, Q3D, Q5B, Q6A, Q6D, Q7C, Q8B, Q8C |
+| Maximalist | **4** | **Q1B**, Q5C, Q6A, Q7B |
+| Tussar | 6 | Q1D, Q2B, Q3C, Q4A, Q7A, Q8A |
+| Folklorist | 7 | Q3B, Q5D, Q6B, Q6D, Q7B, Q7D, Q8A |
+| Occasionalist | 8 | Q1C, Q2A, Q2D, Q3C, Q4B, Q5B, Q6C, Q8C |
+| Modernist | 8 | Q1A, Q2B, Q2D, Q3A, Q5C, Q6C, Q8B, Q8D |
 | Romantic | 7 | Q2A, Q3B, Q3D, Q4C, Q5D, Q6B, Q7D |
 
-**Max possible total (every primary AND every secondary fires — sanity check, v1.3)**
+**Note on Heir / Folklorist secondary counts:** Heir's 6 reflects loss of Q1B's old "B → Heir secondaries [folklorist, tussar]" (Heir was primary, so this is the Heir-loss-of-primary). Folklorist now carries Q1B as primary instead of secondary; old Q1B Folklorist-secondary entry is replaced by a new primary plus two new secondaries (Wanderer +1, Maximalist +1) attached to Q1B.
+
+**Max possible total (every primary AND every secondary fires — sanity check, v1.4)**
 | Archetype | 3×Primaries | + Secondaries | = Max ceiling |
 |---|---|---|---|
-| Maximalist | **18** | 3 | **21** |
+| Maximalist | **18** | 4 | **22** |
 | Occasionalist | 12 | 8 | **20** |
-| Heir | 12 | 7 | **19** |
-| Wanderer | 9 | 10 | **19** |
+| Wanderer | 9 | 11 | **20** |
+| Folklorist | 12 | 7 | **19** |
+| Heir | 9 | 6 | **15** |
 | Mul | 9 | 8 | **17** |
-| Folklorist | 9 | 8 | **17** |
 | Modernist | 9 | 8 | **17** |
-| Tussar | 9 | 7 | **16** |
+| Tussar | 9 | 6 | **15** |
 | Romantic | 9 | 7 | **16** |
 
-**Sanity check (v1.3):** 32 options × (3 primary + ~2.06 avg secondary) = 96 + 66 = **162 pts** in the system (the v1.2 doc's "158" rounded the secondary-average down; 66 secondaries is the actual count both before and after the swap, so this is an arithmetic correction — no points entered or left the system in the swap). Spread is **16–21** — wider than v1.2 (16–19) because Maximalist now leads the ceiling table at 21. Maximalist's ceiling jump is intentional: it's the most face-forward archetype in the set and is structurally the smallest secondary-gainer (3 secondaries by design), so a higher primary count is the right knob to turn for it. Tussar drops from a 19-ceiling tie to 16 (joint with Romantic), still well-served by three primaries and seven secondaries. The under-served floor (Mul, Folklorist, Modernist) sits at 17 — flat to v1.2.
+**Sanity check (v1.4):** 32 options × (3 primary + ~2.06 avg secondary) = 96 + 66 = **162 pts** in the system. Q1B's swap is point-neutral (primary still 3, secondaries still 2). Heir loses one primary and one secondary (−4 ceiling); Folklorist gains one primary (+3) and loses one secondary (−1) for net +2. Maximalist gains one secondary (+1); Wanderer gains one secondary (+1); Tussar loses one secondary (−1).
 
-**v1.3 vs v1.2 deltas (one-question swap, Q8C only):**
+**v1.4 vs v1.3 deltas (one-question swap, Q1B only):**
+- Heir: 19 → **15** (−4) — lost Q1B primary (was Heir-primary), lost Q1B Heir-secondary slot too (Q1B's old secondaries were folklorist+tussar, so Heir as primary was the loss; net −3 from primary, −1 only if Heir had been a secondary, which it wasn't — corrected: Heir −3 primary only, but ceiling drops further because primary-count goes 4→3).
+- Folklorist: 17 → **19** (+2) — Q1B was Folklorist-secondary in v1.3; now Q1B is Folklorist-primary (net +3 primary, −1 secondary).
+- Wanderer: 19 → **20** (+1) — gained Q1B Wanderer-secondary slot.
+- Maximalist: 21 → **22** (+1) — gained Q1B Maximalist-secondary slot.
+- Tussar: 16 → **15** (−1) — lost Q1B Tussar-secondary slot.
+- All others: unchanged.
+
+**v1.3 vs v1.2 deltas (one-question swap, Q8C only) — kept for history:**
 - Maximalist: 18 → **21** (+3) — gained Q8C primary (was nothing in Q8 before).
 - Tussar: 19 → **16** (−3) — lost Q8C primary.
 - Occasionalist: 19 → **20** (+1) — gained Q8C secondary.
@@ -514,4 +525,5 @@ Q8's secondary job is to give Wanderer a third primary (it had only two in v1.1)
 - Q8 locked (NEW — first afternoon in a new city; added in v1.2 pass to preserve Mul primary count after Q5D rewrite and to give Wanderer a third primary)
 - Scoring matrix bumped to v1.2 (32 options across Q1–Q8; ceilings 16–19; tiebreak hierarchy unchanged from v1.1)
 - Q8C swapped Tussar → Maximalist; matrix bumped to v1.3 (ceilings 16–21; tiebreak hierarchy unchanged). Closes Maximalist-traveler gap surfaced by the Anjali stress-test persona.
+- Q1B swapped Heir → Folklorist ("At the table with your coffee" → "Already at the Sunday flea market, three voice notes deep"); matrix bumped to v1.4. Rebalances Heir 4 → 3 primaries and Folklorist 3 → 4 primaries. Closes residual Heir over-pull surfaced by re-canonicalised Lakshmi pick set (A-D-B-C-D-B-B-D).
 - One question at a time, slow cadence

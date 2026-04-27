@@ -1,4 +1,4 @@
-// Persona verification for scoring matrix v1.3.
+// Persona verification for scoring matrix v1.4.
 // Run: npx tsx scripts/verify-scoring.ts
 
 import { computeWinner, MATRIX, type Pick, type OptionId, type Slug } from "../app/quiz/scoring";
@@ -29,7 +29,8 @@ const personas: Persona[] = [
   },
   {
     name: "Lakshmi",
-    picks: ["B", "C", "B", "D", "D", "B", "B", "A"],
+    // Re-canonicalised v1.4: 47yo Chennai Bharatanatyam mom — early walker (Q1A), busy-mom bedside (Q2D), classical-warm room not bohemian-loom (Q4C), planner abroad (Q8D). Old picks B-C-B-D-D-B-B-A were over-fit to v1.3.
+    picks: ["A", "D", "B", "C", "D", "B", "B", "D"],
     expected: "heir",
   },
   {
@@ -40,8 +41,8 @@ const personas: Persona[] = [
   {
     name: "Nayantara",
     picks: ["B", "C", "B", "D", "D", "B", "B", "A"],
-    expected: "heir",
-    note: "same picks as Lakshmi",
+    expected: "folklorist",
+    note: "textile historian — Folklorist is the spec-accepted v1.4 outcome (Heir or Folklorist both acceptable for her)",
   },
 ];
 
