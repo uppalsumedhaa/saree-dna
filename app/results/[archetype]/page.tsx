@@ -118,9 +118,10 @@ function Headline({ name }: { name: string }) {
   );
 }
 
-// The full results layout — vertical hero. Card centered up top as the
-// moment, then headline + tagline, then a single narrow column of body
-// copy below. Same on mobile and desktop; only sizes scale.
+// The full results layout. Mobile: headline-led vertical stack (headline
+// above the card so the verdict lands first on small screens). Desktop:
+// two-column side-by-side — card anchored left, full text column right —
+// with a 5/7 grid favoring the text so description/spec get breathing room.
 function FullResults({
   archetype,
   index,
@@ -133,89 +134,117 @@ function FullResults({
     <main className="relative min-h-[100svh] w-full bg-stone-50 text-stone-900">
       <TopBar index={index} />
 
-      <section className="mx-auto w-full px-5 pb-24 pt-10 sm:px-10 sm:pt-14 md:pt-16">
-        {/* Card — centered, large, portrait. Sized so it's the moment without
-            dominating the fold. 75vw on mobile keeps it visible without forcing
-            a scroll to read the headline; max-w-md on desktop keeps detail
-            legible at arm's length. */}
-        <div className="mx-auto w-full max-w-[75vw] sm:max-w-sm md:max-w-md">
-          <Image
-            src={cardImage}
-            alt={`${archetype.name} card illustration`}
-            width={964}
-            height={1600}
-            priority
-            sizes="(min-width: 768px) 28rem, 75vw"
-            className="h-auto w-full border border-stone-200 shadow-[0_1px_2px_rgba(0,0,0,0.04),0_8px_24px_-12px_rgba(0,0,0,0.18)]"
-          />
-        </div>
-
-        <div className="mt-10 sm:mt-12 md:mt-14">
-          <Headline name={archetype.name} />
-        </div>
-
-        <p className="mt-3 text-center font-serif text-lg italic text-stone-600 sm:mt-4 sm:text-xl">
-          {archetype.tagline}
-        </p>
-
-        {/* Body — single narrow column for comfortable reading line length.
-            DESCRIPTION sits first (option b): the description IS the portrait,
-            weave is the spec. Label stays per the no-invention rule. */}
-        <div className="mx-auto mt-14 w-full max-w-2xl space-y-7 sm:mt-16 sm:space-y-8">
-          <div className="space-y-1.5">
-            <Label>Description</Label>
-            <p className="font-serif text-base leading-7 text-stone-800">
-              {archetype.description}
+      <section className="mx-auto w-full max-w-6xl px-5 pb-24 pt-10 sm:px-10 sm:pt-14 md:pt-16">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-12 md:gap-16 lg:gap-20">
+          {/* MOBILE-ONLY: Headline + tagline above the card so the verdict
+              ("You are the X") lands first on small screens before scroll.
+              Hidden on md+ where this content lives in the right column. */}
+          <div className="md:hidden">
+            <Headline name={archetype.name} />
+            <p className="mt-3 text-center font-serif text-lg italic text-stone-600 sm:mt-4 sm:text-xl">
+              {archetype.tagline}
             </p>
           </div>
 
-          {/* Specimen card — Weave / Drape / Palette / Worn well by grouped
-              as the saree's physical specification, distinct from Description
-              (personality) above. Sharp corners + thin border read like a
-              museum specimen card, not a UI panel. */}
-          <div className="space-y-5 border border-stone-200 bg-white p-6 sm:space-y-6 sm:p-8 md:p-10">
-            <div className="space-y-1.5">
-              <Label>Weave</Label>
-              <p className="font-serif text-base leading-7 text-stone-800">
-                {archetype.weave}
-              </p>
-            </div>
-
-            {/* Drape, Palette, Worn well by — stacked label-above-content to
-                match Weave/Description rhythm. Consistent format across all
-                spec sections reads cleaner than mixing inline + stacked. */}
-            <div className="space-y-1.5">
-              <Label>Drape</Label>
-              <p className="font-serif text-base leading-7 text-stone-800">
-                {archetype.drape}
-              </p>
-            </div>
-
-            <div className="space-y-1.5">
-              <Label>Palette</Label>
-              <p className="font-serif text-base leading-7 text-stone-800">
-                {archetype.palette}
-              </p>
-            </div>
-
-            <div className="space-y-1.5">
-              <Label>Worn well by</Label>
-              <p className="font-serif text-base leading-7 text-stone-800">
-                {archetype.wornWellBy}
-              </p>
+          {/* Card column. On mobile it sits between headline and description;
+              on desktop it occupies the left 5/12 columns and is vertically
+              centered in its track via self-start + sticky-ish placement so
+              it feels anchored against the scrolling text on the right.
+              max-w-sm/md keeps detail legible without overwhelming the text. */}
+          <div className="md:col-span-5 md:self-start">
+            <div className="mx-auto w-full max-w-[75vw] sm:max-w-sm md:sticky md:top-10 md:max-w-md">
+              <Image
+                src={cardImage}
+                alt={`${archetype.name} card illustration`}
+                width={964}
+                height={1600}
+                priority
+                sizes="(min-width: 768px) 28rem, 75vw"
+                className="h-auto w-full border border-stone-200 shadow-[0_1px_2px_rgba(0,0,0,0.04),0_8px_24px_-12px_rgba(0,0,0,0.18)]"
+              />
             </div>
           </div>
-        </div>
 
-        <div className="mt-14 flex justify-center sm:mt-16">
-          <TakeAgainButton />
-        </div>
+          {/* Text column. On desktop holds the full reading flow:
+              headline → tagline → description → spec box → CTA → share.
+              On mobile only the body content (description onwards) lives
+              here — headline/tagline render above the card via the md:hidden
+              block. */}
+          <div className="md:col-span-7">
+            {/* DESKTOP-ONLY headline/tagline. Left-aligned on desktop so the
+                two columns read as a magazine spread, not a centered hero. */}
+            <div className="hidden md:block">
+              <h1 className="font-serif font-medium leading-[1.05] tracking-tight text-stone-900">
+                <span className="block text-4xl md:text-5xl">You are the</span>
+                <span className="mt-3 block text-5xl italic md:text-6xl">
+                  {archetype.name}.
+                </span>
+              </h1>
+              <p className="mt-4 font-serif text-xl italic text-stone-600">
+                {archetype.tagline}
+              </p>
+            </div>
 
-        <ShareBlock
-          archetypeName={archetype.name}
-          archetypeSlug={archetype.slug}
-          cardImage={archetype.cardImage}
-        />
+            {/* Body — description sits first (the description IS the portrait,
+                weave is the spec). Bumped to text-lg/xl so it commands its
+                own breathing room and reads like editorial body copy, not
+                caption text. */}
+            <div className="mt-10 space-y-7 sm:space-y-8 md:mt-10">
+              <div className="space-y-1.5">
+                <Label>Description</Label>
+                <p className="font-serif text-lg leading-8 text-stone-800 sm:text-xl sm:leading-8 md:text-xl md:leading-9">
+                  {archetype.description}
+                </p>
+              </div>
+
+              {/* Specimen card — Weave / Drape / Palette / Worn well by
+                  grouped as the saree's physical specification, distinct
+                  from Description (personality) above. Sharp corners + thin
+                  border read like a museum specimen card, not a UI panel.
+                  Body bumped to text-lg to sit closer in weight to the
+                  description above; section labels stay small + tracked. */}
+              <div className="space-y-5 border border-stone-200 bg-white p-6 sm:space-y-6 sm:p-8 md:p-10">
+                <div className="space-y-1.5">
+                  <Label>Weave</Label>
+                  <p className="font-serif text-lg leading-8 text-stone-800">
+                    {archetype.weave}
+                  </p>
+                </div>
+
+                <div className="space-y-1.5">
+                  <Label>Drape</Label>
+                  <p className="font-serif text-lg leading-8 text-stone-800">
+                    {archetype.drape}
+                  </p>
+                </div>
+
+                <div className="space-y-1.5">
+                  <Label>Palette</Label>
+                  <p className="font-serif text-lg leading-8 text-stone-800">
+                    {archetype.palette}
+                  </p>
+                </div>
+
+                <div className="space-y-1.5">
+                  <Label>Worn well by</Label>
+                  <p className="font-serif text-lg leading-8 text-stone-800">
+                    {archetype.wornWellBy}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-14 flex justify-center sm:mt-16 md:justify-start">
+              <TakeAgainButton />
+            </div>
+
+            <ShareBlock
+              archetypeName={archetype.name}
+              archetypeSlug={archetype.slug}
+              cardImage={archetype.cardImage}
+            />
+          </div>
+        </div>
       </section>
     </main>
   );
